@@ -115,7 +115,7 @@ done
 💗 If you enjoy our VideoRepair and find some beneficial things, citing our paper would be the best support for us! 
 
 ```
-@misc{lin2024ctrladapter,
+@misc{lee2024videorepair,
       title={VideoRepair: Improving Text-to-Video Generation via Misalignment Evaluation and Localized Refinement}, 
       author={Daeun Lee and Jaehong Yoon and Jaemin Cho and Mohit Bansal},
       year={2024},
