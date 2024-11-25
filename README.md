@@ -2,17 +2,13 @@
 
 [![Project Website](https://img.shields.io/badge/Project-Website-blue)](https://video-repair.github.io/)  [![arXiv](https://img.shields.io/badge/arXiv-2402.08712-b31b1b.svg)](https://arxiv.org/pdf/2411.xxxx.pdf)   
 
-[Daeun Lee](https://daeunni.github.io/),
-[Jaehong Yoon](https://jaehong31.github.io/),
-[Jaemin Cho](https://j-min.io),
-[Mohit Bansal](https://www.cs.unc.edu/~mbansal/)
-
+#### [Daeun Lee](https://daeunni.github.io/), [Jaehong Yoon](https://jaehong31.github.io/), [Jaemin Cho](https://j-min.io), [Mohit Bansal](https://www.cs.unc.edu/~mbansal/)
 
 <br>
 <img width="950" src="image/teaser_final_verylarge_v2.gif"/>
 <br>
 
-😛 ***VideoRepair** can (1) detect misalignments by generating fine-grained evaluation questions and answering, (2) plan refinement, (3) decompose the region and finally (4) conduct localized refinement.* 
+✨ **VideoRepair** can *(1) **detect** misalignments by generating fine-grained evaluation questions and answering, (2) **plan** refinement, (3) **decompose** the region* and finally *(4) conduct **localized refinement**.* 
 
 ## 🔧 Setup
 
