@@ -134,7 +134,7 @@ done
       title={VideoRepair: Improving Text-to-Video Generation via Misalignment Evaluation and Localized Refinement}, 
       author={Daeun Lee and Jaehong Yoon and Jaemin Cho and Mohit Bansal},
       year={2024},
-      eprint={2404.xxxx},
+      eprint={2411.15115},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
