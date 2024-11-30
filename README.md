@@ -2,13 +2,15 @@
 
 [![Project Website](https://img.shields.io/badge/Project-Website-blue)](https://video-repair.github.io/)  [![arXiv](https://img.shields.io/badge/arXiv-2411.15115-b31b1b.svg)](https://arxiv.org/pdf/2411.15115.pdf)   
 
-#### [Daeun Lee](https://daeunni.github.io/), [Jaehong Yoon](https://jaehong31.github.io/), [Jaemin Cho](https://j-min.io), [Mohit Bansal](https://www.cs.unc.edu/~mbansal/)
+#### [Daeun Lee](https://daeunni.github.io/), [Jaehong Yoon](https://jaehong31.github.io/), [Jaemin Cho](https://j-min.io), [Mohit Bansal](https://www.cs.unc.edu/~mbansal/)    
+🚨 All code will be released by the first week of Dec, stay tuned!    
+
 
 <br>
 <img width="950" src="image/teaser_final_verylarge_v2.gif"/>
 <br>
 
-✨ **VideoRepair** can *(1) **detect** misalignments by generating fine-grained evaluation questions and answering, (2) **plan** refinement, (3) **decompose** the region* and finally *(4) conduct **localized refinement**.* 
+✨ **VideoRepair** can *(1) **detect** misalignments by generating fine-grained evaluation questions and answering, (2) **plan** refinement, (3) **decompose** the region* and finally *(4) conduct **localized refinement**.*      
 
 ## 🔧 Setup
 
@@ -42,16 +44,29 @@ client = AzureOpenAI(
 ```
 
 ### Download Models 
-VideoRepair's region decomposition is based on Molmo, Semantic-SAM, you can download it as follows: 
-- We use [MolmoE-1B](https://huggingface.co/allenai/MolmoE-1B-0924) downloaded from here.
-- We use [Semantic-SAM (L)](https://github.com/UX-Decoder/Semantic-SAM?tab=readme-ov-file) downloaded from here.  
+Locate all downloaded models in the  `./checkpoints` directory! The code structure will like below: 
+```bash
+./checkpoints
+    ├── blip2-opt-2.7b
+    ├── t2v-turbo 
+    │   ├── unet_lora.pt
+    │   ├── inference_t2v_512_v2.0.yaml     # downloaded from T2V-turbo official repo 
+    ├── VideoCrafter
+    │   ├── model.ckpt
+    ├── ssam
+    │   ├── swinl_only_sam_many2many.pth
+```
 
-Also, for initial video generation, you should setup your t2v models. In our main paper, we use VideoCrafter2 and T2V-turbo. 
-- We use [VideoCrafter2](https://github.com/AILab-CVC/VideoCrafter) downloaded from here.
-- We use [T2V-turbo](https://github.com/Ji4chenLi/t2v-turbo?tab=readme-ov-file) downloaded from here. 
-
-
-
+You can download pre-trained models as below: 
+- [T2V-turbo](https://huggingface.co/jiachenli-ucsb/T2V-Turbo-VC2/blob/main/unet_lora.pt)
+- [VideoCrafter2](https://huggingface.co/VideoCrafter/VideoCrafter2/blob/main/model.ckpt)
+- [MolmoE-1B-0924](https://huggingface.co/allenai/MolmoE-1B-0924)
+- [Semantic-SAM (L)](https://github.com/UX-Decoder/Semantic-SAM/releases/download/checkpoint/swinl_only_sam_many2many.pth)
+- BLIP-BLUE for Video Ranking 
+```shell
+git lfs install
+git clone https://huggingface.co/Salesforce/blip2-opt-2.7b
+```
 
 ## 🎨 Apply to your own prompt  
 We provide demo (`run_demo.sh`) for your own prompt! This demo use `main_iter_demo.py`. 
