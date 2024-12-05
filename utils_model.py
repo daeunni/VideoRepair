@@ -146,15 +146,14 @@ def video_ranking(cur_gen_dir,
     if selection_score == 'dsg_blip' : 
         
         videos = sorted([f for f in os.listdir(cur_gen_dir) if f.endswith('.mp4')])
-        # filtered_videos = sorted([file for file in videos if init_prompt in file])        # NOTE background prompt -> initial prompt로 함 
+        # filtered_videos = sorted([file for file in videos if init_prompt in file])        
 
         # if args.not_initprompt_for_background : 
         filtered_videos = sorted([file for file in videos if init_prompt not in file])  
         filtered_videos.append(videos[0])
 
         candidates_dsg_scores = automatic_scoring_w_dsg(filtered_videos, cur_gen_dir, qid2question, init_prompt, qid2dependency)
-        max_value = max(candidates_dsg_scores)
-        # max_index = candidates_dsg_scores.index(max(candidates_dsg_scores))           # 동일한 dsg가 2개 이상이면 -> 1) 걍 가장 위에꺼 판단 2) CLIP or BLIP2로 판단 
+        max_value = max(candidates_dsg_scores)  
         max_indices = [i for i, score in enumerate(candidates_dsg_scores) if score == max_value]
 
 

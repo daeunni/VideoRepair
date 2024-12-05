@@ -115,7 +115,8 @@ done
 
 
 ## 📝 TODO List
-- [ ] Release the demo code.
+- [ ] Release EvalCrafter section-wise evaluation code.
+- [ ] Release the demo + question generation code.
 - [x] Release the benchmark generation code.
 
 
