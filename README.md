@@ -59,8 +59,7 @@ Next, please locate all downloaded models in the  `./checkpoints` directory! The
     │   ├── model.ckpt
 
 ./SemanticSAM/checkpoint
-    ├── ssam
-    │   ├── swinl_only_sam_many2many.pth
+    ├── swinl_only_sam_many2many.pth
 ```
 
 ## 🎨 Apply to your own prompt  
