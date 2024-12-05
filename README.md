@@ -3,7 +3,6 @@
 [![Project Website](https://img.shields.io/badge/Project-Website-blue)](https://video-repair.github.io/)  [![arXiv](https://img.shields.io/badge/arXiv-2411.15115-b31b1b.svg)](https://arxiv.org/pdf/2411.15115.pdf)   
 
 #### [Daeun Lee](https://daeunni.github.io/), [Jaehong Yoon](https://jaehong31.github.io/), [Jaemin Cho](https://j-min.io), [Mohit Bansal](https://www.cs.unc.edu/~mbansal/)    
-🚨 All code will be released by the first week of Dec, stay tuned!    
 
 
 <br>
@@ -28,23 +27,28 @@ python -m pip install 'git+https://github.com/MaureenZOU/detectron2-xyz.git'
 
 ### OpenAI API Setup 
 Our VideoRepair is based on GPT4 / GPT4o, so you need to setup your Azure OpenAI API config in the below files. 
-You can find your keys in Azure Portal. We recommend using [python-dotenv](https://github.com/theskumar/python-dotenv) to store and load your keys.
-
-- `DSG/openai_utils.py`
-- `DSG/dsg_questions_gen.py`
-- `DSG/query_utils.py`
-- `DSG/vqa_utils.py`
+You can set your own API infomation in `config.ini`. 
 
 ```python
-client = AzureOpenAI(
-            azure_endpoint = # your keys,  
-            api_key= # your keys,  
-            api_version=# your keys,  
-            )
+[openai]
+azure_endpoint = your endpoint   
+api_key = your key 
+api_version = your version 
 ```
 
 ### Download Models 
-Locate all downloaded models in the  `./checkpoints` directory! The code structure will like below: 
+You can download pre-trained models here. 
+- [T2V-turbo](https://huggingface.co/jiachenli-ucsb/T2V-Turbo-VC2/blob/main/unet_lora.pt)
+- [VideoCrafter2](https://huggingface.co/VideoCrafter/VideoCrafter2/blob/main/model.ckpt)
+- [MolmoE-1B-0924](https://huggingface.co/allenai/MolmoE-1B-0924)
+- [Semantic-SAM (L)](https://github.com/UX-Decoder/Semantic-SAM/releases/download/checkpoint/swinl_only_sam_many2many.pth)
+- BLIP-BLUE 
+```shell
+git lfs install
+git clone https://huggingface.co/Salesforce/blip2-opt-2.7b
+```
+
+Next, please locate all downloaded models in the  `./checkpoints` directory! The code structure will like below: 
 ```bash
 ./checkpoints
     ├── blip2-opt-2.7b
@@ -53,19 +57,10 @@ Locate all downloaded models in the  `./checkpoints` directory! The code structu
     │   ├── inference_t2v_512_v2.0.yaml     # downloaded from T2V-turbo official repo 
     ├── VideoCrafter
     │   ├── model.ckpt
+
+./SemanticSAM/checkpoint
     ├── ssam
     │   ├── swinl_only_sam_many2many.pth
-```
-
-You can download pre-trained models as below: 
-- [T2V-turbo](https://huggingface.co/jiachenli-ucsb/T2V-Turbo-VC2/blob/main/unet_lora.pt)
-- [VideoCrafter2](https://huggingface.co/VideoCrafter/VideoCrafter2/blob/main/model.ckpt)
-- [MolmoE-1B-0924](https://huggingface.co/allenai/MolmoE-1B-0924)
-- [Semantic-SAM (L)](https://github.com/UX-Decoder/Semantic-SAM/releases/download/checkpoint/swinl_only_sam_many2many.pth)
-- BLIP-BLUE for Video Ranking 
-```shell
-git lfs install
-git clone https://huggingface.co/Salesforce/blip2-opt-2.7b
 ```
 
 ## 🎨 Apply to your own prompt  
@@ -111,18 +106,17 @@ do
                         --output_root="$output_root" \
                         --eval_section="$section" \
                         --model='t2vturbo' \              # t2v model backbone 
-                        --load_molmo \
                         --selection_score='dsg_blip' \    # video ranking metric 
                         --seed=123 \                      # random seed 
                         --round=1 \                       # iteration round 
                         --k=10 \                          # number of video candidates 
-                        --div_seeds                       # use diverse seed per iterative rounds. 
 done
 ```
 
 
 ## 📝 TODO List
-- [ ] Release the whole code.
+- [ ] Release the demo code.
+- [x] Release the benchmark generation code.
 
 
 ## 📚 BibTeX
