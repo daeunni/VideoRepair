@@ -1,0 +1,2282 @@
+[
+  {
+    "origin_prompt": "A family of three take their dog and cat for a walk in the park, enjoying the fresh air and exercise.",
+    "idx": 78,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A family of three take their dog and cat for a walk in the park, enjoying the fresh air and exercise.",
+        "output": "1 | entity - whole (family)\n2 | other - count (dog, ==1)\n3 | other - count (cat, ==1)\n4 | entity - whole (park)\n5 | attribute - state (family, take a walk)\n6 | attribute - state (dog, walk)\n7 | attribute - state (cat, walk)\n8 | attribute - state (family, enjoy)\n9 | attribute - state (family, breathe fresh air)\n10 | attribute - state (family, exercise)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        2
+      ],
+      "7": [
+        3
+      ],
+      "8": [
+        1
+      ],
+      "9": [
+        1
+      ],
+      "10": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there a family?",
+      "2": "Is there one dog?",
+      "3": "Is there one cat?",
+      "4": "Is there a park?",
+      "5": "Is the family taking a walk?",
+      "6": "Is the dog walking?",
+      "7": "Is the cat walking?",
+      "8": "Is the family enjoying?",
+      "9": "Is the family breathing fresh air?",
+      "10": "Is the family exercising?"
+    }
+  },
+  {
+    "origin_prompt": "Two individuals ride a bike through the temple gates.",
+    "idx": 80,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Two individuals ride a bike through the temple gates.",
+        "output": "1 | other - count (individuals, ==2)\n2 | other - count (bike, ==1)\n3 | other - count (temple gates, ==1)\n4 | action - (individuals, bike, ride)\n5 | relation - spatial (individuals, temple gates, through)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two individuals?",
+      "2": "Is there one bike?",
+      "3": "Are there temple gates?",
+      "4": "Are the individuals riding a bike?",
+      "5": "Are the individuals riding through the temple gates?"
+    }
+  },
+  {
+    "origin_prompt": "A young woman with glasses is jogging in the park wearing a pink headband.",
+    "idx": 82,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A young woman with glasses is jogging in the park wearing a pink headband.",
+        "output": "1 | other - count (woman, ==1)\n2 | attribute - age (woman, young)\n3 | attribute - accessory (woman, glasses)\n4 | action - (woman, jog)\n5 | relation - spatial (woman, park, in)\n6 | attribute - color (woman's headband, pink)\n7 | attribute - type (woman's headband, headband)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        5
+      ],
+      "6": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one young woman?",
+      "2": "Does the woman wear glasses?",
+      "3": "Is the woman jogging?",
+      "4": "Is the woman in the park?",
+      "5": "Is the woman wearing a pink headband?",
+      "6": "Is the headband a headband?"
+    }
+  },
+  {
+    "origin_prompt": "six people are singing together. One person is a young African-American woman with curly black hair, wearing a red dress. The other person is a middle-aged Caucasian man with short blonde hair, wearing a blue shirt.",
+    "idx": 83,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "six people are singing together. One person is a young African-American woman with curly black hair, wearing a red dress. The other person is a middle-aged Caucasian man with short blonde hair, wearing a blue shirt.",
+        "output": "1 | other - count (people, ==6)\n2 | action - (people, sing)\n3 | entity - part (young African-American woman)\n4 | attribute - type (young African-American woman, woman)\n5 | attribute - type (young African-American woman, African-American)\n6 | attribute - state (young African-American woman, curly black hair)\n7 | attribute - state (young African-American woman, red dress)\n8 | entity - part (middle-aged Caucasian man)\n9 | attribute - type (middle-aged Caucasian man, man)\n10 | attribute - type (middle-aged Caucasian man, Caucasian)\n11 | attribute - state (middle-aged Caucasian man, short blonde hair)\n12 | attribute - state (middle-aged Caucasian man, blue shirt)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        3
+      ],
+      "7": [
+        3
+      ],
+      "8": [
+        1
+      ],
+      "9": [
+        8
+      ],
+      "10": [
+        8
+      ],
+      "11": [
+        8
+      ],
+      "12": [
+        8
+      ]
+    },
+    "qid2question": {
+      "1": "Are there six people?",
+      "2": "Are the people singing together?",
+      "3": "Is there a young African-American woman?",
+      "4": "Is the young woman a woman?",
+      "5": "Is the young woman African-American?",
+      "6": "Does the young woman have curly black hair?",
+      "7": "Is the young woman wearing a red dress?",
+      "8": "Is there a middle-aged Caucasian man?",
+      "9": "Is the middle-aged man a man?",
+      "10": "Is the middle-aged man Caucasian?",
+      "11": "Does the middle-aged man have short blonde hair?",
+      "12": "Is the middle-aged man wearing a blue shirt?"
+    }
+  },
+  {
+    "origin_prompt": "Two people kicking soccer ball beside a truck at police station",
+    "idx": 85,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Two people kicking soccer ball beside a truck at police station",
+        "output": "1 | other - count (people, ==2)\n2 | other - count (soccer ball, ==1)\n3 | other - count (truck, ==1)\n4 | other - count (police station, ==1)\n5 | action - (people, soccer ball, kick)\n6 | relation - spatial (people, truck, beside)\n7 | relation - spatial (people, police station, at)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ],
+      "7": [
+        1,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two people?",
+      "2": "Is there one soccer ball?",
+      "3": "Is there one truck?",
+      "4": "Is there one police station?",
+      "5": "Are the people kicking the soccer ball?",
+      "6": "Is the truck beside the people?",
+      "7": "Are the people at the police station?"
+    }
+  },
+  {
+    "origin_prompt": "michel jordan playing basketball",
+    "idx": 88,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "michel jordan playing basketball",
+        "output": "1 | other - count (michel jordan, ==1)\n2 | action - (michel jordan, basketball, play)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one Michel Jordan?",
+      "2": "Is Michel Jordan playing basketball?"
+    }
+  },
+  {
+    "origin_prompt": "Hawaiian woman playing a ukulele",
+    "idx": 89,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Hawaiian woman playing a ukulele",
+        "output": "1 | other - count (woman, ==1)\n2 | other - count (ukulele, ==1)\n3 | attribute - nationality (woman, Hawaiian)\n4 | action - (woman, ukulele, play)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one Hawaiian woman?",
+      "2": "Is there one ukulele?",
+      "3": "Is the woman Hawaiian?",
+      "4": "Is the woman playing the ukulele?"
+    }
+  },
+  {
+    "origin_prompt": "man driving in a taxi, angry face",
+    "idx": 92,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "man driving in a taxi, angry face",
+        "output": "1 | other - count (man, ==1)\n2 | other - count (taxi, ==1)\n3 | attribute - state (man, angry)\n4 | action - (man, taxi, drive)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one man?",
+      "2": "Is there one taxi?",
+      "3": "Is the man angry?",
+      "4": "Is the man driving in the taxi?"
+    }
+  },
+  {
+    "origin_prompt": "Two people playing rock-paper-scissors. They are laughing and having fun.",
+    "idx": 93,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Two people playing rock-paper-scissors. They are laughing and having fun.",
+        "output": "1 | other - count (people, ==2)\n2 | action - (people, play rock-paper-scissors)\n3 | attribute - state (people, laugh)\n4 | attribute - state (people, have fun)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two people?",
+      "2": "Are the people playing rock-paper-scissors?",
+      "3": "Are the people laughing?",
+      "4": "Are the people having fun?"
+    }
+  },
+  {
+    "origin_prompt": "A person scuba dives in a deep blue ocean.",
+    "idx": 98,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A person scuba dives in a deep blue ocean.",
+        "output": "1 | other - count (person, ==1)\n2 | other - count (ocean, ==1)\n3 | attribute - color (ocean, deep blue)\n4 | action - (person, scuba dive)\n5 | relation - spatial (person, ocean, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one person?",
+      "2": "Is there one ocean?",
+      "3": "Is the ocean deep blue?",
+      "4": "Is the person scuba diving?",
+      "5": "Is the person in the ocean?"
+    }
+  },
+  {
+    "origin_prompt": "A woman is walking her dog on the beach at sunset.",
+    "idx": 104,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A woman is walking her dog on the beach at sunset.",
+        "output": "1 | other - count (woman, ==1)\n2 | other - count (dog, ==1)\n3 | other - count (beach, ==1)\n4 | attribute - state (woman, walk)\n5 | relation - spatial (woman, dog, walking)\n6 | relation - spatial (woman, beach, on)\n7 | relation - temporal (woman, sunset, at)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1,
+        3
+      ],
+      "7": [
+        1,
+        6
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one woman?",
+      "2": "Is there one dog?",
+      "3": "Is there one beach?",
+      "4": "Is the woman walking?",
+      "5": "Is the woman walking the dog?",
+      "6": "Is the woman on the beach?",
+      "7": "Is it sunset when the woman is walking?"
+    }
+  },
+  {
+    "origin_prompt": "A young man is riding a bicycle on a sunny day. He is wearing a blue hoodie and black jeans. His hair is brown and styled messily. He has a small scar above his left eye.",
+    "idx": 106,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A young man is riding a bicycle on a sunny day. He is wearing a blue hoodie and black jeans. His hair is brown and styled messily. He has a small scar above his left eye.",
+        "output": "1 | other - count (man, ==1)\n2 | other - count (bicycle, ==1)\n3 | attribute - age (man, young)\n4 | attribute - state (day, sunny)\n5 | attribute - color (man's hoodie, blue)\n6 | attribute - color (man's jeans, black)\n7 | attribute - color (man's hair, brown)\n8 | attribute - style (man's hair, messy)\n9 | attribute - state (man, scar above left eye)\n10 | action - (man, bicycle, ride)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        1
+      ],
+      "8": [
+        1
+      ],
+      "9": [
+        1
+      ],
+      "10": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one young man?",
+      "2": "Is there one bicycle?",
+      "3": "Is the man young?",
+      "4": "Is it a sunny day?",
+      "5": "Is the man wearing a blue hoodie?",
+      "6": "Is the man wearing black jeans?",
+      "7": "Is the man's hair brown?",
+      "8": "Is the man's hair styled messily?",
+      "9": "Does the man have a small scar above his left eye?",
+      "10": "Is the man riding a bicycle?"
+    }
+  },
+  {
+    "origin_prompt": "Valkyrie riding flying horses through the clouds",
+    "idx": 109,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Valkyrie riding flying horses through the clouds",
+        "output": "1 | other - count (Valkyrie, ==1)\n2 | other - count (horses, ==2)\n3 | other - count (clouds, ==1)\n4 | action - (Valkyrie, horses, ride)\n5 | relation - spatial (Valkyrie, clouds, through)\n6 | relation - spatial (horses, clouds, through)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        3
+      ],
+      "6": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one Valkyrie?",
+      "2": "Are there two horses?",
+      "3": "Is there one cloud?",
+      "4": "Is the Valkyrie riding the horses?",
+      "5": "Is the Valkyrie riding through the clouds?",
+      "6": "Are the horses riding through the clouds?"
+    }
+  },
+  {
+    "origin_prompt": "A basketball player dribbles down the court, weaving through defenders before leaping for a slam dunk.",
+    "idx": 115,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A basketball player dribbles down the court, weaving through defenders before leaping for a slam dunk.",
+        "output": "1 | other - count (basketball player, ==1)\n2 | other - count (court, ==1)\n3 | action - (basketball player, dribble down)\n4 | action - (basketball player, weave through defenders)\n5 | action - (basketball player, leap for a slam dunk)\n6 | relation - spatial (basketball player, court, down)\n7 | relation - spatial (basketball player, defenders, through)\n8 | relation - spatial (basketball player, slam dunk, for)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        1,
+        2
+      ],
+      "8": [
+        1,
+        5
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one basketball player?",
+      "2": "Is there one court?",
+      "3": "Is the basketball player dribbling down the court?",
+      "4": "Is the basketball player weaving through defenders?",
+      "5": "Is the basketball player leaping for a slam dunk?",
+      "6": "Is the basketball player down on the court?",
+      "7": "Is the basketball player going through the defenders?",
+      "8": "Is the basketball player going for a slam dunk?"
+    }
+  },
+  {
+    "origin_prompt": "A group of two artists collaborate on a painting, each adding their own unique touch to the canvas.",
+    "idx": 117,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A group of two artists collaborate on a painting, each adding their own unique touch to the canvas.",
+        "output": "1 | entity - whole (artists)\n2 | entity - whole (painting)\n3 | other - count (artists, ==2)\n4 | action - (artists, collaborate)\n5 | action - (artists, painting, add)\n6 | attribute - state (artists, unique)\n7 | relation - spatial (artists, painting, on)\n8 | relation - spatial (artists, canvas, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        3
+      ],
+      "7": [
+        1,
+        2
+      ],
+      "8": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there a group of artists?",
+      "2": "Is there a painting?",
+      "3": "Are there two artists?",
+      "4": "Are the artists collaborating?",
+      "5": "Are the artists adding to the painting?",
+      "6": "Do the artists have unique touches?",
+      "7": "Are the artists on the painting?",
+      "8": "Are the artists on the canvas?"
+    }
+  },
+  {
+    "origin_prompt": "A group of six dancers perform a ballet on stage, their movements synchronized and graceful.",
+    "idx": 118,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A group of six dancers perform a ballet on stage, their movements synchronized and graceful.",
+        "output": "1 | entity - whole (dancers)\n2 | other - count (dancers, ==6)\n3 | action - (dancers, ballet, perform)\n4 | attribute - state (dancers, synchronized)\n5 | attribute - state (dancers, graceful)\n6 | relation - spatial (dancers, stage, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there a group of dancers?",
+      "2": "Are there six dancers?",
+      "3": "Are the dancers performing a ballet?",
+      "4": "Are the dancers synchronized?",
+      "5": "Are the dancers graceful?",
+      "6": "Are the dancers on the stage?"
+    }
+  },
+  {
+    "origin_prompt": "A mother and her child feed ducks at a pond.",
+    "idx": 132,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A mother and her child feed ducks at a pond.",
+        "output": "1 | other - count (mother, ==1)\n2 | other - count (child, ==1)\n3 | other - count (ducks, ==1)\n4 | other - count (pond, ==1)\n5 | action - (mother, ducks, feed)\n6 | relation - spatial (mother, ducks, at)\n7 | relation - spatial (child, ducks, at)\n8 | relation - spatial (mother, pond, at)\n9 | relation - spatial (child, pond, at)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1,
+        3
+      ],
+      "6": [
+        1,
+        3
+      ],
+      "7": [
+        2,
+        3
+      ],
+      "8": [
+        1,
+        4
+      ],
+      "9": [
+        2,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one mother?",
+      "2": "Is there one child?",
+      "3": "Are there ducks?",
+      "4": "Is there one pond?",
+      "5": "Is the mother feeding the ducks?",
+      "6": "Is the mother at the ducks?",
+      "7": "Is the child at the ducks?",
+      "8": "Is the mother at the pond?",
+      "9": "Is the child at the pond?"
+    }
+  },
+  {
+    "origin_prompt": "A father teaches his son how to ride a bicycle in the backyard",
+    "idx": 134,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A father teaches his son how to ride a bicycle in the backyard",
+        "output": "1 | other - count (father, ==1)\n2 | other - count (son, ==1)\n3 | other - count (bicycle, ==1)\n4 | other - count (backyard, ==1)\n5 | action - (father, son, teach)\n6 | action - (son, bicycle, ride)\n7 | relation - spatial (father, son, in)\n8 | relation - spatial (son, bicycle, on)\n9 | relation - spatial (bicycle, backyard, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        2,
+        3
+      ],
+      "7": [
+        1,
+        2
+      ],
+      "8": [
+        2,
+        3
+      ],
+      "9": [
+        3,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one father?",
+      "2": "Is there one son?",
+      "3": "Is there one bicycle?",
+      "4": "Is there one backyard?",
+      "5": "Is the father teaching the son?",
+      "6": "Is the son riding the bicycle?",
+      "7": "Is the son in the father's presence?",
+      "8": "Is the son on the bicycle?",
+      "9": "Is the bicycle in the backyard?"
+    }
+  },
+  {
+    "origin_prompt": "A man cruises through the city on a motorcycle, feeling the adrenaline rush",
+    "idx": 137,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A man cruises through the city on a motorcycle, feeling the adrenaline rush",
+        "output": "1 | other - count (man, ==1)\n2 | other - count (motorcycle, ==1)\n3 | other - count (city, ==1)\n4 | action - (man, motorcycle, cruise through)\n5 | attribute - state (man, feel)\n6 | attribute - state (man, adrenaline rush)\n7 | relation - spatial (man, city, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2,
+        3
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one man?",
+      "2": "Is there one motorcycle?",
+      "3": "Is there one city?",
+      "4": "Is the man cruising through the city on the motorcycle?",
+      "5": "Is the man feeling something?",
+      "6": "Is the man feeling an adrenaline rush?",
+      "7": "Is the man in the city?"
+    }
+  },
+  {
+    "origin_prompt": "A musician strums his guitar, serenading the moonlit night",
+    "idx": 140,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A musician strums his guitar, serenading the moonlit night",
+        "output": "1 | other - count (musician, ==1)\n2 | other - count (guitar, ==1)\n3 | attribute - state (night, moonlit)\n4 | action - (musician, guitar, strum)\n5 | action - (musician, night, serenade)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one musician?",
+      "2": "Is there one guitar?",
+      "3": "Is the night moonlit?",
+      "4": "Is the musician strumming his guitar?",
+      "5": "Is the musician serenading the night?"
+    }
+  },
+  {
+    "origin_prompt": "A child excitedly swings on a rusty swing set, laughter filling the air.",
+    "idx": 142,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A child excitedly swings on a rusty swing set, laughter filling the air.",
+        "output": "1 | other - count (child, ==1)\n2 | other - count (swing set, ==1)\n3 | attribute - state (child, excited)\n4 | attribute - state (swing set, rusty)\n5 | action - (child, swing)\n6 | action - (child, laughter, fill)\n7 | relation - spatial (child, swing set, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one child?",
+      "2": "Is there one swing set?",
+      "3": "Is the child excited?",
+      "4": "Is the swing set rusty?",
+      "5": "Is the child swinging?",
+      "6": "Is there laughter filling the air?",
+      "7": "Is the child on the swing set?"
+    }
+  },
+  {
+    "origin_prompt": "A woman paints on a canvas, capturing the beauty of a sunset",
+    "idx": 143,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A woman paints on a canvas, capturing the beauty of a sunset",
+        "output": "1 | other - count (woman, ==1)\n2 | other - count (canvas, ==1)\n3 | attribute - state (sunset, beauty)\n4 | action - (woman, canvas, paint)\n5 | action - (woman, sunset, capture)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one woman?",
+      "2": "Is there one canvas?",
+      "3": "Is the sunset beautiful?",
+      "4": "Is the woman painting on the canvas?",
+      "5": "Is the woman capturing the beauty of the sunset?"
+    }
+  },
+  {
+    "origin_prompt": "A man had been feeding pigeons in the park on a sunny day. with the style of Black and White Film Noir",
+    "idx": 300,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A man had been feeding pigeons in the park on a sunny day. with the style of Black and White Film Noir",
+        "output": "1 | other - count (man, ==1)\n2 | entity - whole (pigeons)\n3 | entity - whole (park)\n4 | attribute - state (day, sunny)\n5 | attribute - style (photo, Black and White Film Noir)\n6 | action - (man, pigeons, feed)\n7 | relation - temporal (man, day, in)\n8 | relation - spatial (man, park, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        1,
+        4
+      ],
+      "8": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one man?",
+      "2": "Are there pigeons?",
+      "3": "Is there a park?",
+      "4": "Is it a sunny day?",
+      "5": "Is the photo in the style of Black and White Film Noir?",
+      "6": "Is the man feeding pigeons?",
+      "7": "Is the man in the park during the day?"
+    }
+  },
+  {
+    "origin_prompt": "In Jamini Roy style, a father and a son playing tennis",
+    "idx": 333,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "In Jamini Roy style, a father and a son playing tennis",
+        "output": "1 | other - count (father, ==1)\n2 | other - count (son, ==1)\n3 | action - (father, tennis, play)\n4 | action - (son, tennis, play)\n5 | attribute - style (father, Jamini Roy)\n6 | attribute - style (son, Jamini Roy)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one father?",
+      "2": "Is there one son?",
+      "3": "Is the father playing tennis?",
+      "4": "Is the son playing tennis?",
+      "5": "Is the father in Jamini Roy style?",
+      "6": "Is the son in Jamini Roy style?"
+    }
+  },
+  {
+    "origin_prompt": "a young girl playing piano, slow motion",
+    "idx": 447,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "a young girl playing piano, slow motion",
+        "output": "1 | other - count (girl, ==1)\n2 | other - count (piano, ==1)\n3 | attribute - age (girl, young)\n4 | action - (girl, piano, play)\n5 | global - (slow motion)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        0
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one young girl?",
+      "2": "Is there one piano?",
+      "3": "Is the girl young?",
+      "4": "Is the girl playing the piano?",
+      "5": "Is the video in slow motion?"
+    }
+  },
+  {
+    "origin_prompt": "camera pan from right to left, four people riding in a convertible car",
+    "idx": 456,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "camera pan from right to left, four people riding in a convertible car",
+        "output": "1 | action - (camera, pan)\n2 | relation - spatial (camera, right, to)\n3 | relation - spatial (right, left, to)\n4 | other - count (people, ==4)\n5 | other - count (car, ==1)\n6 | attribute - type (car, convertible)\n7 | action - (people, car, ride in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        0
+      ],
+      "6": [
+        5
+      ],
+      "7": [
+        4,
+        5
+      ]
+    },
+    "qid2question": {
+      "1": "Is the camera panning?",
+      "2": "Is the camera panning from right?",
+      "3": "Is the camera panning from right to left?",
+      "4": "Are there four people?",
+      "5": "Is there one car?",
+      "6": "Is the car a convertible?",
+      "7": "Are the people riding in the car?"
+    }
+  },
+  {
+    "origin_prompt": "a father and a son playing tennis, hand-held camera",
+    "idx": 465,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "a father and a son playing tennis, hand-held camera",
+        "output": "1 | other - count (father, ==1)\n2 | other - count (son, ==1)\n3 | other - count (tennis, ==1)\n4 | global - (hand-held camera)\n5 | action - (father, tennis, play)\n6 | action - (son, tennis, play)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1,
+        3
+      ],
+      "6": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one father?",
+      "2": "Is there one son?",
+      "3": "Is there one tennis?",
+      "4": "Is this a hand-held camera?",
+      "5": "Is the father playing tennis?",
+      "6": "Is the son playing tennis?"
+    }
+  },
+  {
+    "origin_prompt": "A teenager sits on a park bench, engrossed in texting on their smartphone, oblivious to the world around them.",
+    "idx": 512,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A teenager sits on a park bench, engrossed in texting on their smartphone, oblivious to the world around them.",
+        "output": "1 | other - count (teenager, ==1)\n2 | other - count (park bench, ==1)\n3 | other - count (smartphone, ==1)\n4 | attribute - age (teenager, teenager)\n5 | attribute - state (teenager, sit)\n6 | action - (teenager, smartphone, text)\n7 | attribute - state (teenager, oblivious)\n8 | relation - spatial (teenager, park bench, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        3
+      ],
+      "7": [
+        1,
+        5
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one teenager?",
+      "2": "Is there one park bench?",
+      "3": "Is there one smartphone?",
+      "4": "Is the teenager a teenager?",
+      "5": "Is the teenager sitting?",
+      "6": "Is the teenager texting on their smartphone?",
+      "7": "Is the teenager oblivious?",
+      "8": "Is the teenager on the park bench?"
+    }
+  },
+  {
+    "origin_prompt": "A couple paddles their kayaks through the calm waters of a serene lake, surrounded by breathtaking scenery.",
+    "idx": 513,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A couple paddles their kayaks through the calm waters of a serene lake, surrounded by breathtaking scenery.",
+        "output": "1 | other - count (couple, ==1)\n2 | other - count (kayaks, ==2)\n3 | other - count (waters, ==1)\n4 | other - count (lake, ==1)\n5 | attribute - state (waters, calm)\n6 | attribute - state (lake, serene)\n7 | attribute - state (scenery, breathtaking)\n8 | action - (couple, kayaks, paddle)\n9 | relation - spatial (couple, waters, through)\n10 | relation - spatial (couple, lake, surrounded by)\n11 | relation - spatial (couple, scenery, surrounded by)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        4
+      ],
+      "7": [
+        4
+      ],
+      "8": [
+        1,
+        2
+      ],
+      "9": [
+        1,
+        3
+      ],
+      "10": [
+        1,
+        4
+      ],
+      "11": [
+        1,
+        7
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one couple?",
+      "2": "Are there two kayaks?",
+      "3": "Is there calm water?",
+      "4": "Is there a serene lake?",
+      "5": "Is the scenery breathtaking?",
+      "6": "Is the couple paddling their kayaks?",
+      "7": "Are the couple paddling through the water?",
+      "8": "Is the couple surrounded by the lake?",
+      "9": "Is the couple surrounded by the scenery?"
+    }
+  },
+  {
+    "origin_prompt": "A hockey player executes a perfect hockey stop, spraying ice in all directions as they come to a sudden halt.",
+    "idx": 514,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A hockey player executes a perfect hockey stop, spraying ice in all directions as they come to a sudden halt.",
+        "output": "1 | other - count (hockey player, ==1)\n2 | action - (hockey player, execute hockey stop)\n3 | action - (hockey player, spray ice)\n4 | attribute - state (hockey player, perfect)\n5 | relation - spatial (hockey player, ice, spray in all directions)\n6 | relation - spatial (hockey player, halt)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one hockey player?",
+      "2": "Is the hockey player executing a perfect hockey stop?",
+      "3": "Is the hockey player spraying ice?",
+      "4": "Is the hockey player's hockey stop perfect?",
+      "5": "Is the hockey player spraying ice in all directions?",
+      "6": "Is the hockey player coming to a sudden halt?"
+    }
+  },
+  {
+    "origin_prompt": "A group of tourists ride on the backs of majestic elephants, exploring the lush jungles of Thailand.",
+    "idx": 515,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A group of tourists ride on the backs of majestic elephants, exploring the lush jungles of Thailand.",
+        "output": "1 | entity - whole (tourists)\n2 | entity - whole (elephants)\n3 | entity - whole (jungles)\n4 | entity - whole (Thailand)\n5 | attribute - state (elephants, majestic)\n6 | attribute - state (jungles, lush)\n7 | action - (tourists, elephants, ride on the backs of)\n8 | action - (tourists, explore)\n9 | relation - spatial (tourists, elephants, on the backs of)\n10 | relation - spatial (tourists, jungles, exploring)\n11 | relation - spatial (jungles, Thailand, of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        3
+      ],
+      "7": [
+        1,
+        2
+      ],
+      "8": [
+        1,
+        10
+      ],
+      "9": [
+        1,
+        2
+      ],
+      "10": [
+        1,
+        3
+      ],
+      "11": [
+        3,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Are there a group of tourists?",
+      "2": "Are there elephants?",
+      "3": "Are there jungles?",
+      "4": "Is this in Thailand?",
+      "5": "Are the elephants majestic?",
+      "6": "Are the jungles lush?",
+      "7": "Are the tourists riding on the backs of elephants?",
+      "8": "Are the tourists exploring?",
+      "9": "Are the tourists on the backs of elephants?",
+      "10": "Are the tourists exploring the jungles?",
+      "11": "Are the jungles in Thailand?"
+    }
+  },
+  {
+    "origin_prompt": "A woman meticulously paints her nails, carefully applying a vibrant shade of red to each delicate fingernail.",
+    "idx": 516,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A woman meticulously paints her nails, carefully applying a vibrant shade of red to each delicate fingernail.",
+        "output": "1 | other - count (woman, ==1)\n2 | action - (woman, paint nails)\n3 | attribute - state (nails, meticulously painted)\n4 | attribute - color (nails, vibrant red)\n5 | attribute - state (fingernails, delicate)\n6 | relation - spatial (woman, fingernails, apply)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        1,
+        5
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one woman?",
+      "2": "Is the woman meticulously painting her nails?",
+      "3": "Are the nails meticulously painted?",
+      "4": "Are the nails a vibrant shade of red?",
+      "5": "Are the fingernails delicate?",
+      "6": "Is the woman applying the nail polish to her fingernails?"
+    }
+  },
+  {
+    "origin_prompt": "A musician effortlessly plays a complex melody on a keyboard, fingers dancing across the keys with precision.",
+    "idx": 517,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A musician effortlessly plays a complex melody on a keyboard, fingers dancing across the keys with precision.",
+        "output": "1 | other - count (musician, ==1)\n2 | other - count (keyboard, ==1)\n3 | action - (musician, play)\n4 | attribute - state (musician, effortless)\n5 | attribute - type (melody, complex)\n6 | action - (fingers, dance across keys)\n7 | attribute - state (fingers, precise)\n8 | relation - spatial (musician, keyboard, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        6
+      ],
+      "8": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one musician?",
+      "2": "Is there one keyboard?",
+      "3": "Is the musician playing?",
+      "4": "Is the musician playing effortlessly?",
+      "5": "Is the melody complex?",
+      "6": "Are the fingers dancing across the keys?",
+      "7": "Are the fingers precise?",
+      "8": "Is the musician on the keyboard?"
+    }
+  },
+  {
+    "origin_prompt": "Families gather around a table, engrossed in a game of Monopoly, eagerly strategizing and making deals.",
+    "idx": 518,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Families gather around a table, engrossed in a game of Monopoly, eagerly strategizing and making deals.",
+        "output": "1 | entity - whole (families)\n2 | entity - whole (table)\n3 | action - (families, table, gather around)\n4 | action - (families, game, play)\n5 | attribute - type (game, Monopoly)\n6 | action - (families, strategize)\n7 | action - (families, make deals)\n8 | attribute - state (families, engrossed)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        1,
+        5
+      ],
+      "5": [
+        0
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Are there families?",
+      "2": "Is there a table?",
+      "3": "Are the families gathered around the table?",
+      "4": "Are the families playing a game?",
+      "5": "Is the game Monopoly?",
+      "6": "Are the families strategizing?",
+      "7": "Are the families making deals?",
+      "8": "Are the families engrossed?"
+    }
+  },
+  {
+    "origin_prompt": "A skilled masseuse gently massages a person's head, using soothing motions to relieve tension and promote relaxation.",
+    "idx": 519,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A skilled masseuse gently massages a person's head, using soothing motions to relieve tension and promote relaxation.",
+        "output": "1 | other - count (masseuse, ==1)\n2 | other - count (person, ==1)\n3 | entity - part (person's head)\n4 | action - (masseuse, person's head, massage)\n5 | attribute - state (person, tense)\n6 | attribute - state (person, relaxed)\n7 | action - (masseuse, motions, use)\n8 | action - (motions, relieve tension)\n9 | action - (motions, promote relaxation)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        1,
+        3
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        2
+      ],
+      "7": [
+        1,
+        7
+      ],
+      "8": [
+        7
+      ],
+      "9": [
+        7
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one masseuse?",
+      "2": "Is there one person?",
+      "3": "Is the masseuse massaging the person's head?",
+      "4": "Is the person tense?",
+      "5": "Is the person relaxed?",
+      "6": "Is the masseuse using soothing motions?",
+      "7": "Are the motions relieving tension?",
+      "8": "Are the motions promoting relaxation?"
+    }
+  },
+  {
+    "origin_prompt": "A little girl stands in a park, holding out her hand as she feeds a flock of colorful birds fluttering around her.",
+    "idx": 520,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A little girl stands in a park, holding out her hand as she feeds a flock of colorful birds fluttering around her.",
+        "output": "1 | other - count (girl, ==1)\n2 | other - count (park, ==1)\n3 | other - count (birds, ==1)\n4 | attribute - scale (girl, little)\n5 | attribute - state (girl, stand)\n6 | action - (girl, birds, feed)\n7 | relation - spatial (girl, park, in)\n8 | relation - spatial (girl, birds, around)\n9 | relation - spatial (girl, birds, fluttering)\n10 | relation - spatial (girl, hand, hold out)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1,
+        3
+      ],
+      "7": [
+        1,
+        2
+      ],
+      "8": [
+        1,
+        3
+      ],
+      "9": [
+        1,
+        3
+      ],
+      "10": [
+        1,
+        10
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one little girl?",
+      "2": "Is there one park?",
+      "3": "Is there one flock of birds?",
+      "4": "Is the girl little?",
+      "5": "Is the girl standing?",
+      "6": "Is the girl feeding the birds?",
+      "7": "Is the girl in the park?",
+      "8": "Are the birds around the girl?",
+      "9": "Are the birds fluttering around the girl?",
+      "10": "Is the girl holding out her hand?"
+    }
+  },
+  {
+    "origin_prompt": "A news anchor delivers breaking news with confidence, presenting the latest stories to a captivated audience.",
+    "idx": 521,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A news anchor delivers breaking news with confidence, presenting the latest stories to a captivated audience.",
+        "output": "1 | other - count (news anchor, ==1)\n2 | action - (news anchor, deliver breaking news)\n3 | attribute - state (news anchor, confident)\n4 | action - (news anchor, present latest stories)\n5 | entity - whole (audience)\n6 | attribute - state (audience, captivated)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        0
+      ],
+      "6": [
+        0
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one news anchor?",
+      "2": "Is the news anchor delivering breaking news?",
+      "3": "Is the news anchor confident?",
+      "4": "Is the news anchor presenting the latest stories?",
+      "5": "Is there an audience?",
+      "6": "Is the audience captivated?"
+    }
+  },
+  {
+    "origin_prompt": "A passionate musician air drums to their favorite song, mimicking the beats and fills with enthusiasm.",
+    "idx": 522,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A passionate musician air drums to their favorite song, mimicking the beats and fills with enthusiasm.",
+        "output": "1 | other - count (musician, ==1)\n2 | action - (musician, air drums)\n3 | attribute - state (musician, passionate)\n4 | attribute - state (musician, enthusiastic)\n5 | action - (musician, mimic beats and fills)\n6 | action - (musician, air drums to favorite song)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one musician?",
+      "2": "Is the musician air drumming?",
+      "3": "Is the musician passionate?",
+      "4": "Is the musician enthusiastic?",
+      "5": "Is the musician mimicking beats and fills?",
+      "6": "Is the musician air drumming to their favorite song?"
+    }
+  },
+  {
+    "origin_prompt": "A person diligently sorts and loads laundry into a washing machine, preparing for a fresh and clean wardrobe.",
+    "idx": 523,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A person diligently sorts and loads laundry into a washing machine, preparing for a fresh and clean wardrobe.",
+        "output": "1 | other - count (person, ==1)\n2 | other - count (laundry, ==1)\n3 | other - count (washing machine, ==1)\n4 | action - (person, sort laundry)\n5 | action - (person, load laundry into washing machine)\n6 | attribute - state (wardrobe, fresh and clean)\n7 | attribute - state (person, diligent)\n8 | relation - spatial (person, laundry, sort)\n9 | relation - spatial (person, washing machine, load into)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        0
+      ],
+      "7": [
+        1
+      ],
+      "8": [
+        1,
+        2
+      ],
+      "9": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one person?",
+      "2": "Is there one load of laundry?",
+      "3": "Is there one washing machine?",
+      "4": "Is the person sorting laundry?",
+      "5": "Is the person loading laundry into the washing machine?",
+      "6": "Is the wardrobe fresh and clean?",
+      "7": "Is the person diligent?",
+      "8": "Is the person sorting the laundry?",
+      "9": "Is the person loading the laundry into the washing machine?"
+    }
+  },
+  {
+    "origin_prompt": "With precise movements, a chef skillfully peels potatoes, removing the skin in one continuous motion.",
+    "idx": 524,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "With precise movements, a chef skillfully peels potatoes, removing the skin in one continuous motion.",
+        "output": "1 | other - count (chef, ==1)\n2 | other - count (potatoes, ==1)\n3 | action - (chef, peel)\n4 | action - (chef, remove)\n5 | attribute - state (potatoes, skin)\n6 | attribute - texture (potatoes, skin)\n7 | attribute - state (chef, skillful)\n8 | action - (chef, peel potatoes)\n9 | action - (chef, remove skin)\n10 | relation - spatial (chef, potatoes, with)\n11 | relation - spatial (chef, skin, in one continuous motion)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        2
+      ],
+      "7": [
+        1
+      ],
+      "8": [
+        1,
+        2
+      ],
+      "9": [
+        5
+      ],
+      "10": [
+        1,
+        2
+      ],
+      "11": [
+        1,
+        5
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one chef?",
+      "2": "Is there one potato?",
+      "3": "Is the chef peeling?",
+      "4": "Is the chef removing?",
+      "5": "Does the potato have skin?",
+      "6": "Does the potato have a texture?",
+      "7": "Is the chef skillful?",
+      "8": "Is the chef peeling the potatoes?",
+      "9": "Is the chef removing the skin?",
+      "10": "Is the chef with the potatoes?",
+      "11": "Is the chef removing the skin in one continuous motion?"
+    }
+  },
+  {
+    "origin_prompt": "A martial artist performs a powerful side kick, demonstrating strength and agility in their technique.",
+    "idx": 525,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A martial artist performs a powerful side kick, demonstrating strength and agility in their technique.",
+        "output": "1 | other - count (martial artist, ==1)\n2 | action - (martial artist, perform side kick)\n3 | attribute - state (martial artist, powerful)\n4 | attribute - state (martial artist, agile)\n5 | attribute - skill (martial artist, technique)\n6 | attribute - skill (martial artist, strength)\n7 | attribute - skill (martial artist, agility)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one martial artist?",
+      "2": "Is the martial artist performing a side kick?",
+      "3": "Is the martial artist powerful?",
+      "4": "Is the martial artist agile?",
+      "5": "Does the martial artist have good technique?",
+      "6": "Does the martial artist have strength?",
+      "7": "Does the martial artist have agility?"
+    }
+  },
+  {
+    "origin_prompt": "Dancers in vibrant costumes swing and twist, perfectly executing the energetic and lively Charleston dance.",
+    "idx": 526,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Dancers in vibrant costumes swing and twist, perfectly executing the energetic and lively Charleston dance.",
+        "output": "1 | entity - whole (dancers)\n2 | attribute - state (costumes, vibrant)\n3 | action - (dancers, swing)\n4 | action - (dancers, twist)\n5 | action - (dancers, execute)\n6 | attribute - type (dance, Charleston)\n7 | attribute - state (dance, energetic)\n8 | attribute - state (dance, lively)\n9 | attribute - state (dance, perfectly)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        6
+      ],
+      "8": [
+        6
+      ],
+      "9": [
+        3,
+        4,
+        5
+      ]
+    },
+    "qid2question": {
+      "1": "Are there dancers?",
+      "2": "Are the costumes vibrant?",
+      "3": "Are the dancers swinging?",
+      "4": "Are the dancers twisting?",
+      "5": "Are the dancers executing the dance?",
+      "6": "Is the dance Charleston?",
+      "7": "Is the dance energetic?",
+      "8": "Is the dance lively?",
+      "9": "Are the dancers executing the dance perfectly?"
+    }
+  },
+  {
+    "origin_prompt": "An adventurer descends a sheer cliff face, expertly navigating the ropes and harnesses during the thrilling abseiling descent.",
+    "idx": 527,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "An adventurer descends a sheer cliff face, expertly navigating the ropes and harnesses during the thrilling abseiling descent.",
+        "output": "1 | other - count (adventurer, ==1)\n2 | other - count (cliff face, ==1)\n3 | action - (adventurer, descend)\n4 | attribute - state (cliff face, sheer)\n5 | attribute - skill (adventurer, expertly navigate ropes and harnesses)\n6 | action - (adventurer, abseiling descent)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one adventurer?",
+      "2": "Is there one cliff face?",
+      "3": "Is the adventurer descending?",
+      "4": "Is the cliff face sheer?",
+      "5": "Can the adventurer expertly navigate ropes and harnesses?",
+      "6": "Is the adventurer doing an abseiling descent?"
+    }
+  },
+  {
+    "origin_prompt": "A traveler explores a scenic trail on the back of a sturdy mule, taking in the breathtaking views of the mountains.",
+    "idx": 528,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A traveler explores a scenic trail on the back of a sturdy mule, taking in the breathtaking views of the mountains.",
+        "output": "1 | other - count (traveler, ==1)\n2 | other - count (trail, ==1)\n3 | other - count (mule, ==1)\n4 | attribute - state (trail, scenic)\n5 | attribute - state (mule, sturdy)\n6 | action - (traveler, explore)\n7 | relation - spatial (traveler, trail, on)\n8 | relation - spatial (traveler, mountains, take in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        1,
+        2
+      ],
+      "8": [
+        1,
+        8
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one traveler?",
+      "2": "Is there one trail?",
+      "3": "Is there one mule?",
+      "4": "Is the trail scenic?",
+      "5": "Is the mule sturdy?",
+      "6": "Is the traveler exploring?",
+      "7": "Is the traveler on the trail?",
+      "8": "Is the traveler taking in the mountains?"
+    }
+  },
+  {
+    "origin_prompt": "A person lies on a mat, performing sit-ups with determination, their abdominal muscles working with each repetition.",
+    "idx": 529,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A person lies on a mat, performing sit-ups with determination, their abdominal muscles working with each repetition.",
+        "output": "1 | other - count (person, ==1)\n2 | entity - whole (mat)\n3 | action - (person, lie on)\n4 | action - (person, perform sit-ups)\n5 | attribute - state (person, determination)\n6 | entity - part (person's abdominal muscles)\n7 | relation - spatial (person, mat, on)\n8 | relation - spatial (person's abdominal muscles, person, work with each repetition)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        1,
+        2
+      ],
+      "8": [
+        6,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one person?",
+      "2": "Is there a mat?",
+      "3": "Is the person lying on the mat?",
+      "4": "Is the person performing sit-ups?",
+      "5": "Is the person determined?",
+      "6": "Are the person's abdominal muscles working with each repetition?"
+    }
+  },
+  {
+    "origin_prompt": "A worker pushes a heavy cart through a bustling warehouse, maneuvering through narrow aisles with precision.",
+    "idx": 530,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A worker pushes a heavy cart through a bustling warehouse, maneuvering through narrow aisles with precision.",
+        "output": "1 | other - count (worker, ==1)\n2 | other - count (cart, ==1)\n3 | other - count (warehouse, ==1)\n4 | attribute - state (cart, heavy)\n5 | attribute - state (warehouse, bustling)\n6 | action - (worker, cart, push)\n7 | action - (worker, maneuver, through)\n8 | attribute - state (aisles, narrow)\n9 | attribute - state (worker, precise)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        1,
+        3
+      ],
+      "8": [
+        3
+      ],
+      "9": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one worker?",
+      "2": "Is there one cart?",
+      "3": "Is there one warehouse?",
+      "4": "Is the cart heavy?",
+      "5": "Is the warehouse bustling?",
+      "6": "Is the worker pushing the cart?",
+      "7": "Is the worker maneuvering through?",
+      "8": "Are the aisles narrow?",
+      "9": "Is the worker precise?"
+    }
+  },
+  {
+    "origin_prompt": "A meticulous accountant sits at a desk, meticulously counting and organizing stacks of money with utmost concentration.",
+    "idx": 531,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A meticulous accountant sits at a desk, meticulously counting and organizing stacks of money with utmost concentration.",
+        "output": "1 | other - count (accountant, ==1)\n2 | other - count (desk, ==1)\n3 | other - count (money, ==1)\n4 | attribute - state (accountant, meticulous)\n5 | attribute - state (accountant, sit)\n6 | action - (accountant, count)\n7 | action - (accountant, organize)\n8 | relation - spatial (accountant, desk, at)\n9 | relation - spatial (money, accountant, with)\n10 | attribute - state (accountant, concentrate)\n11 | attribute - degree (accountant, utmost)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        1
+      ],
+      "8": [
+        1,
+        2
+      ],
+      "9": [
+        3,
+        1
+      ],
+      "10": [
+        1
+      ],
+      "11": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one meticulous accountant?",
+      "2": "Is there one desk?",
+      "3": "Is there one stack of money?",
+      "4": "Is the accountant meticulous?",
+      "5": "Is the accountant sitting?",
+      "6": "Is the accountant counting?",
+      "7": "Is the accountant organizing?",
+      "8": "Is the accountant at the desk?",
+      "9": "Is the money with the accountant?",
+      "10": "Is the accountant concentrating?",
+      "11": "Is the accountant concentrating with utmost concentration?"
+    }
+  },
+  {
+    "origin_prompt": "A farmer drives a tractor through a vast field, tending to the crops with care and expertise.",
+    "idx": 532,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A farmer drives a tractor through a vast field, tending to the crops with care and expertise.",
+        "output": "1 | other - count (farmer, ==1)\n2 | other - count (tractor, ==1)\n3 | other - count (field, ==1)\n4 | action - (farmer, tractor, drive)\n5 | action - (farmer, crops, tend to)\n6 | attribute - state (crops, care)\n7 | attribute - state (crops, expertise)\n8 | relation - spatial (farmer, field, through)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        5
+      ],
+      "7": [
+        5
+      ],
+      "8": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one farmer?",
+      "2": "Is there one tractor?",
+      "3": "Is there one field?",
+      "4": "Is the farmer driving the tractor?",
+      "5": "Is the farmer tending to the crops?",
+      "6": "Are the crops taken care of?",
+      "7": "Are the crops tended to with expertise?",
+      "8": "Is the farmer driving through the field?"
+    }
+  },
+  {
+    "origin_prompt": "A person hones their aim, skillfully throwing an axe at a wooden target, hitting the bullseye with accuracy.",
+    "idx": 533,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A person hones their aim, skillfully throwing an axe at a wooden target, hitting the bullseye with accuracy.",
+        "output": "1 | other - count (person, ==1)\n2 | other - count (axe, ==1)\n3 | other - count (wooden target, ==1)\n4 | action - (person, aim, hone)\n5 | action - (person, throw, axe)\n6 | action - (axe, hit, wooden target)\n7 | attribute - state (wooden target, bullseye)\n8 | attribute - state (axe, accuracy)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        2,
+        3
+      ],
+      "7": [
+        3
+      ],
+      "8": [
+        6
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one person?",
+      "2": "Is there one axe?",
+      "3": "Is there one wooden target?",
+      "4": "Is the person honing their aim?",
+      "5": "Is the person throwing the axe?",
+      "6": "Is the axe hitting the wooden target?",
+      "7": "Is the wooden target a bullseye?",
+      "8": "Is the axe hitting the target with accuracy?"
+    }
+  },
+  {
+    "origin_prompt": "A gentleman stands in front of a mirror, skillfully tying a perfectly symmetrical bow tie for a formal event.",
+    "idx": 534,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A gentleman stands in front of a mirror, skillfully tying a perfectly symmetrical bow tie for a formal event.",
+        "output": "1 | other - count (gentleman, ==1)\n2 | other - count (mirror, ==1)\n3 | attribute - state (bow tie, perfectly symmetrical)\n4 | attribute - type (gentleman, formal)\n5 | action - (gentleman, tie)\n6 | relation - spatial (gentleman, mirror, in front of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one gentleman?",
+      "2": "Is there one mirror?",
+      "3": "Is the bow tie perfectly symmetrical?",
+      "4": "Is the gentleman dressed formally?",
+      "5": "Is the gentleman tying a tie?",
+      "6": "Is the gentleman in front of the mirror?"
+    }
+  }
+]

@@ -1,0 +1,3412 @@
+[
+  {
+    "origin_prompt": "Two cars collide at an intersection",
+    "idx": 0,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Two cars collide at an intersection",
+        "output": "1 | other - count (cars, ==2)\n2 | relation - spatial (cars, intersection, at)\n3 | action - (cars, collide)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two cars?",
+      "2": "Are the cars at an intersection?",
+      "3": "Did the cars collide?"
+    }
+  },
+  {
+    "origin_prompt": "Football players bump into each other during a game",
+    "idx": 1,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Football players bump into each other during a game",
+        "output": "1 | entity - whole (football players)\n2 | action - (football players, game, play)\n3 | action - (football players, bump into each other)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there football players?",
+      "2": "Are the football players playing a game?",
+      "3": "Are the football players bumping into each other?"
+    }
+  },
+  {
+    "origin_prompt": "A swimmer dives into a pool, creating ripples.",
+    "idx": 2,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A swimmer dives into a pool, creating ripples.",
+        "output": "1 | other - count (swimmer, ==1)\n2 | other - count (pool, ==1)\n3 | action - (swimmer, dive)\n4 | action - (swimmer, create ripples)\n5 | relation - spatial (swimmer, pool, into)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one swimmer?",
+      "2": "Is there one pool?",
+      "3": "Is the swimmer diving?",
+      "4": "Is the swimmer creating ripples?",
+      "5": "Is the swimmer diving into the pool?"
+    }
+  },
+  {
+    "origin_prompt": "Iron presses down on wrinkled fabric",
+    "idx": 3,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Iron presses down on wrinkled fabric",
+        "output": "1 | other - count (iron, ==1)\n2 | other - count (fabric, ==1)\n3 | action - (iron, fabric, press down)\n4 | attribute - state (fabric, wrinkled)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one iron?",
+      "2": "Is there one fabric?",
+      "3": "Is the iron pressing down on the fabric?",
+      "4": "Is the fabric wrinkled?"
+    }
+  },
+  {
+    "origin_prompt": "Drum skin vibrates when struck by a drumstick",
+    "idx": 4,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Drum skin vibrates when struck by a drumstick",
+        "output": "1 | other - count (drum skin, ==1)\n2 | entity - part (drumstick)\n3 | action - (drum skin, drumstick, strike)\n4 | action - (drum skin, vibrate)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one drum skin?",
+      "2": "Is there a drumstick?",
+      "3": "Does the drum skin get struck by the drumstick?",
+      "4": "Does the drum skin vibrate when struck?"
+    }
+  },
+  {
+    "origin_prompt": "A horse jumps over a fence",
+    "idx": 5,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A horse jumps over a fence",
+        "output": "1 | other - count (horse, ==1)\n2 | other - count (fence, ==1)\n3 | action - (horse, jump over, fence)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one horse?",
+      "2": "Is there one fence?",
+      "3": "Is the horse jumping over the fence?"
+    }
+  },
+  {
+    "origin_prompt": "Raindrops hit a tin roof",
+    "idx": 6,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Raindrops hit a tin roof",
+        "output": "1 | other - count (raindrops, ==1)\n2 | entity - whole (tin roof)\n3 | action - (raindrops, tin roof, hit)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one raindrop?",
+      "2": "Is there a tin roof?",
+      "3": "Are the raindrops hitting the tin roof?"
+    }
+  },
+  {
+    "origin_prompt": "Rope tugs against a boat",
+    "idx": 7,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Rope tugs against a boat",
+        "output": "1 | other - count (rope, ==1)\n2 | other - count (boat, ==1)\n3 | action - (rope, boat, tug against)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one rope?",
+      "2": "Is there one boat?",
+      "3": "Is the rope tugging against the boat?"
+    }
+  },
+  {
+    "origin_prompt": "Car brakes abruptly, stopping at a red light",
+    "idx": 8,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Car brakes abruptly, stopping at a red light",
+        "output": "1 | other - count (car, ==1)\n2 | action - (car, brake abruptly)\n3 | action - (car, stop)\n4 | attribute - state (red light, red)\n5 | relation - spatial (car, red light, at)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one car?",
+      "2": "Does the car brake abruptly?",
+      "3": "Does the car stop?",
+      "4": "Is the light red?",
+      "5": "Is the car at the red light?"
+    }
+  },
+  {
+    "origin_prompt": "Bird lands on a branch causing it to dip",
+    "idx": 9,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Bird lands on a branch causing it to dip",
+        "output": "1 | other - count (bird, ==1)\n2 | other - count (branch, ==1)\n3 | action - (bird, branch, land on)\n4 | action - (branch, dip)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Does a bird land on a branch?",
+      "2": "Is there one branch?",
+      "3": "Does the bird land on the branch?",
+      "4": "Does the branch dip?"
+    }
+  },
+  {
+    "origin_prompt": "Child kicks a soccer ball",
+    "idx": 10,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Child kicks a soccer ball",
+        "output": "1 | other - count (child, ==1)\n2 | other - count (soccer ball, ==1)\n3 | action - (child, soccer ball, kick)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one child?",
+      "2": "Is there one soccer ball?",
+      "3": "Is the child kicking the soccer ball?"
+    }
+  },
+  {
+    "origin_prompt": "Dog snatches a rolling ball",
+    "idx": 11,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Dog snatches a rolling ball",
+        "output": "1 | other - count (dog, ==1)\n2 | other - count (ball, ==1)\n3 | action - (dog, ball, snatch)\n4 | action - (ball, roll)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one dog?",
+      "2": "Is there one ball?",
+      "3": "Is the dog snatching the ball?",
+      "4": "Is the ball rolling?"
+    }
+  },
+  {
+    "origin_prompt": "The golfer striking the ball forward",
+    "idx": 12,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "The golfer striking the ball forward",
+        "output": "1 | other - count (golfer, ==1)\n2 | other - count (ball, ==1)\n3 | action - (golfer, ball, strike)\n4 | action - (ball, forward)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one golfer?",
+      "2": "Is there one ball?",
+      "3": "Is the golfer striking the ball?",
+      "4": "Is the ball moving forward?"
+    }
+  },
+  {
+    "origin_prompt": "Basketball player dribbles",
+    "idx": 13,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Basketball player dribbles",
+        "output": "1 | other - count (basketball player, ==1)\n2 | action - (basketball player, dribble)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one basketball player?",
+      "2": "Is the basketball player dribbling?"
+    }
+  },
+  {
+    "origin_prompt": "Child jumps on a trampoline, bouncing high",
+    "idx": 14,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Child jumps on a trampoline, bouncing high",
+        "output": "1 | other - count (child, ==1)\n2 | other - count (trampoline, ==1)\n3 | action - (child, trampoline, jump)\n4 | action - (trampoline, bounce)\n5 | attribute - state (child, high)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one child?",
+      "2": "Is there one trampoline?",
+      "3": "Is the child jumping on the trampoline?",
+      "4": "Is the trampoline bouncing?",
+      "5": "Is the child bouncing high?"
+    }
+  },
+  {
+    "origin_prompt": "Wave crashes into rocks, splashing water everywhere",
+    "idx": 15,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Wave crashes into rocks, splashing water everywhere",
+        "output": "1 | other - count (wave, ==1)\n2 | other - count (rocks, ==1)\n3 | action - (wave, crash into rocks)\n4 | action - (wave, splash water)\n5 | relation - spatial (wave, rocks, into)\n6 | relation - spatial (water, wave, everywhere)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one wave?",
+      "2": "Are there rocks?",
+      "3": "Is the wave crashing into the rocks?",
+      "4": "Is the wave splashing water?",
+      "5": "Is the wave crashing into the rocks?",
+      "6": "Is the water splashing everywhere?"
+    }
+  },
+  {
+    "origin_prompt": "Child pushes toy car",
+    "idx": 16,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Child pushes toy car",
+        "output": "1 | other - count (child, ==1)\n2 | other - count (toy car, ==1)\n3 | action - (child, toy car, push)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one child?",
+      "2": "Is there one toy car?",
+      "3": "Is the child pushing the toy car?"
+    }
+  },
+  {
+    "origin_prompt": "Bowling ball strikes pins, scattering them",
+    "idx": 17,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Bowling ball strikes pins, scattering them",
+        "output": "1 | other - count (bowling ball, ==1)\n2 | other - count (pins, >=1)\n3 | action - (bowling ball, pins, strike)\n4 | action - (pins, scatter)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Does the bowling ball strike the pins?",
+      "2": "Are there any pins?",
+      "3": "Does the bowling ball strike the pins?",
+      "4": "Do the pins scatter?"
+    }
+  },
+  {
+    "origin_prompt": "Surfer catches a wave, riding forward",
+    "idx": 18,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Surfer catches a wave, riding forward",
+        "output": "1 | other - count (surfer, ==1)\n2 | action - (surfer, catch a wave)\n3 | action - (surfer, ride forward)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one surfer?",
+      "2": "Is the surfer catching a wave?",
+      "3": "Is the surfer riding forward?"
+    }
+  },
+  {
+    "origin_prompt": "Person slips on ice, sliding forward",
+    "idx": 19,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Person slips on ice, sliding forward",
+        "output": "1 | other - count (person, ==1)\n2 | other - count (ice, ==1)\n3 | action - (person, slip)\n4 | action - (person, slide)\n5 | relation - spatial (person, ice, on)\n6 | relation - spatial (person, forward, slide)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one person?",
+      "2": "Is there one ice?",
+      "3": "Is the person slipping?",
+      "4": "Is the person sliding?",
+      "5": "Is the person on the ice?",
+      "6": "Is the person sliding forward?"
+    }
+  },
+  {
+    "origin_prompt": "A tire pump inflates a bicycle tire",
+    "idx": 20,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A tire pump inflates a bicycle tire",
+        "output": "1 | other - count (tire pump, ==1)\n2 | other - count (bicycle tire, ==1)\n3 | action - (tire pump, bicycle tire, inflate)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one tire pump?",
+      "2": "Is there one bicycle tire?",
+      "3": "Is the tire pump inflating the bicycle tire?"
+    }
+  },
+  {
+    "origin_prompt": "Cat's paw presses on a soft pillow",
+    "idx": 21,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Cat's paw presses on a soft pillow",
+        "output": "1 | other - count (cat's paw, ==1)\n2 | other - count (pillow, ==1)\n3 | attribute - texture (pillow, soft)\n4 | action - (cat's paw, pillow, press on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one cat's paw?",
+      "2": "Is there one pillow?",
+      "3": "Is the pillow soft?",
+      "4": "Is the cat's paw pressing on the pillow?"
+    }
+  },
+  {
+    "origin_prompt": "Footsteps imprint on soft sand",
+    "idx": 22,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Footsteps imprint on soft sand",
+        "output": "1 | attribute - texture (sand, soft)\n2 | action - (footsteps, imprint on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is the sand soft?",
+      "2": "Are there footsteps imprinted on the sand?"
+    }
+  },
+  {
+    "origin_prompt": "Fork tines press into a piece of cake",
+    "idx": 23,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Fork tines press into a piece of cake",
+        "output": "1 | other - count (fork, ==1)\n2 | other - count (cake, ==1)\n3 | action - (fork, cake, press into)\n4 | entity - part (fork's tines)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one fork?",
+      "2": "Is there one piece of cake?",
+      "3": "Is the fork pressing into the cake?",
+      "4": "Does the fork have tines?"
+    }
+  },
+  {
+    "origin_prompt": "A child's hand presses a clay ball into a flat disc",
+    "idx": 24,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A child's hand presses a clay ball into a flat disc",
+        "output": "1 | other - count (hand, ==1)\n2 | other - count (clay ball, ==1)\n3 | attribute - state (clay ball, flat disc)\n4 | action - (hand, clay ball, press into)\n5 | entity - part (child's hand)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one child's hand?",
+      "2": "Is there one clay ball?",
+      "3": "Is the clay ball flattened into a disc?",
+      "4": "Is the child's hand pressing the clay ball into a disc?"
+    }
+  },
+  {
+    "origin_prompt": "A pair of scissors cuts through fabric",
+    "idx": 25,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A pair of scissors cuts through fabric",
+        "output": "1 | other - count (scissors, ==1)\n2 | other - count (fabric, ==1)\n3 | action - (scissors, fabric, cut through)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one pair of scissors?",
+      "2": "Is there one fabric?",
+      "3": "Are the scissors cutting through the fabric?"
+    }
+  },
+  {
+    "origin_prompt": "Spoon stirs cream into coffee",
+    "idx": 26,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Spoon stirs cream into coffee",
+        "output": "1 | other - count (spoon, ==1)\n2 | other - count (cream, ==1)\n3 | other - count (coffee, ==1)\n4 | action - (spoon, cream, stir into)\n5 | action - (spoon, coffee, stir into)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one spoon?",
+      "2": "Is there one cream?",
+      "3": "Is there one coffee?",
+      "4": "Is the spoon stirring the cream into the coffee?"
+    }
+  },
+  {
+    "origin_prompt": "Dog's nose touches a reflective glass door",
+    "idx": 27,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Dog's nose touches a reflective glass door",
+        "output": "1 | other - count (dog, ==1)\n2 | entity - part (dog's nose)\n3 | other - count (glass door, ==1)\n4 | attribute - state (glass door, reflective)\n5 | relation - spatial (dog's nose, glass door, touch)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one dog?",
+      "2": "Is there a dog's nose?",
+      "3": "Is there one glass door?",
+      "4": "Is the glass door reflective?",
+      "5": "Is the dog's nose touching the glass door?"
+    }
+  },
+  {
+    "origin_prompt": "An eraser removes marks from paper",
+    "idx": 28,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "An eraser removes marks from paper",
+        "output": "1 | other - count (eraser, ==1)\n2 | other - count (marks, ==1)\n3 | other - count (paper, ==1)\n4 | action - (eraser, marks, remove)\n5 | relation - spatial (eraser, paper, from)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one eraser?",
+      "2": "Is there one mark?",
+      "3": "Is there one paper?",
+      "4": "Does the eraser remove marks?",
+      "5": "Is the eraser removing marks from the paper?"
+    }
+  },
+  {
+    "origin_prompt": "A knife slices through a ripe tomato",
+    "idx": 29,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A knife slices through a ripe tomato",
+        "output": "1 | other - count (knife, ==1)\n2 | other - count (tomato, ==1)\n3 | action - (knife, tomato, slice through)\n4 | attribute - state (tomato, ripe)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one knife?",
+      "2": "Is there one tomato?",
+      "3": "Is the knife slicing through the tomato?",
+      "4": "Is the tomato ripe?"
+    }
+  },
+  {
+    "origin_prompt": "Chef slices cucumber",
+    "idx": 30,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Chef slices cucumber",
+        "output": "1 | other - count (chef, ==1)\n2 | other - count (cucumber, ==1)\n3 | action - (chef, cucumber, slice)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one chef?",
+      "2": "Is there one cucumber?",
+      "3": "Is the chef slicing the cucumber?"
+    }
+  },
+  {
+    "origin_prompt": "Soccer ball strikes window, causing it to crack",
+    "idx": 31,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Soccer ball strikes window, causing it to crack",
+        "output": "1 | other - count (soccer ball, ==1)\n2 | other - count (window, ==1)\n3 | action - (soccer ball, window, strike)\n4 | action - (window, crack)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one soccer ball?",
+      "2": "Is there one window?",
+      "3": "Did the soccer ball strike the window?",
+      "4": "Did the window crack?"
+    }
+  },
+  {
+    "origin_prompt": "Knife sharpens pencil",
+    "idx": 32,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Knife sharpens pencil",
+        "output": "1 | other - count (knife, ==1)\n2 | other - count (pencil, ==1)\n3 | action - (knife, pencil, sharpen)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one knife?",
+      "2": "Is there one pencil?",
+      "3": "Is the knife sharpening the pencil?"
+    }
+  },
+  {
+    "origin_prompt": "Lightning strikes tree, splitting it in half",
+    "idx": 33,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Lightning strikes tree, splitting it in half",
+        "output": "1 | other - count (lightning, ==1)\n2 | other - count (tree, ==1)\n3 | action - (lightning, tree, strike)\n4 | action - (tree, split in half)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Does lightning strike the tree?",
+      "2": "Is there one tree?",
+      "3": "Does the lightning strike the tree?",
+      "4": "Does the tree split in half?"
+    }
+  },
+  {
+    "origin_prompt": "Glass shatters when hit by a rock",
+    "idx": 34,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Glass shatters when hit by a rock",
+        "output": "1 | other - count (glass, ==1)\n2 | other - count (rock, ==1)\n3 | action - (rock, glass, hit)\n4 | action - (glass, shatter)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one glass?",
+      "2": "Is there one rock?",
+      "3": "Does the rock hit the glass?",
+      "4": "Does the glass shatter when hit by the rock?"
+    }
+  },
+  {
+    "origin_prompt": "A mirror breaks when struck by a thrown rock",
+    "idx": 35,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A mirror breaks when struck by a thrown rock",
+        "output": "1 | other - count (mirror, ==1)\n2 | other - count (rock, ==1)\n3 | action - (rock, strike)\n4 | action - (mirror, break)\n5 | relation - spatial (rock, mirror, strike)\n6 | relation - spatial (rock, mirror, thrown)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        2,
+        1
+      ],
+      "6": [
+        2,
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one mirror?",
+      "2": "Is there one rock?",
+      "3": "Is the rock striking?",
+      "4": "Is the mirror breaking?",
+      "5": "Is the rock striking the mirror?",
+      "6": "Is the rock thrown at the mirror?"
+    }
+  },
+  {
+    "origin_prompt": "Firewood splits under axe's chop",
+    "idx": 36,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Firewood splits under axe's chop",
+        "output": "1 | other - count (firewood, ==1)\n2 | entity - whole (axe)\n3 | action - (axe, chop)\n4 | relation - action (firewood, axe, under)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one piece of firewood?",
+      "2": "Is there one axe?",
+      "3": "Is the axe chopping?",
+      "4": "Is the firewood under the axe's chop?"
+    }
+  },
+  {
+    "origin_prompt": "Pottery shatters on the floor",
+    "idx": 37,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Pottery shatters on the floor",
+        "output": "1 | other - count (pottery, ==1)\n2 | other - count (floor, ==1)\n3 | action - (pottery, shatter)\n4 | relation - spatial (pottery, floor, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one piece of pottery?",
+      "2": "Is there one floor?",
+      "3": "Did the pottery shatter?",
+      "4": "Is the pottery on the floor?"
+    }
+  },
+  {
+    "origin_prompt": "Paper burns in a fire",
+    "idx": 38,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Paper burns in a fire",
+        "output": "1 | other - count (paper, ==1)\n2 | other - count (fire, ==1)\n3 | action - (paper, fire, burn)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one piece of paper?",
+      "2": "Is there one fire?",
+      "3": "Is the paper burning in the fire?"
+    }
+  },
+  {
+    "origin_prompt": "Balloon pops when pricked with a needle",
+    "idx": 39,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Balloon pops when pricked with a needle",
+        "output": "1 | other - count (balloon, ==1)\n2 | action - (balloon, pop)\n3 | action - (needle, prick)\n4 | relation - causal (needle, balloon, when pricked)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Does the balloon pop?",
+      "2": "Does the needle prick?",
+      "3": "Does the balloon pop when pricked with a needle?"
+    }
+  },
+  {
+    "origin_prompt": "Blue ink drops into water and disperses",
+    "idx": 40,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Blue ink drops into water and disperses",
+        "output": "1 | attribute - color (ink, blue)\n2 | action - (ink, water, drop)\n3 | action - (ink, disperse)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is the ink blue?",
+      "2": "Is the ink dropped into water?",
+      "3": "Does the ink disperse?"
+    }
+  },
+  {
+    "origin_prompt": "Butter melts on hot toast",
+    "idx": 41,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Butter melts on hot toast",
+        "output": "1 | other - count (butter, ==1)\n2 | other - count (toast, ==1)\n3 | attribute - state (butter, melt)\n4 | attribute - state (toast, hot)\n5 | relation - spatial (butter, toast, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one butter?",
+      "2": "Is there one toast?",
+      "3": "Is the butter melting?",
+      "4": "Is the toast hot?",
+      "5": "Is the butter on the toast?"
+    }
+  },
+  {
+    "origin_prompt": "Mage conjures fireball in palm, controlling the flames",
+    "idx": 42,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Mage conjures fireball in palm, controlling the flames",
+        "output": "1 | other - count (mage, ==1)\n2 | entity - part (mage's palm)\n3 | action - (mage, conjure fireball)\n4 | action - (mage, control flames)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one mage?",
+      "2": "Is there a palm?",
+      "3": "Is the mage conjuring a fireball in their palm?",
+      "4": "Is the mage controlling the flames?"
+    }
+  },
+  {
+    "origin_prompt": "A magician pulls a rabbit out of a hat",
+    "idx": 43,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A magician pulls a rabbit out of a hat",
+        "output": "1 | other - count (magician, ==1)\n2 | other - count (rabbit, ==1)\n3 | other - count (hat, ==1)\n4 | action - (magician, rabbit, pull out of)\n5 | relation - spatial (rabbit, hat, out of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2,
+        3
+      ],
+      "5": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one magician?",
+      "2": "Is there one rabbit?",
+      "3": "Is there one hat?",
+      "4": "Is the magician pulling the rabbit out of the hat?",
+      "5": "Is the rabbit out of the hat?"
+    }
+  },
+  {
+    "origin_prompt": "Alice shrinks after drinking mysterious potion",
+    "idx": 44,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Alice shrinks after drinking mysterious potion",
+        "output": "1 | other - count (Alice, ==1)\n2 | action - (Alice, drink)\n3 | attribute - state (Alice, shrink)\n4 | attribute - type (potion, mysterious)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        0
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one person named Alice?",
+      "2": "Did Alice drink something?",
+      "3": "Did Alice shrink?",
+      "4": "Is the potion mysterious?"
+    }
+  },
+  {
+    "origin_prompt": "Warrior controls wind, creating a tornado",
+    "idx": 45,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Warrior controls wind, creating a tornado",
+        "output": "1 | other - count (warrior, ==1)\n2 | action - (warrior, control wind)\n3 | action - (warrior, create tornado)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one warrior?",
+      "2": "Can the warrior control wind?",
+      "3": "Can the warrior create a tornado?"
+    }
+  },
+  {
+    "origin_prompt": "Sorcerer summons water from thin air, flooding room",
+    "idx": 46,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Sorcerer summons water from thin air, flooding room",
+        "output": "1 | other - count (sorcerer, ==1)\n2 | other - count (water, ==1)\n3 | other - count (room, ==1)\n4 | action - (sorcerer, water, summon)\n5 | action - (water, room, flood)\n6 | relation - spatial (water, air, from)\n7 | relation - spatial (water, room, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        2,
+        3
+      ],
+      "6": [
+        2
+      ],
+      "7": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one sorcerer?",
+      "2": "Is there water?",
+      "3": "Is there one room?",
+      "4": "Is the sorcerer summoning water?",
+      "5": "Is the water flooding the room?",
+      "6": "Is the water coming from the air?",
+      "7": "Is the water in the room?"
+    }
+  },
+  {
+    "origin_prompt": "Superhero phases through falling debris unharmed",
+    "idx": 47,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Superhero phases through falling debris unharmed",
+        "output": "1 | other - count (superhero, ==1)\n2 | action - (superhero, phase through)\n3 | action - (debris, fall)\n4 | attribute - state (superhero, unharmed)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one superhero?",
+      "2": "Is the superhero phasing through?",
+      "3": "Is the debris falling?",
+      "4": "Is the superhero unharmed?"
+    }
+  },
+  {
+    "origin_prompt": "Water sprite freezes lake with a touch",
+    "idx": 48,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Water sprite freezes lake with a touch",
+        "output": "1 | other - count (water sprite, ==1)\n2 | other - count (lake, ==1)\n3 | action - (water sprite, lake, freeze)\n4 | action - (water sprite, touch)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one water sprite?",
+      "2": "Is there one lake?",
+      "3": "Does the water sprite freeze the lake?",
+      "4": "Does the water sprite touch something?"
+    }
+  },
+  {
+    "origin_prompt": "Man teaches robot to play chess",
+    "idx": 49,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Man teaches robot to play chess",
+        "output": "1 | other - count (man, ==1)\n2 | other - count (robot, ==1)\n3 | action - (man, robot, teach)\n4 | action - (robot, chess, play)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one man?",
+      "2": "Is there one robot?",
+      "3": "Is the man teaching the robot?",
+      "4": "Is the robot playing chess?"
+    }
+  },
+  {
+    "origin_prompt": "Woman discusses project with colleague over coffee",
+    "idx": 50,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Woman discusses project with colleague over coffee",
+        "output": "1 | other - count (woman, ==1)\n2 | other - count (colleague, ==1)\n3 | action - (woman, discuss project)\n4 | relation - social (woman, colleague, over)\n5 | relation - social (woman, coffee, over)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        5
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one woman?",
+      "2": "Is there one colleague?",
+      "3": "Is the woman discussing a project?",
+      "4": "Is the woman discussing the project with her colleague?",
+      "5": "Is the woman discussing over coffee?"
+    }
+  },
+  {
+    "origin_prompt": "Boy shares ice cream with his dog",
+    "idx": 51,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Boy shares ice cream with his dog",
+        "output": "1 | other - count (boy, ==1)\n2 | other - count (ice cream, ==1)\n3 | other - count (dog, ==1)\n4 | action - (boy, ice cream, share with)\n5 | relation - social (boy, dog, share)\n6 | entity - part (boy's dog)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        3
+      ],
+      "6": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one boy?",
+      "2": "Is there one ice cream?",
+      "3": "Is there one dog?",
+      "4": "Is the boy sharing the ice cream?",
+      "5": "Is the boy sharing with the dog?",
+      "6": "Is the dog part of the boy's family?"
+    }
+  },
+  {
+    "origin_prompt": "Cats chase each other around the living room",
+    "idx": 52,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Cats chase each other around the living room",
+        "output": "1 | other - count (cats, ==2)\n2 | entity - whole (living room)\n3 | action - (cats, chase each other)\n4 | relation - spatial (cats, living room, around)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two cats?",
+      "2": "Is there a living room?",
+      "3": "Are the cats chasing each other?",
+      "4": "Are the cats running around the living room?"
+    }
+  },
+  {
+    "origin_prompt": "Girl reads bedtime story to her stuffed bear",
+    "idx": 53,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Girl reads bedtime story to her stuffed bear",
+        "output": "1 | other - count (girl, ==1)\n2 | other - count (bedtime story, ==1)\n3 | other - count (stuffed bear, ==1)\n4 | action - (girl, bedtime story, read)\n5 | relation - spatial (girl, stuffed bear, to)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one girl?",
+      "2": "Is there one bedtime story?",
+      "3": "Is there one stuffed bear?",
+      "4": "Is the girl reading a bedtime story?",
+      "5": "Is the girl reading the bedtime story to the stuffed bear?"
+    }
+  },
+  {
+    "origin_prompt": "Business partners shake hands on a new deal",
+    "idx": 54,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Business partners shake hands on a new deal",
+        "output": "1 | other - count (business partners, ==2)\n2 | action - (business partners, shake hands)\n3 | action - (business partners, deal, make)\n4 | attribute - state (deal, new)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two business partners?",
+      "2": "Are the business partners shaking hands?",
+      "3": "Are the business partners making a deal?",
+      "4": "Is the deal new?"
+    }
+  },
+  {
+    "origin_prompt": "Child plays with family dog at the beach",
+    "idx": 55,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Child plays with family dog at the beach",
+        "output": "1 | other - count (child, ==1)\n2 | other - count (family dog, ==1)\n3 | other - count (beach, ==1)\n4 | action - (child, play)\n5 | relation - spatial (child, family dog, with)\n6 | relation - spatial (child, beach, at)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one child?",
+      "2": "Is there one family dog?",
+      "3": "Is there one beach?",
+      "4": "Is the child playing?",
+      "5": "Is the child with the family dog?",
+      "6": "Is the child at the beach?"
+    }
+  },
+  {
+    "origin_prompt": "Old friends hug each other at a reunion",
+    "idx": 56,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Old friends hug each other at a reunion",
+        "output": "1 | other - count (friends, ==2)\n2 | action - (friends, hug)\n3 | attribute - state (friends, old)\n4 | attribute - state (reunion, at)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        0
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two friends?",
+      "2": "Are the friends hugging each other?",
+      "3": "Are the friends old?",
+      "4": "Is the reunion happening?"
+    }
+  },
+  {
+    "origin_prompt": "Couple dances closely at a dimly lit party",
+    "idx": 57,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Couple dances closely at a dimly lit party",
+        "output": "1 | other - count (couple, ==1)\n2 | attribute - state (party, dimly lit)\n3 | action - (couple, dance)\n4 | relation - spatial (couple, party, at)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one couple?",
+      "2": "Is the party dimly lit?",
+      "3": "Are the couple dancing?",
+      "4": "Is the couple at the party?"
+    }
+  },
+  {
+    "origin_prompt": "Fisherman feeds seagulls at the dock",
+    "idx": 58,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Fisherman feeds seagulls at the dock",
+        "output": "1 | other - count (fisherman, ==1)\n2 | other - count (seagulls, >=1)\n3 | other - count (dock, ==1)\n4 | action - (fisherman, seagulls, feed)\n5 | relation - spatial (fisherman, dock, at)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one fisherman?",
+      "2": "Are there seagulls?",
+      "3": "Is there one dock?",
+      "4": "Is the fisherman feeding the seagulls?",
+      "5": "Is the fisherman at the dock?"
+    }
+  },
+  {
+    "origin_prompt": "Mother teaches son how to tie his shoes",
+    "idx": 59,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Mother teaches son how to tie his shoes",
+        "output": "1 | other - count (mother, ==1)\n2 | other - count (son, ==1)\n3 | action - (mother, son, teach)\n4 | action - (son, tie shoes)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one mother?",
+      "2": "Is there one son?",
+      "3": "Is the mother teaching the son?",
+      "4": "Is the son tying his shoes?"
+    }
+  },
+  {
+    "origin_prompt": "Two wolves howl together under a full moon",
+    "idx": 60,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Two wolves howl together under a full moon",
+        "output": "1 | other - count (wolves, ==2)\n2 | other - count (moon, ==1)\n3 | action - (wolves, howl)\n4 | relation - spatial (wolves, moon, under)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two wolves?",
+      "2": "Is there a full moon?",
+      "3": "Are the wolves howling?",
+      "4": "Are the wolves under the moon?"
+    }
+  },
+  {
+    "origin_prompt": "Two monkeys groom each other on a tree branch",
+    "idx": 61,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Two monkeys groom each other on a tree branch",
+        "output": "1 | other - count (monkeys, ==2)\n2 | entity - whole (tree branch)\n3 | action - (monkeys, groom each other)\n4 | relation - spatial (monkeys, tree branch, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two monkeys?",
+      "2": "Is there a tree branch?",
+      "3": "Are the monkeys grooming each other?",
+      "4": "Are the monkeys on the tree branch?"
+    }
+  },
+  {
+    "origin_prompt": "Coach motivates athlete during a tough workout",
+    "idx": 62,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Coach motivates athlete during a tough workout",
+        "output": "1 | other - count (coach, ==1)\n2 | other - count (athlete, ==1)\n3 | action - (coach, athlete, motivate)\n4 | action - (athlete, workout, tough)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one coach?",
+      "2": "Is there one athlete?",
+      "3": "Is the coach motivating the athlete?",
+      "4": "Is the workout tough for the athlete?"
+    }
+  },
+  {
+    "origin_prompt": "Customer negotiates price with a street vendor",
+    "idx": 63,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Customer negotiates price with a street vendor",
+        "output": "1 | other - count (customer, ==1)\n2 | other - count (street vendor, ==1)\n3 | action - (customer, price negotiation, with street vendor)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one customer?",
+      "2": "Is there one street vendor?",
+      "3": "Is the customer negotiating the price with the street vendor?"
+    }
+  },
+  {
+    "origin_prompt": "Rabbit in a suit negotiates carrot deal with farmer",
+    "idx": 64,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Rabbit in a suit negotiates carrot deal with farmer",
+        "output": "1 | other - count (rabbit, ==1)\n2 | other - count (suit, ==1)\n3 | other - count (carrot, ==1)\n4 | other - count (farmer, ==1)\n5 | action - (rabbit, suit, negotiate)\n6 | action - (rabbit, carrot, deal)\n7 | relation - spatial (rabbit, farmer, with)\n8 | relation - spatial (rabbit, carrot, with)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ],
+      "7": [
+        1,
+        4
+      ],
+      "8": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one rabbit?",
+      "2": "Is there one suit?",
+      "3": "Is there one carrot?",
+      "4": "Is there one farmer?",
+      "5": "Is the rabbit negotiating in a suit?",
+      "6": "Is the rabbit making a deal with the carrot?",
+      "7": "Is the rabbit with the farmer?",
+      "8": "Is the rabbit with the carrot?"
+    }
+  },
+  {
+    "origin_prompt": "Business cat types on laptop",
+    "idx": 65,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Business cat types on laptop",
+        "output": "1 | other - count (cat, ==1)\n2 | other - count (laptop, ==1)\n3 | action - (cat, type on laptop)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one cat?",
+      "2": "Is there one laptop?",
+      "3": "Is the cat typing on the laptop?"
+    }
+  },
+  {
+    "origin_prompt": "Owl teacher explains math to squirrel students",
+    "idx": 66,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Owl teacher explains math to squirrel students",
+        "output": "1 | other - count (owl teacher, ==1)\n2 | other - count (squirrel students, ==1)\n3 | action - (owl teacher, explain)\n4 | attribute - subject (owl teacher, math)\n5 | relation - spatial (owl teacher, squirrel students, to)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one owl teacher?",
+      "2": "Are there squirrel students?",
+      "3": "Is the owl teacher explaining?",
+      "4": "Is the owl teacher explaining math?",
+      "5": "Is the owl teacher explaining math to the squirrel students?"
+    }
+  },
+  {
+    "origin_prompt": "Bear chef tastes honey from his gourmet kitchen",
+    "idx": 67,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Bear chef tastes honey from his gourmet kitchen",
+        "output": "1 | other - count (bear, ==1)\n2 | attribute - occupation (bear, chef)\n3 | action - (bear, taste)\n4 | other - count (honey, ==1)\n5 | attribute - location (bear, gourmet kitchen)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one bear?",
+      "2": "Is the bear a chef?",
+      "3": "Is the bear tasting something?",
+      "4": "Is there one honey?",
+      "5": "Is the bear in a gourmet kitchen?"
+    }
+  },
+  {
+    "origin_prompt": "Dapper wolf discusses stock market trends",
+    "idx": 68,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Dapper wolf discusses stock market trends",
+        "output": "1 | other - count (wolf, ==1)\n2 | action - (wolf, discuss)\n3 | attribute - state (wolf, dapper)\n4 | attribute - topic (wolf, stock market trends)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one wolf?",
+      "2": "Is the wolf discussing something?",
+      "3": "Is the wolf dapper?",
+      "4": "Is the wolf discussing stock market trends?"
+    }
+  },
+  {
+    "origin_prompt": "Giraffe painter reaches high walls without a ladder",
+    "idx": 69,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Giraffe painter reaches high walls without a ladder",
+        "output": "1 | other - count (giraffe, ==1)\n2 | entity - part (giraffe's painter)\n3 | attribute - state (giraffe's painter, reach)\n4 | attribute - state (walls, high)\n5 | action - (giraffe's painter, walls, reach without a ladder)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        4
+      ],
+      "5": [
+        2,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one giraffe?",
+      "2": "Does the giraffe have a painter?",
+      "3": "Can the giraffe's painter reach?",
+      "4": "Are the walls high?",
+      "5": "Can the giraffe's painter reach the walls without a ladder?"
+    }
+  },
+  {
+    "origin_prompt": "Mouse detective investigates cheese theft",
+    "idx": 70,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Mouse detective investigates cheese theft",
+        "output": "1 | other - count (mouse detective, ==1)\n2 | action - (mouse detective, investigate)\n3 | attribute - type (mouse detective, detective)\n4 | action - (mouse detective, cheese theft, investigate)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one mouse detective?",
+      "2": "Is the mouse detective investigating something?",
+      "3": "Is the mouse detective a detective?",
+      "4": "Is the mouse detective investigating a cheese theft?"
+    }
+  },
+  {
+    "origin_prompt": "Duck journalist interviews a famous goose",
+    "idx": 71,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Duck journalist interviews a famous goose",
+        "output": "1 | other - count (duck journalist, ==1)\n2 | other - count (famous goose, ==1)\n3 | action - (duck journalist, interview)\n4 | attribute - type (duck journalist, duck)\n5 | attribute - type (famous goose, goose)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one duck journalist?",
+      "2": "Is there one famous goose?",
+      "3": "Is the duck journalist interviewing?",
+      "4": "Is the duck journalist a duck?",
+      "5": "Is the famous goose a goose?"
+    }
+  },
+  {
+    "origin_prompt": "Tiger coach whistles at soccer practice",
+    "idx": 72,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Tiger coach whistles at soccer practice",
+        "output": "1 | other - count (coach, ==1)\n2 | other - count (whistles, ==1)\n3 | other - count (soccer practice, ==1)\n4 | attribute - type (coach, tiger)\n5 | action - (coach, whistle)\n6 | action - (coach, soccer practice, attend)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one coach?",
+      "2": "Is there one whistle?",
+      "3": "Is there one soccer practice?",
+      "4": "Is the coach a tiger?",
+      "5": "Is the coach whistling?",
+      "6": "Is the coach attending the soccer practice?"
+    }
+  },
+  {
+    "origin_prompt": "Raccoon trash collector cleans up the park",
+    "idx": 73,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Raccoon trash collector cleans up the park",
+        "output": "1 | other - count (raccoon, ==1)\n2 | other - count (trash collector, ==1)\n3 | other - count (park, ==1)\n4 | action - (raccoon, clean up)\n5 | relation - spatial (raccoon, park, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one raccoon?",
+      "2": "Is there one trash collector?",
+      "3": "Is there one park?",
+      "4": "Is the raccoon cleaning up?",
+      "5": "Is the raccoon in the park?"
+    }
+  },
+  {
+    "origin_prompt": "Penguin waiter slides dinner to customers",
+    "idx": 74,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Penguin waiter slides dinner to customers",
+        "output": "1 | other - count (penguin waiter, ==1)\n2 | action - (penguin waiter, slide)\n3 | entity - whole (customers)\n4 | action - (penguin waiter, dinner, slide to)\n5 | relation - spatial (penguin waiter, customers, to)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        2,
+        3
+      ],
+      "5": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one penguin waiter?",
+      "2": "Is the penguin waiter sliding?",
+      "3": "Are there customers?",
+      "4": "Is the penguin waiter sliding dinner to the customers?",
+      "5": "Is the penguin waiter sliding dinner to the customers?"
+    }
+  },
+  {
+    "origin_prompt": "Rabbit tailor sews fabric into a dress",
+    "idx": 75,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Rabbit tailor sews fabric into a dress",
+        "output": "1 | other - count (rabbit, ==1)\n2 | other - count (tailor, ==1)\n3 | other - count (fabric, ==1)\n4 | other - count (dress, ==1)\n5 | action - (tailor, fabric, sew)\n6 | relation - spatial (rabbit, fabric, into)\n7 | relation - spatial (fabric, dress, into)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        2,
+        3
+      ],
+      "6": [
+        1,
+        3
+      ],
+      "7": [
+        3,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one rabbit?",
+      "2": "Is there one tailor?",
+      "3": "Is there one fabric?",
+      "4": "Is there one dress?",
+      "5": "Is the tailor sewing fabric?",
+      "6": "Is the rabbit sewing fabric into something?",
+      "7": "Is the fabric sewn into the dress?"
+    }
+  },
+  {
+    "origin_prompt": "Beaver architect designs a dam",
+    "idx": 76,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Beaver architect designs a dam",
+        "output": "1 | other - count (beaver, ==1)\n2 | attribute - occupation (beaver, architect)\n3 | action - (beaver, dam, design)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one beaver?",
+      "2": "Is the beaver an architect?",
+      "3": "Is the beaver designing a dam?"
+    }
+  },
+  {
+    "origin_prompt": "Sloth librarian arranges books slowly but surely",
+    "idx": 77,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Sloth librarian arranges books slowly but surely",
+        "output": "1 | other - count (sloth librarian, ==1)\n2 | other - count (books, >=1)\n3 | action - (sloth librarian, arrange books)\n4 | attribute - speed (sloth librarian, slow)\n5 | attribute - certainty (sloth librarian, surely)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one sloth librarian?",
+      "2": "Are there any books?",
+      "3": "Is the sloth librarian arranging books?",
+      "4": "Is the sloth librarian slow?",
+      "5": "Is the sloth librarian arranging books surely?"
+    }
+  },
+  {
+    "origin_prompt": "Dog firefighter rescues kittens from a tree",
+    "idx": 78,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Dog firefighter rescues kittens from a tree",
+        "output": "1 | other - count (dog, ==1)\n2 | other - count (firefighter, ==1)\n3 | other - count (kittens, ==1)\n4 | other - count (tree, ==1)\n5 | action - (dog, kittens, rescue)\n6 | relation - spatial (dog, tree, from)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1,
+        3
+      ],
+      "6": [
+        1,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one dog?",
+      "2": "Is there one firefighter?",
+      "3": "Is there one kitten?",
+      "4": "Is there one tree?",
+      "5": "Is the dog rescuing the kittens?",
+      "6": "Is the dog rescuing the kittens from the tree?"
+    }
+  },
+  {
+    "origin_prompt": "Rabbit police officer directs traffic",
+    "idx": 79,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Rabbit police officer directs traffic",
+        "output": "1 | other - count (rabbit, ==1)\n2 | other - count (police officer, ==1)\n3 | action - (police officer, traffic, direct)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one rabbit?",
+      "2": "Is there one police officer?",
+      "3": "Is the police officer directing traffic?"
+    }
+  },
+  {
+    "origin_prompt": "Bear journalist interviews a celebrity",
+    "idx": 80,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Bear journalist interviews a celebrity",
+        "output": "1 | other - count (bear, ==1)\n2 | other - count (journalist, ==1)\n3 | other - count (celebrity, ==1)\n4 | action - (bear, journalist, interview)\n5 | attribute - type (bear, journalist)\n6 | attribute - type (celebrity)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one bear?",
+      "2": "Is there one journalist?",
+      "3": "Is there one celebrity?",
+      "4": "Is the bear interviewing the celebrity?",
+      "5": "Is the bear a journalist?",
+      "6": "Is the celebrity a celebrity?"
+    }
+  },
+  {
+    "origin_prompt": "Friends share stories around bonfire, under starry night sky",
+    "idx": 81,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Friends share stories around bonfire, under starry night sky",
+        "output": "1 | entity - whole (friends)\n2 | action - (friends, share stories)\n3 | entity - whole (bonfire)\n4 | entity - whole (starry night sky)\n5 | relation - spatial (friends, bonfire, around)\n6 | relation - spatial (friends, starry night sky, under)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1,
+        3
+      ],
+      "6": [
+        1,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Are there friends?",
+      "2": "Are the friends sharing stories?",
+      "3": "Is there a bonfire?",
+      "4": "Is there a starry night sky?",
+      "5": "Are the friends around the bonfire?",
+      "6": "Are the friends under the starry night sky?"
+    }
+  },
+  {
+    "origin_prompt": "Violinist and pianist captivate with harmonious duet performance",
+    "idx": 82,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Violinist and pianist captivate with harmonious duet performance",
+        "output": "1 | other - count (violinist, ==1)\n2 | other - count (pianist, ==1)\n3 | action - (violinist, captivate)\n4 | action - (pianist, captivate)\n5 | action - (violinist, pianist, perform)\n6 | attribute - state (violinist, harmonious)\n7 | attribute - state (pianist, harmonious)\n8 | relation - social (violinist, pianist, duet)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        2
+      ],
+      "8": [
+        3,
+        4,
+        5
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one violinist?",
+      "2": "Is there one pianist?",
+      "3": "Is the violinist captivating?",
+      "4": "Is the pianist captivating?",
+      "5": "Are the violinist and pianist performing together?",
+      "6": "Is the violinist's performance harmonious?",
+      "7": "Is the pianist's performance harmonious?",
+      "8": "Are the violinist and pianist performing a duet?"
+    }
+  },
+  {
+    "origin_prompt": "Astronauts repair spacecraft, floating weightlessly in vastness of space",
+    "idx": 83,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Astronauts repair spacecraft, floating weightlessly in vastness of space",
+        "output": "1 | other - count (astronauts, ==1)\n2 | other - count (spacecraft, ==1)\n3 | global - (vastness of space)\n4 | action - (astronauts, spacecraft, repair)\n5 | attribute - state (astronauts, weightlessly)\n6 | relation - spatial (astronauts, space, in)\n7 | relation - spatial (spacecraft, space, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        2,
+        6
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one astronaut?",
+      "2": "Is there one spacecraft?",
+      "3": "Is it the vastness of space?",
+      "4": "Are the astronauts repairing the spacecraft?",
+      "5": "Are the astronauts weightless?",
+      "6": "Are the astronauts in space?",
+      "7": "Is the spacecraft in space?"
+    }
+  },
+  {
+    "origin_prompt": "Gardener tenderly prunes bonsai tree, creating natural art",
+    "idx": 84,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Gardener tenderly prunes bonsai tree, creating natural art",
+        "output": "1 | other - count (gardener, ==1)\n2 | other - count (bonsai tree, ==1)\n3 | action - (gardener, bonsai tree, prune)\n4 | attribute - state (bonsai tree, tenderly pruned)\n5 | attribute - type (bonsai tree, natural art)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one gardener?",
+      "2": "Is there one bonsai tree?",
+      "3": "Is the gardener pruning the bonsai tree?",
+      "4": "Is the bonsai tree tenderly pruned?",
+      "5": "Is the bonsai tree considered natural art?"
+    }
+  },
+  {
+    "origin_prompt": "Girl and grandmother bake cookies, laughter filling the kitchen",
+    "idx": 85,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Girl and grandmother bake cookies, laughter filling the kitchen",
+        "output": "1 | other - count (girl, ==1)\n2 | other - count (grandmother, ==1)\n3 | action - (girl, grandmother, bake cookies)\n4 | attribute - state (kitchen, filled with laughter)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        0
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one girl?",
+      "2": "Is there one grandmother?",
+      "3": "Are the girl and grandmother baking cookies?",
+      "4": "Is the kitchen filled with laughter?"
+    }
+  },
+  {
+    "origin_prompt": "Elderly man feeds pigeons, surrounded by fluttering wings",
+    "idx": 86,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Elderly man feeds pigeons, surrounded by fluttering wings",
+        "output": "1 | other - count (man, ==1)\n2 | other - count (pigeons, ==1)\n3 | attribute - age (man, elderly)\n4 | action - (man, pigeons, feed)\n5 | relation - spatial (man, pigeons, surrounded by)\n6 | entity - part (pigeons' wings)\n7 | attribute - state (pigeons' wings, fluttering)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        2
+      ],
+      "7": [
+        6
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one elderly man?",
+      "2": "Are there pigeons?",
+      "3": "Is the man feeding the pigeons?",
+      "4": "Are the pigeons surrounding the man?",
+      "5": "Are the wings of the pigeons fluttering?"
+    }
+  },
+  {
+    "origin_prompt": "A group of elephants playfully spray water at each other",
+    "idx": 87,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A group of elephants playfully spray water at each other",
+        "output": "1 | entity - whole (group of elephants)\n2 | action - (elephants, spray water)\n3 | relation - spatial (elephants, each other, at)\n4 | attribute - state (elephants, playful)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there a group of elephants?",
+      "2": "Are the elephants spraying water?",
+      "3": "Are the elephants spraying water at each other?",
+      "4": "Are the elephants playful?"
+    }
+  },
+  {
+    "origin_prompt": "A young girl and her teddy bear have a tea party",
+    "idx": 88,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A young girl and her teddy bear have a tea party",
+        "output": "1 | other - count (girl, ==1)\n2 | other - count (teddy bear, ==1)\n3 | action - (girl, teddy bear, have a tea party)\n4 | entity - part (girl's teddy bear)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one young girl?",
+      "2": "Is there one teddy bear?",
+      "3": "Are the young girl and her teddy bear having a tea party?",
+      "4": "Does the girl have a teddy bear?"
+    }
+  },
+  {
+    "origin_prompt": "A child and a puppy embark on an adventure through a forest",
+    "idx": 89,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A child and a puppy embark on an adventure through a forest",
+        "output": "1 | other - count (child, ==1)\n2 | other - count (puppy, ==1)\n3 | other - count (forest, ==1)\n4 | action - (child, puppy, embark on an adventure)\n5 | relation - spatial (child, forest, through)\n6 | relation - spatial (puppy, forest, through)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        3
+      ],
+      "6": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one child?",
+      "2": "Is there one puppy?",
+      "3": "Is there one forest?",
+      "4": "Are the child and puppy embarking on an adventure?",
+      "5": "Is the child going through the forest?",
+      "6": "Is the puppy going through the forest?"
+    }
+  },
+  {
+    "origin_prompt": "A pack of wolves howl in harmony, their voices echoing through the night",
+    "idx": 90,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A pack of wolves howl in harmony, their voices echoing through the night",
+        "output": "1 | other - count (wolves, ==1)\n2 | action - (wolves, howl)\n3 | attribute - state (wolves, harmony)\n4 | attribute - sound (wolves, howl)\n5 | attribute - time (wolves, night)\n6 | action - (voices, echo)\n7 | relation - temporal (howl, echo, through the night)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        0
+      ],
+      "7": [
+        2,
+        6
+      ]
+    },
+    "qid2question": {
+      "1": "Is there a pack of wolves?",
+      "2": "Are the wolves howling?",
+      "3": "Are the wolves howling in harmony?",
+      "4": "Do the wolves' howls make a sound?",
+      "5": "Are the wolves howling at night?",
+      "6": "Are the voices echoing?",
+      "7": "Are the howls echoing through the night?"
+    }
+  },
+  {
+    "origin_prompt": "A parent and child build a sandcastle together",
+    "idx": 91,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A parent and child build a sandcastle together",
+        "output": "1 | other - count (parent, ==1)\n2 | other - count (child, ==1)\n3 | action - (parent, child, build)\n4 | entity - whole (sandcastle)\n5 | relation - spatial (parent, sandcastle, together)\n6 | relation - spatial (child, sandcastle, together)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        1,
+        4
+      ],
+      "6": [
+        2,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one parent?",
+      "2": "Is there one child?",
+      "3": "Are the parent and child building something?",
+      "4": "Is there a sandcastle?",
+      "5": "Is the parent building the sandcastle together with the child?",
+      "6": "Is the child building the sandcastle together with the parent?"
+    }
+  },
+  {
+    "origin_prompt": "A conductor leads an orchestra, guiding the musicians to create a harmonious symphony",
+    "idx": 92,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A conductor leads an orchestra, guiding the musicians to create a harmonious symphony",
+        "output": "1 | other - count (conductor, ==1)\n2 | entity - whole (orchestra)\n3 | action - (conductor, lead)\n4 | action - (musicians, create)\n5 | attribute - state (symphony, harmonious)\n6 | relation - spatial (conductor, orchestra, lead)\n7 | relation - spatial (conductor, musicians, guide)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        1,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one conductor?",
+      "2": "Is there an orchestra?",
+      "3": "Is the conductor leading?",
+      "4": "Are the musicians creating?",
+      "5": "Is the symphony harmonious?",
+      "6": "Is the conductor leading the orchestra?",
+      "7": "Is the conductor guiding the musicians?"
+    }
+  },
+  {
+    "origin_prompt": "A dog and a cat playfully chase each other",
+    "idx": 93,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A dog and a cat playfully chase each other",
+        "output": "1 | other - count (dog, ==1)\n2 | other - count (cat, ==1)\n3 | action - (dog, cat, chase)\n4 | action - (cat, dog, chase)\n5 | attribute - state (dog, playful)\n6 | attribute - state (cat, playful)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one dog?",
+      "2": "Is there one cat?",
+      "3": "Is the dog chasing the cat?",
+      "4": "Is the cat chasing the dog?",
+      "5": "Is the dog playful?",
+      "6": "Is the cat playful?"
+    }
+  },
+  {
+    "origin_prompt": "A group of children engage in a lively game of jump rope",
+    "idx": 94,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A group of children engage in a lively game of jump rope",
+        "output": "1 | entity - whole (children)\n2 | action - (children, game, engage in)\n3 | action - (children, jump rope, play)\n4 | attribute - state (game, lively)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there a group of children?",
+      "2": "Are the children engaging in a game?",
+      "3": "Are the children playing jump rope?",
+      "4": "Is the game lively?"
+    }
+  },
+  {
+    "origin_prompt": "A couple dances under the moonlight, their steps perfectly in sync with the romantic melody",
+    "idx": 95,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A couple dances under the moonlight, their steps perfectly in sync with the romantic melody",
+        "output": "1 | other - count (couple, ==1)\n2 | other - count (moonlight, ==1)\n3 | action - (couple, dance)\n4 | attribute - state (couple, in sync)\n5 | attribute - state (couple, under moonlight)\n6 | attribute - state (couple, romantic)\n7 | attribute - sound (melody, romantic)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        7
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one couple?",
+      "2": "Is there moonlight?",
+      "3": "Is the couple dancing?",
+      "4": "Are the couple's steps in sync?",
+      "5": "Are the couple dancing under the moonlight?",
+      "6": "Is the couple's dance romantic?",
+      "7": "Is the melody romantic?"
+    }
+  },
+  {
+    "origin_prompt": "A group of volunteers clean up a beach, working together to protect the environment",
+    "idx": 96,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A group of volunteers clean up a beach, working together to protect the environment",
+        "output": "1 | entity - whole (volunteers)\n2 | entity - whole (beach)\n3 | action - (volunteers, clean up)\n4 | action - (volunteers, protect)\n5 | attribute - purpose (volunteers, protect the environment)\n6 | relation - social (volunteers, work together)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there a group of volunteers?",
+      "2": "Is there a beach?",
+      "3": "Are the volunteers cleaning up?",
+      "4": "Are the volunteers protecting?",
+      "5": "Are the volunteers working together to protect the environment?"
+    }
+  },
+  {
+    "origin_prompt": "A parent teaches a child to ride a bike",
+    "idx": 97,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A parent teaches a child to ride a bike",
+        "output": "1 | other - count (parent, ==1)\n2 | other - count (child, ==1)\n3 | action - (parent, child, teach)\n4 | action - (child, bike, ride)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one parent?",
+      "2": "Is there one child?",
+      "3": "Is the parent teaching the child?",
+      "4": "Is the child riding a bike?"
+    }
+  },
+  {
+    "origin_prompt": "A group of firefighters work together, battling the flames and saving lives",
+    "idx": 98,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A group of firefighters work together, battling the flames and saving lives",
+        "output": "1 | entity - whole (group of firefighters)\n2 | action - (firefighters, work together)\n3 | action - (firefighters, battle flames)\n4 | action - (firefighters, save lives)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there a group of firefighters?",
+      "2": "Are the firefighters working together?",
+      "3": "Are the firefighters battling flames?",
+      "4": "Are the firefighters saving lives?"
+    }
+  },
+  {
+    "origin_prompt": "A parent and child plant a garden, nurturing plants and watching them grow",
+    "idx": 99,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A parent and child plant a garden, nurturing plants and watching them grow",
+        "output": "1 | other - count (parent, ==1)\n2 | other - count (child, ==1)\n3 | action - (parent, garden, plant)\n4 | action - (parent, plants, nurture)\n5 | action - (parent, plants, watch grow)\n6 | action - (child, garden, plant)\n7 | action - (child, plants, nurture)\n8 | action - (child, plants, watch grow)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        1
+      ],
+      "8": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one parent?",
+      "2": "Is there one child?",
+      "3": "Is the parent planting a garden?",
+      "4": "Is the parent nurturing plants?",
+      "5": "Is the parent watching the plants grow?",
+      "6": "Is the child planting a garden?",
+      "7": "Is the child nurturing plants?",
+      "8": "Is the child watching the plants grow?"
+    }
+  }
+]

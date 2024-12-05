@@ -1,0 +1,1888 @@
+[
+  {
+    "origin_prompt": "Two child sleeping beside each other on a comfortable blue bed with beige pillows.",
+    "idx": 84,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Two child sleeping beside each other on a comfortable blue bed with beige pillows.",
+        "output": "1 | other - count (children, ==2)\n2 | entity - whole (bed)\n3 | attribute - color (bed, blue)\n4 | attribute - color (pillows, beige)\n5 | attribute - state (children, sleep)\n6 | relation - spatial (children, bed, beside each other)\n7 | relation - spatial (bed, pillows, with)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        2,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two children?",
+      "2": "Is there a bed?",
+      "3": "Is the bed blue?",
+      "4": "Are the pillows beige?",
+      "5": "Are the children sleeping?",
+      "6": "Are the children beside each other on the bed?",
+      "7": "Are the pillows with the bed?"
+    }
+  },
+  {
+    "origin_prompt": "Red knife cuts string of kite",
+    "idx": 178,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Red knife cuts string of kite",
+        "output": "1 | other - count (knife, ==1)\n2 | other - count (string, ==1)\n3 | other - count (kite, ==1)\n4 | attribute - color (knife, red)\n5 | action - (knife, string, cut)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one red knife?",
+      "2": "Is there one string?",
+      "3": "Is there one kite?",
+      "4": "Is the knife red?",
+      "5": "Is the knife cutting the string?"
+    }
+  },
+  {
+    "origin_prompt": "A bright yellow umbrella with a wooden handle. It's compact and easy to carry.",
+    "idx": 180,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A bright yellow umbrella with a wooden handle. It's compact and easy to carry.",
+        "output": "1 | other - count (umbrella, ==1)\n2 | attribute - color (umbrella, bright yellow)\n3 | attribute - material (umbrella handle, wood)\n4 | attribute - state (umbrella, compact)\n5 | attribute - state (umbrella, easy to carry)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one umbrella?",
+      "2": "Is the umbrella bright yellow?",
+      "3": "Is the handle of the umbrella made of wood?",
+      "4": "Is the umbrella compact?",
+      "5": "Is the umbrella easy to carry?"
+    }
+  },
+  {
+    "origin_prompt": "A silver cell phone lays next to a red fire hydrant.",
+    "idx": 189,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A silver cell phone lays next to a red fire hydrant.",
+        "output": "1 | other - count (cell phone, ==1)\n2 | other - count (fire hydrant, ==1)\n3 | attribute - color (cell phone, silver)\n4 | attribute - color (fire hydrant, red)\n5 | relation - spatial (cell phone, fire hydrant, next to)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one cell phone?",
+      "2": "Is there one fire hydrant?",
+      "3": "Is the cell phone silver?",
+      "4": "Is the fire hydrant red?",
+      "5": "Is the cell phone next to the fire hydrant?"
+    }
+  },
+  {
+    "origin_prompt": "A yellow truck with a sturdy fork lifts a pile of wooden blocks. The truck has a rectangular shape and metal material, with a blue text label 'Toyota' on the hood.",
+    "idx": 202,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A yellow truck with a sturdy fork lifts a pile of wooden blocks. The truck has a rectangular shape and metal material, with a blue text label 'Toyota' on the hood.",
+        "output": "1 | other - count (truck, ==1)\n2 | other - count (fork, ==1)\n3 | other - count (wooden blocks, ==1)\n4 | attribute - color (truck, yellow)\n5 | attribute - state (fork, sturdy)\n6 | attribute - shape (truck, rectangular)\n7 | attribute - material (truck, metal)\n8 | attribute - text (truck, 'Toyota')\n9 | attribute - color (text label, blue)\n10 | relation - spatial (truck, wooden blocks, lifts)\n11 | relation - spatial (truck, fork, has)\n12 | relation - spatial (text label, truck, on the hood)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        1
+      ],
+      "8": [
+        1
+      ],
+      "9": [
+        8
+      ],
+      "10": [
+        1,
+        3
+      ],
+      "11": [
+        1,
+        2
+      ],
+      "12": [
+        8,
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one yellow truck?",
+      "2": "Is there one fork?",
+      "3": "Is there one pile of wooden blocks?",
+      "4": "Is the truck yellow?",
+      "5": "Is the fork sturdy?",
+      "6": "Is the truck rectangular in shape?",
+      "7": "Is the truck made of metal?",
+      "8": "Does the truck have a blue text label that says 'Toyota'?",
+      "9": "Is the text label blue?",
+      "10": "Is the truck lifting the pile of wooden blocks?",
+      "11": "Does the truck have a fork?",
+      "12": "Is the text label on the hood of the truck?"
+    }
+  },
+  {
+    "origin_prompt": "A colorful street scene with a red bicycle, a yellow truck, a blue car and a green scooter.",
+    "idx": 204,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A colorful street scene with a red bicycle, a yellow truck, a blue car and a green scooter.",
+        "output": "1 | other - count (street scene, ==1)\n2 | other - count (bicycle, ==1)\n3 | other - count (truck, ==1)\n4 | other - count (car, ==1)\n5 | other - count (scooter, ==1)\n6 | attribute - color (bicycle, red)\n7 | attribute - color (truck, yellow)\n8 | attribute - color (car, blue)\n9 | attribute - color (scooter, green)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        2
+      ],
+      "7": [
+        3
+      ],
+      "8": [
+        4
+      ],
+      "9": [
+        5
+      ]
+    },
+    "qid2question": {
+      "1": "Is there a street scene?",
+      "2": "Is there a red bicycle?",
+      "3": "Is there a yellow truck?",
+      "4": "Is there a blue car?",
+      "5": "Is there a green scooter?"
+    }
+  },
+  {
+    "origin_prompt": "A grey Yamaha motorcycle and a yellow Trek bicycle race.",
+    "idx": 205,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A grey Yamaha motorcycle and a yellow Trek bicycle race.",
+        "output": "1 | other - count (motorcycle, ==1)\n2 | other - count (bicycle, ==1)\n3 | attribute - color (motorcycle, grey)\n4 | attribute - color (bicycle, yellow)\n5 | attribute - brand (motorcycle, Yamaha)\n6 | attribute - brand (bicycle, Trek)\n7 | action - (motorcycle, race)\n8 | action - (bicycle, race)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        1
+      ],
+      "8": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one grey Yamaha motorcycle?",
+      "2": "Is there one yellow Trek bicycle?",
+      "3": "Is the motorcycle grey?",
+      "4": "Is the bicycle yellow?",
+      "5": "Is the motorcycle a Yamaha?",
+      "6": "Is the bicycle a Trek?",
+      "7": "Is the motorcycle racing?",
+      "8": "Is the bicycle racing?"
+    }
+  },
+  {
+    "origin_prompt": "a blue pickup truck with a rhinoceros in its flatbed",
+    "idx": 210,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "a blue pickup truck with a rhinoceros in its flatbed",
+        "output": "1 | other - count (pickup truck, ==1)\n2 | other - count (rhinoceros, ==1)\n3 | attribute - color (pickup truck, blue)\n4 | relation - spatial (rhinoceros, pickup truck, in flatbed)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one blue pickup truck?",
+      "2": "Is there one rhinoceros?",
+      "3": "Is the pickup truck blue?",
+      "4": "Is the rhinoceros in the flatbed of the pickup truck?"
+    }
+  },
+  {
+    "origin_prompt": "an orange pickup truck next to a yellow Porsche 911",
+    "idx": 211,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "an orange pickup truck next to a yellow Porsche 911",
+        "output": "1 | other - count (pickup truck, ==1)\n2 | other - count (Porsche 911, ==1)\n3 | attribute - color (pickup truck, orange)\n4 | attribute - color (Porsche 911, yellow)\n5 | relation - spatial (pickup truck, Porsche 911, next to)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one orange pickup truck?",
+      "2": "Is there one yellow Porsche 911?",
+      "3": "Is the pickup truck orange?",
+      "4": "Is the Porsche 911 yellow?",
+      "5": "Is the pickup truck next to the Porsche 911?"
+    }
+  },
+  {
+    "origin_prompt": "an yellow clock is ticking on a wooden table",
+    "idx": 238,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "an yellow clock is ticking on a wooden table",
+        "output": "1 | other - count (clock, ==1)\n2 | other - count (table, ==1)\n3 | attribute - color (clock, yellow)\n4 | action - (clock, tick)\n5 | relation - spatial (clock, table, on)\n6 | attribute - material (table, wooden)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one clock?",
+      "2": "Is there one table?",
+      "3": "Is the clock yellow?",
+      "4": "Is the clock ticking?",
+      "5": "Is the clock on the table?",
+      "6": "Is the table made of wood?"
+    }
+  },
+  {
+    "origin_prompt": "With the style of low-poly game art, A majestic, white horse gallops gracefully across a moonlit beach.",
+    "idx": 273,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "With the style of low-poly game art, A majestic, white horse gallops gracefully across a moonlit beach.",
+        "output": "1 | global - (low-poly game art)\n2 | entity - whole (horse)\n3 | attribute - color (horse, white)\n4 | action - (horse, gallop)\n5 | attribute - state (horse, majestic)\n6 | relation - spatial (horse, beach, across)\n7 | attribute - state (beach, moonlit)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        2,
+        6
+      ],
+      "7": [
+        6
+      ]
+    },
+    "qid2question": {
+      "1": "Is this low-poly game art?",
+      "2": "Is there a horse?",
+      "3": "Is the horse white?",
+      "4": "Is the horse galloping?",
+      "5": "Is the horse majestic?",
+      "6": "Is the horse galloping across the beach?",
+      "7": "Is the beach moonlit?"
+    }
+  },
+  {
+    "origin_prompt": "With the style of pointilism, A green apple and a black backpack.",
+    "idx": 359,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "With the style of pointilism, A green apple and a black backpack.",
+        "output": "1 | other - count (apple, ==1)\n2 | other - count (backpack, ==1)\n3 | attribute - color (apple, green)\n4 | attribute - color (backpack, black)\n5 | attribute - style (pointilism)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        0
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one green apple?",
+      "2": "Is there one black backpack?",
+      "3": "Is the apple green?",
+      "4": "Is the backpack black?",
+      "5": "Is the style pointilism?"
+    }
+  },
+  {
+    "origin_prompt": "A blue cup and a green cell phone. with the style of pencil drawing",
+    "idx": 360,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A blue cup and a green cell phone. with the style of pencil drawing",
+        "output": "1 | other - count (cup, ==1)\n2 | other - count (cell phone, ==1)\n3 | attribute - color (cup, blue)\n4 | attribute - color (cell phone, green)\n5 | attribute - style (cup, pencil drawing)\n6 | attribute - style (cell phone, pencil drawing)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one blue cup?",
+      "2": "Is there one green cell phone?",
+      "3": "Is the cup drawn in the style of a pencil drawing?",
+      "4": "Is the cell phone drawn in the style of a pencil drawing?"
+    }
+  },
+  {
+    "origin_prompt": "low-poly game art style, A red colored car.",
+    "idx": 373,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "low-poly game art style, A red colored car.",
+        "output": "1 | global - (low-poly game art style)\n2 | other - count (car, ==1)\n3 | attribute - color (car, red)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is this a low-poly game art style?",
+      "2": "Is there one red colored car?"
+    }
+  },
+  {
+    "origin_prompt": "With the style of Vincent Van Gogh, blue apples on a tree with yellow leaves",
+    "idx": 407,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "With the style of Vincent Van Gogh, blue apples on a tree with yellow leaves",
+        "output": "1 | attribute - style (Vincent Van Gogh)\n2 | other - count (apples, ==blue)\n3 | other - count (tree, ==1)\n4 | attribute - color (apples, blue)\n5 | attribute - color (leaves, yellow)\n6 | relation - spatial (apples, tree, on)\n7 | relation - spatial (leaves, tree, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        2,
+        3
+      ],
+      "7": [
+        3,
+        6
+      ]
+    },
+    "qid2question": {
+      "1": "Is the style similar to Vincent Van Gogh?",
+      "2": "Are there blue apples?",
+      "3": "Is there one tree?",
+      "4": "Are the apples blue?",
+      "5": "Are the leaves yellow?",
+      "6": "Are the apples on the tree?",
+      "7": "Are the leaves on the tree?"
+    }
+  },
+  {
+    "origin_prompt": "Wide angle lens, A red car and a white sheep.",
+    "idx": 410,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Wide angle lens, A red car and a white sheep.",
+        "output": "1 | other - count (wide angle lens, ==1)\n2 | other - count (car, ==1)\n3 | other - count (sheep, ==1)\n4 | attribute - color (car, red)\n5 | attribute - color (sheep, white)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there a wide angle lens?",
+      "2": "Is there a red car?",
+      "3": "Is there a white sheep?",
+      "4": "Is the car red?",
+      "5": "Is the sheep white?"
+    }
+  },
+  {
+    "origin_prompt": "slow motion, A brown bird and a blue bear.",
+    "idx": 411,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "slow motion, A brown bird and a blue bear.",
+        "output": "1 | other - count (bird, ==1)\n2 | other - count (bear, ==1)\n3 | attribute - color (bird, brown)\n4 | attribute - color (bear, blue)\n5 | global - (slow motion)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        0
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one brown bird?",
+      "2": "Is there one blue bear?",
+      "3": "Is the bird brown?",
+      "4": "Is the bear blue?",
+      "5": "Is the video in slow motion?"
+    }
+  },
+  {
+    "origin_prompt": "hand-held camera, a tree reflected in the sunroof of a blue car",
+    "idx": 509,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "hand-held camera, a tree reflected in the sunroof of a blue car",
+        "output": "1 | other - count (camera, ==1)\n2 | other - count (tree, ==1)\n3 | other - count (sunroof, ==1)\n4 | other - count (car, ==1)\n5 | attribute - state (car, blue)\n6 | relation - spatial (tree, sunroof, reflected in)\n7 | relation - spatial (tree, car, reflected in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        4
+      ],
+      "6": [
+        2,
+        3
+      ],
+      "7": [
+        2,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one hand-held camera?",
+      "2": "Is there one tree?",
+      "3": "Is there one sunroof?",
+      "4": "Is there one car?",
+      "5": "Is the car blue?",
+      "6": "Is the tree reflected in the sunroof?",
+      "7": "Is the tree reflected in the car?"
+    }
+  },
+  {
+    "origin_prompt": "A red bicycle leaning against a green tree in a park.",
+    "idx": 624,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A red bicycle leaning against a green tree in a park.",
+        "output": "1 | other - count (bicycle, ==1)\n2 | other - count (tree, ==1)\n3 | other - count (park, ==1)\n4 | attribute - color (bicycle, red)\n5 | attribute - color (tree, green)\n6 | relation - spatial (bicycle, tree, leaning against)\n7 | relation - spatial (bicycle, park, in)\n8 | relation - spatial (tree, park, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        1,
+        3
+      ],
+      "8": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one bicycle?",
+      "2": "Is there one tree?",
+      "3": "Is there one park?",
+      "4": "Is the bicycle red?",
+      "5": "Is the tree green?",
+      "6": "Is the bicycle leaning against the tree?",
+      "7": "Is the bicycle in the park?",
+      "8": "Is the tree in the park?"
+    }
+  },
+  {
+    "origin_prompt": "A yellow dog playing with an orange frisbee in the grass.",
+    "idx": 625,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A yellow dog playing with an orange frisbee in the grass.",
+        "output": "1 | other - count (dog, ==1)\n2 | other - count (frisbee, ==1)\n3 | other - count (grass, ==1)\n4 | attribute - color (dog, yellow)\n5 | attribute - color (frisbee, orange)\n6 | action - (dog, frisbee, play)\n7 | relation - spatial (dog, grass, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one yellow dog?",
+      "2": "Is there one orange frisbee?",
+      "3": "Is there grass?",
+      "4": "Is the dog playing?",
+      "5": "Is the frisbee in the grass?"
+    }
+  },
+  {
+    "origin_prompt": "A blue car parked next to a red fire hydrant on the street.",
+    "idx": 626,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A blue car parked next to a red fire hydrant on the street.",
+        "output": "1 | other - count (car, ==1)\n2 | other - count (fire hydrant, ==1)\n3 | attribute - color (car, blue)\n4 | attribute - color (fire hydrant, red)\n5 | relation - spatial (car, fire hydrant, next to)\n6 | relation - spatial (car, street, parked)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one blue car?",
+      "2": "Is there one red fire hydrant?",
+      "3": "Is the car blue?",
+      "4": "Is the fire hydrant red?",
+      "5": "Is the car next to the fire hydrant?",
+      "6": "Is the car parked on the street?"
+    }
+  },
+  {
+    "origin_prompt": "A green umbrella with a yellow bird perched on top.",
+    "idx": 627,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A green umbrella with a yellow bird perched on top.",
+        "output": "1 | other - count (umbrella, ==1)\n2 | other - count (bird, ==1)\n3 | attribute - color (umbrella, green)\n4 | attribute - color (bird, yellow)\n5 | relation - spatial (bird, umbrella, perched on top)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        2,
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one umbrella?",
+      "2": "Is there one bird?",
+      "3": "Is the umbrella green?",
+      "4": "Is the bird yellow?",
+      "5": "Is the bird perched on top of the umbrella?"
+    }
+  },
+  {
+    "origin_prompt": "A person wearing a red tie and carrying an orange handbag.",
+    "idx": 628,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A person wearing a red tie and carrying an orange handbag.",
+        "output": "1 | other - count (person, ==1)\n2 | attribute - color (person's tie, red)\n3 | attribute - color (person's handbag, orange)\n4 | entity - part (person's tie)\n5 | entity - part (person's handbag)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one person?",
+      "2": "Is the person wearing a red tie?",
+      "3": "Is the person carrying an orange handbag?",
+      "4": "Does the person have a tie?",
+      "5": "Does the person have a handbag?"
+    }
+  },
+  {
+    "origin_prompt": "A yellow bus passing by a green traffic light.",
+    "idx": 629,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A yellow bus passing by a green traffic light.",
+        "output": "1 | other - count (bus, ==1)\n2 | other - count (traffic light, ==1)\n3 | attribute - color (bus, yellow)\n4 | attribute - color (traffic light, green)\n5 | action - (bus, pass by)\n6 | relation - spatial (bus, traffic light, passing by)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one yellow bus?",
+      "2": "Is there one green traffic light?",
+      "3": "Is the bus passing by?",
+      "4": "Is the traffic light green?",
+      "5": "Is the bus passing by the traffic light?"
+    }
+  },
+  {
+    "origin_prompt": "A blue boat sailing on the water with a red flag.",
+    "idx": 630,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A blue boat sailing on the water with a red flag.",
+        "output": "1 | other - count (boat, ==1)\n2 | other - count (water, ==1)\n3 | other - count (flag, ==1)\n4 | attribute - color (boat, blue)\n5 | attribute - color (flag, red)\n6 | action - (boat, water, sail)\n7 | relation - spatial (boat, water, on)\n8 | relation - spatial (flag, boat, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        1,
+        2
+      ],
+      "8": [
+        3,
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one blue boat?",
+      "2": "Is there water?",
+      "3": "Is there one red flag?",
+      "4": "Is the boat sailing?",
+      "5": "Is the boat on the water?",
+      "6": "Is the flag on the boat?"
+    }
+  },
+  {
+    "origin_prompt": "A group of people sitting on a green bench under an orange tree.",
+    "idx": 631,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A group of people sitting on a green bench under an orange tree.",
+        "output": "1 | entity - whole (people)\n2 | entity - whole (bench)\n3 | entity - whole (tree)\n4 | attribute - color (bench, green)\n5 | attribute - color (tree, orange)\n6 | attribute - state (people, sit)\n7 | relation - spatial (people, bench, on)\n8 | relation - spatial (people, tree, under)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        1,
+        2
+      ],
+      "8": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there a group of people?",
+      "2": "Is there a green bench?",
+      "3": "Is there an orange tree?",
+      "4": "Is the bench green?",
+      "5": "Is the tree orange?",
+      "6": "Are the people sitting?",
+      "7": "Are the people on the bench?",
+      "8": "Are the people under the tree?"
+    }
+  },
+  {
+    "origin_prompt": "A red cat chasing a blue bird in the garden.",
+    "idx": 632,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A red cat chasing a blue bird in the garden.",
+        "output": "1 | other - count (cat, ==1)\n2 | other - count (bird, ==1)\n3 | other - count (garden, ==1)\n4 | attribute - color (cat, red)\n5 | attribute - color (bird, blue)\n6 | action - (cat, bird, chase)\n7 | relation - spatial (cat, garden, in)\n8 | relation - spatial (bird, garden, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        1,
+        3
+      ],
+      "8": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one red cat?",
+      "2": "Is there one blue bird?",
+      "3": "Is there one garden?",
+      "4": "Is the cat chasing the bird?",
+      "5": "Is the cat in the garden?",
+      "6": "Is the bird in the garden?"
+    }
+  },
+  {
+    "origin_prompt": "A person riding a green motorbike with an orange helmet.",
+    "idx": 633,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A person riding a green motorbike with an orange helmet.",
+        "output": "1 | other - count (person, ==1)\n2 | other - count (motorbike, ==1)\n3 | other - count (helmet, ==1)\n4 | attribute - color (motorbike, green)\n5 | attribute - color (helmet, orange)\n6 | action - (person, motorbike, ride)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one person?",
+      "2": "Is there one motorbike?",
+      "3": "Is there one helmet?",
+      "4": "Is the motorbike green?",
+      "5": "Is the helmet orange?",
+      "6": "Is the person riding the motorbike?"
+    }
+  },
+  {
+    "origin_prompt": "A yellow aeroplane flying over a field of red flowers.",
+    "idx": 634,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A yellow aeroplane flying over a field of red flowers.",
+        "output": "1 | other - count (aeroplane, ==1)\n2 | other - count (field, ==1)\n3 | other - count (flowers, ==1)\n4 | attribute - color (aeroplane, yellow)\n5 | attribute - color (flowers, red)\n6 | relation - spatial (aeroplane, field, flying over)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one aeroplane?",
+      "2": "Is there one field?",
+      "3": "Is there one group of flowers?",
+      "4": "Is the aeroplane yellow?",
+      "5": "Are the flowers red?",
+      "6": "Is the aeroplane flying over the field?"
+    }
+  },
+  {
+    "origin_prompt": "A red truck carrying a load of green watermelons.",
+    "idx": 635,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A red truck carrying a load of green watermelons.",
+        "output": "1 | other - count (truck, ==1)\n2 | other - count (watermelons, ==1)\n3 | attribute - color (truck, red)\n4 | attribute - color (watermelons, green)\n5 | action - (truck, carry)\n6 | relation - spatial (truck, watermelons, load of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one red truck?",
+      "2": "Is there one watermelon?",
+      "3": "Is the truck red?",
+      "4": "Are the watermelons green?",
+      "5": "Is the truck carrying something?",
+      "6": "Is the truck carrying a load of watermelons?"
+    }
+  },
+  {
+    "origin_prompt": "A blue train speeding past a yellow stop sign.",
+    "idx": 636,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A blue train speeding past a yellow stop sign.",
+        "output": "1 | other - count (train, ==1)\n2 | other - count (stop sign, ==1)\n3 | attribute - color (train, blue)\n4 | attribute - color (stop sign, yellow)\n5 | action - (train, speed past)\n6 | relation - spatial (train, stop sign, past)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one train?",
+      "2": "Is there one stop sign?",
+      "3": "Is the train blue?",
+      "4": "Is the stop sign yellow?",
+      "5": "Is the train speeding?",
+      "6": "Is the train past the stop sign?"
+    }
+  },
+  {
+    "origin_prompt": "A green cow grazing in a field with a yellow sun.",
+    "idx": 637,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A green cow grazing in a field with a yellow sun.",
+        "output": "1 | other - count (cow, ==1)\n2 | other - count (field, ==1)\n3 | other - count (sun, ==1)\n4 | attribute - color (cow, green)\n5 | attribute - color (sun, yellow)\n6 | action - (cow, field, graze)\n7 | relation - spatial (cow, field, in)\n8 | relation - spatial (sun, field, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        1,
+        2
+      ],
+      "8": [
+        3,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one green cow?",
+      "2": "Is there one field?",
+      "3": "Is there one sun?",
+      "4": "Is the cow green?",
+      "5": "Is the sun yellow?",
+      "6": "Is the cow grazing in the field?",
+      "7": "Is the cow in the field?",
+      "8": "Is the sun in the field?"
+    }
+  },
+  {
+    "origin_prompt": "A person wearing a blue backpack and holding a red umbrella.",
+    "idx": 638,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A person wearing a blue backpack and holding a red umbrella.",
+        "output": "1 | other - count (person, ==1)\n2 | entity - part (person's backpack)\n3 | entity - part (person's umbrella)\n4 | attribute - color (person's backpack, blue)\n5 | attribute - color (person's umbrella, red)\n6 | action - (person, hold)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one person?",
+      "2": "Does the person have a backpack?",
+      "3": "Does the person have an umbrella?",
+      "4": "Is the backpack blue?",
+      "5": "Is the umbrella red?",
+      "6": "Is the person holding something?"
+    }
+  },
+  {
+    "origin_prompt": "A yellow horse galloping through a field of green grass.",
+    "idx": 639,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A yellow horse galloping through a field of green grass.",
+        "output": "1 | other - count (horse, ==1)\n2 | other - count (field, ==1)\n3 | attribute - color (horse, yellow)\n4 | attribute - color (grass, green)\n5 | action - (horse, field, gallop)\n6 | relation - spatial (horse, field, through)\n7 | relation - spatial (horse, grass, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one yellow horse?",
+      "2": "Is there one field?",
+      "3": "Is the horse yellow?",
+      "4": "Is the grass green?",
+      "5": "Is the horse galloping through the field?",
+      "6": "Is the horse in the grass?"
+    }
+  },
+  {
+    "origin_prompt": "A red elephant playing with a blue barrel at the zoo.",
+    "idx": 640,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A red elephant playing with a blue barrel at the zoo.",
+        "output": "1 | other - count (elephant, ==1)\n2 | other - count (barrel, ==1)\n3 | attribute - color (elephant, red)\n4 | attribute - color (barrel, blue)\n5 | action - (elephant, barrel, play)\n6 | relation - spatial (elephant, zoo, at)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one red elephant?",
+      "2": "Is there one blue barrel?",
+      "3": "Is the elephant playing?",
+      "4": "Is the elephant at the zoo?"
+    }
+  },
+  {
+    "origin_prompt": "A green zebra standing next to a yellow giraffe.",
+    "idx": 641,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A green zebra standing next to a yellow giraffe.",
+        "output": "1 | other - count (zebra, ==1)\n2 | other - count (giraffe, ==1)\n3 | attribute - color (zebra, green)\n4 | attribute - color (giraffe, yellow)\n5 | relation - spatial (zebra, giraffe, next to)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one green zebra?",
+      "2": "Is there one yellow giraffe?",
+      "3": "Is the zebra green?",
+      "4": "Is the giraffe yellow?",
+      "5": "Is the zebra next to the giraffe?"
+    }
+  },
+  {
+    "origin_prompt": "A person holding a blue handbag and a red suitcase.",
+    "idx": 642,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A person holding a blue handbag and a red suitcase.",
+        "output": "1 | other - count (person, ==1)\n2 | other - count (handbag, ==1)\n3 | other - count (suitcase, ==1)\n4 | attribute - color (handbag, blue)\n5 | attribute - color (suitcase, red)\n6 | action - (person, hold)\n7 | entity - part (person's handbag)\n8 | entity - part (person's suitcase)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        2,
+        6
+      ],
+      "8": [
+        3,
+        6
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one person?",
+      "2": "Is there one handbag?",
+      "3": "Is there one suitcase?",
+      "4": "Is the handbag blue?",
+      "5": "Is the suitcase red?",
+      "6": "Is the person holding something?",
+      "7": "Does the person have a handbag?",
+      "8": "Does the person have a suitcase?"
+    }
+  },
+  {
+    "origin_prompt": "A yellow bench with a green umbrella shading it.",
+    "idx": 643,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A yellow bench with a green umbrella shading it.",
+        "output": "1 | other - count (bench, ==1)\n2 | other - count (umbrella, ==1)\n3 | attribute - color (bench, yellow)\n4 | attribute - color (umbrella, green)\n5 | relation - spatial (umbrella, bench, shading)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        2,
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one yellow bench?",
+      "2": "Is there one green umbrella?",
+      "3": "Is the bench yellow?",
+      "4": "Is the umbrella green?",
+      "5": "Is the umbrella shading the bench?"
+    }
+  },
+  {
+    "origin_prompt": "A blue bird perched on a red traffic light.",
+    "idx": 644,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A blue bird perched on a red traffic light.",
+        "output": "1 | other - count (bird, ==1)\n2 | other - count (traffic light, ==1)\n3 | attribute - color (bird, blue)\n4 | attribute - color (traffic light, red)\n5 | relation - spatial (bird, traffic light, perched on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one blue bird?",
+      "2": "Is there one red traffic light?",
+      "3": "Is the bird perched on the traffic light?"
+    }
+  },
+  {
+    "origin_prompt": "A green car parked in front of an orange parking meter.",
+    "idx": 645,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A green car parked in front of an orange parking meter.",
+        "output": "1 | other - count (car, ==1)\n2 | other - count (parking meter, ==1)\n3 | attribute - color (car, green)\n4 | attribute - color (parking meter, orange)\n5 | relation - spatial (car, parking meter, in front of)\n6 | attribute - state (car, parked)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one green car?",
+      "2": "Is there one orange parking meter?",
+      "3": "Is the car parked?",
+      "4": "Is the car in front of the parking meter?"
+    }
+  },
+  {
+    "origin_prompt": "A red boat sailing on blue waters under a yellow sun.",
+    "idx": 646,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A red boat sailing on blue waters under a yellow sun.",
+        "output": "1 | other - count (boat, ==1)\n2 | other - count (waters, ==1)\n3 | other - count (sun, ==1)\n4 | attribute - color (boat, red)\n5 | attribute - color (waters, blue)\n6 | attribute - color (sun, yellow)\n7 | action - (boat, waters, sail on)\n8 | relation - spatial (boat, sun, under)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        3
+      ],
+      "7": [
+        1,
+        2
+      ],
+      "8": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one red boat?",
+      "2": "Is there one body of water?",
+      "3": "Is there one sun?",
+      "4": "Is the boat red?",
+      "5": "Are the waters blue?",
+      "6": "Is the sun yellow?",
+      "7": "Is the boat sailing on the waters?",
+      "8": "Is the boat under the sun?"
+    }
+  },
+  {
+    "origin_prompt": "A yellow cat sleeping on a green bench.",
+    "idx": 647,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A yellow cat sleeping on a green bench.",
+        "output": "1 | other - count (cat, ==1)\n2 | other - count (bench, ==1)\n3 | attribute - color (cat, yellow)\n4 | attribute - color (bench, green)\n5 | attribute - state (cat, sleeping)\n6 | relation - spatial (cat, bench, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one yellow cat?",
+      "2": "Is there one green bench?",
+      "3": "Is the cat sleeping?",
+      "4": "Is the cat on the bench?"
+    }
+  },
+  {
+    "origin_prompt": "A person wearing an orange tie and carrying a blue suitcase.",
+    "idx": 648,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A person wearing an orange tie and carrying a blue suitcase.",
+        "output": "1 | other - count (person, ==1)\n2 | attribute - color (person's tie, orange)\n3 | attribute - color (person's suitcase, blue)\n4 | action - (person, carry)\n5 | entity - part (person's tie)\n6 | entity - part (person's suitcase)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one person?",
+      "2": "Is the person wearing an orange tie?",
+      "3": "Is the person carrying a blue suitcase?",
+      "4": "Is the person carrying something?",
+      "5": "Does the person have a tie?",
+      "6": "Does the person have a suitcase?"
+    }
+  },
+  {
+    "origin_prompt": "A green bicycle parked next to a yellow fire hydrant.",
+    "idx": 649,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A green bicycle parked next to a yellow fire hydrant.",
+        "output": "1 | other - count (bicycle, ==1)\n2 | other - count (fire hydrant, ==1)\n3 | attribute - color (bicycle, green)\n4 | attribute - color (fire hydrant, yellow)\n5 | relation - spatial (bicycle, fire hydrant, next to)\n6 | attribute - state (bicycle, parked)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one bicycle?",
+      "2": "Is there one fire hydrant?",
+      "3": "Is the bicycle green?",
+      "4": "Is the fire hydrant yellow?",
+      "5": "Is the bicycle next to the fire hydrant?",
+      "6": "Is the bicycle parked?"
+    }
+  },
+  {
+    "origin_prompt": "A red dog playing with a green frisbee in the park.",
+    "idx": 650,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A red dog playing with a green frisbee in the park.",
+        "output": "1 | other - count (dog, ==1)\n2 | other - count (frisbee, ==1)\n3 | other - count (park, ==1)\n4 | attribute - color (dog, red)\n5 | attribute - color (frisbee, green)\n6 | action - (dog, frisbee, play)\n7 | relation - spatial (dog, park, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one red dog?",
+      "2": "Is there one green frisbee?",
+      "3": "Is there one park?",
+      "4": "Is the dog playing?",
+      "5": "Is the frisbee green?",
+      "6": "Is the dog playing with the frisbee?",
+      "7": "Is the dog in the park?"
+    }
+  },
+  {
+    "origin_prompt": "A blue horse running through a field of orange flowers.",
+    "idx": 651,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A blue horse running through a field of orange flowers.",
+        "output": "1 | other - count (horse, ==1)\n2 | other - count (field, ==1)\n3 | other - count (flowers, ==1)\n4 | attribute - color (horse, blue)\n5 | attribute - color (flowers, orange)\n6 | action - (horse, field, run through)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        1,
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one blue horse?",
+      "2": "Is there one field?",
+      "3": "Is there one patch of flowers?",
+      "4": "Is the horse blue?",
+      "5": "Are the flowers orange?",
+      "6": "Is the horse running through the field?"
+    }
+  }
+]

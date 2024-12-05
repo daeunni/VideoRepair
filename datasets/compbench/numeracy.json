@@ -1,0 +1,3729 @@
+[
+  {
+    "origin_prompt": "two cats chase a butterfly in a sunny garden",
+    "idx": 0,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "two cats chase a butterfly in a sunny garden",
+        "output": "1 | other - count (cats, ==2)\n2 | other - count (butterfly, ==1)\n3 | other - count (garden, ==1)\n4 | attribute - state (garden, sunny)\n5 | action - (cats, butterfly, chase)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two cats?",
+      "2": "Is there one butterfly?",
+      "3": "Is there one garden?",
+      "4": "Is the garden sunny?",
+      "5": "Are the cats chasing the butterfly?"
+    }
+  },
+  {
+    "origin_prompt": "three dogs play in the snow with a red ball",
+    "idx": 1,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three dogs play in the snow with a red ball",
+        "output": "1 | other - count (dogs, ==3)\n2 | other - count (snow, ==1)\n3 | other - count (ball, ==1)\n4 | attribute - color (ball, red)\n5 | action - (dogs, play)\n6 | relation - spatial (dogs, snow, in)\n7 | relation - spatial (dogs, ball, with)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three dogs?",
+      "2": "Is there snow?",
+      "3": "Is there one ball?",
+      "4": "Is the ball red?",
+      "5": "Are the dogs playing?",
+      "6": "Are the dogs in the snow?",
+      "7": "Are the dogs playing with the ball?"
+    }
+  },
+  {
+    "origin_prompt": "four birds build a nest together in a large tree",
+    "idx": 2,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "four birds build a nest together in a large tree",
+        "output": "1 | other - count (birds, ==4)\n2 | entity - whole (nest)\n3 | entity - whole (tree)\n4 | action - (birds, nest, build together)\n5 | attribute - size (tree, large)\n6 | relation - spatial (birds, nest, in)\n7 | relation - spatial (nest, tree, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four birds?",
+      "2": "Is there a nest?",
+      "3": "Is there a tree?",
+      "4": "Are the birds building a nest together?",
+      "5": "Is the tree large?",
+      "6": "Is the nest in the tree?",
+      "7": "Is the nest in the tree?"
+    }
+  },
+  {
+    "origin_prompt": "six rabbits hop around a meadow full of flowers",
+    "idx": 3,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "six rabbits hop around a meadow full of flowers",
+        "output": "1 | other - count (rabbits, ==6)\n2 | entity - whole (meadow)\n3 | entity - whole (flowers)\n4 | attribute - state (rabbits, hop)\n5 | relation - spatial (rabbits, meadow, around)\n6 | relation - spatial (meadow, flowers, full of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there six rabbits?",
+      "2": "Is there a meadow?",
+      "3": "Are there flowers?",
+      "4": "Are the rabbits hopping?",
+      "5": "Are the rabbits hopping around the meadow?",
+      "6": "Is the meadow full of flowers?"
+    }
+  },
+  {
+    "origin_prompt": "two horses race across a grassy field at sunset",
+    "idx": 4,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "two horses race across a grassy field at sunset",
+        "output": "1 | other - count (horses, ==2)\n2 | entity - whole (field)\n3 | attribute - state (field, grassy)\n4 | attribute - time (sunset)\n5 | action - (horses, race)\n6 | relation - spatial (horses, field, across)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two horses?",
+      "2": "Is there a field?",
+      "3": "Is the field grassy?",
+      "4": "Is it sunset?",
+      "5": "Are the horses racing?",
+      "6": "Are the horses racing across the field?"
+    }
+  },
+  {
+    "origin_prompt": "five squirrels gather nuts in a busy forest",
+    "idx": 5,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "five squirrels gather nuts in a busy forest",
+        "output": "1 | other - count (squirrels, ==5)\n2 | other - count (nuts, ==1)\n3 | attribute - state (forest, busy)\n4 | action - (squirrels, nuts, gather)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there five squirrels?",
+      "2": "Is there one nut?",
+      "3": "Is the forest busy?",
+      "4": "Are the squirrels gathering nuts?"
+    }
+  },
+  {
+    "origin_prompt": "three children build a sandcastle on a beach",
+    "idx": 6,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three children build a sandcastle on a beach",
+        "output": "1 | other - count (children, ==3)\n2 | other - count (sandcastle, ==1)\n3 | other - count (beach, ==1)\n4 | action - (children, sandcastle, build)\n5 | relation - spatial (children, sandcastle, on)\n6 | relation - spatial (sandcastle, beach, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three children?",
+      "2": "Is there one sandcastle?",
+      "3": "Is there one beach?",
+      "4": "Are the children building a sandcastle?",
+      "5": "Are the children on the sandcastle?",
+      "6": "Is the sandcastle on the beach?"
+    }
+  },
+  {
+    "origin_prompt": "two monkeys swing from vines in a jungle",
+    "idx": 7,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "two monkeys swing from vines in a jungle",
+        "output": "1 | other - count (monkeys, ==2)\n2 | other - count (vines, ==2)\n3 | other - count (jungle, ==1)\n4 | action - (monkeys, swing)\n5 | relation - spatial (monkeys, vines, from)\n6 | relation - spatial (monkeys, jungle, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two monkeys?",
+      "2": "Are there two vines?",
+      "3": "Is there a jungle?",
+      "4": "Are the monkeys swinging?",
+      "5": "Are the monkeys swinging from the vines?",
+      "6": "Are the monkeys in the jungle?"
+    }
+  },
+  {
+    "origin_prompt": "four dolphins jump out of the ocean waves",
+    "idx": 8,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "four dolphins jump out of the ocean waves",
+        "output": "1 | other - count (dolphins, ==4)\n2 | other - count (ocean waves, ==1)\n3 | action - (dolphins, ocean waves, jump out of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four dolphins?",
+      "2": "Is there one ocean wave?",
+      "3": "Are the dolphins jumping out of the ocean waves?"
+    }
+  },
+  {
+    "origin_prompt": "three owls perch on a branch during a full moon",
+    "idx": 9,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three owls perch on a branch during a full moon",
+        "output": "1 | other - count (owls, ==3)\n2 | entity - whole (branch)\n3 | other - count (full moon, ==1)\n4 | relation - spatial (owls, branch, perch on)\n5 | relation - spatial (owls, full moon, during)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three owls?",
+      "2": "Is there a branch?",
+      "3": "Is there a full moon?",
+      "4": "Are the owls perching on the branch?",
+      "5": "Are the owls out during the full moon?"
+    }
+  },
+  {
+    "origin_prompt": "two deer graze in a misty forest at dawn",
+    "idx": 10,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "two deer graze in a misty forest at dawn",
+        "output": "1 | other - count (deer, ==2)\n2 | other - count (forest, ==1)\n3 | attribute - state (forest, misty)\n4 | attribute - time (forest, dawn)\n5 | action - (deer, graze)\n6 | relation - spatial (deer, forest, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two deer?",
+      "2": "Is there a forest?",
+      "3": "Is the forest misty?",
+      "4": "Is it dawn in the forest?",
+      "5": "Are the deer grazing?",
+      "6": "Are the deer in the forest?"
+    }
+  },
+  {
+    "origin_prompt": "five penguins slide on ice into icy water",
+    "idx": 11,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "five penguins slide on ice into icy water",
+        "output": "1 | other - count (penguins, ==5)\n2 | other - count (ice, ==1)\n3 | other - count (water, ==1)\n4 | action - (penguins, slide on ice)\n5 | relation - spatial (penguins, ice, into)\n6 | relation - spatial (penguins, water, into)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there five penguins?",
+      "2": "Is there ice?",
+      "3": "Is there water?",
+      "4": "Are the penguins sliding on ice?",
+      "5": "Are the penguins sliding into the ice?",
+      "6": "Are the penguins sliding into the water?"
+    }
+  },
+  {
+    "origin_prompt": "four children play tag in a park",
+    "idx": 12,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "four children play tag in a park",
+        "output": "1 | other - count (children, ==4)\n2 | action - (children, play tag)\n3 | entity - whole (park)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        0
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four children?",
+      "2": "Are the children playing tag?",
+      "3": "Is there a park?"
+    }
+  },
+  {
+    "origin_prompt": "three bears fish in a river surrounded by mountains",
+    "idx": 13,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three bears fish in a river surrounded by mountains",
+        "output": "1 | other - count (bears, ==3)\n2 | other - count (fish, ==1)\n3 | other - count (river, ==1)\n4 | other - count (mountains, ==1)\n5 | action - (bears, fish, in)\n6 | relation - spatial (bears, river, in)\n7 | relation - spatial (bears, mountains, surrounded by)\n8 | relation - spatial (fish, river, in)\n9 | relation - spatial (mountains, river, surrounded by)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ],
+      "7": [
+        1,
+        4
+      ],
+      "8": [
+        2,
+        3
+      ],
+      "9": [
+        4,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three bears?",
+      "2": "Is there one fish?",
+      "3": "Is there one river?",
+      "4": "Are there mountains?",
+      "5": "Are the bears fishing?",
+      "6": "Are the bears in the river?",
+      "7": "Are the bears surrounded by mountains?",
+      "8": "Is the fish in the river?",
+      "9": "Are the mountains surrounding the river?"
+    }
+  },
+  {
+    "origin_prompt": "six geese fly over a lake at sunrise",
+    "idx": 14,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "six geese fly over a lake at sunrise",
+        "output": "1 | other - count (geese, ==6)\n2 | other - count (lake, ==1)\n3 | global - (sunrise)\n4 | action - (geese, fly)\n5 | relation - spatial (geese, lake, over)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there six geese?",
+      "2": "Is there one lake?",
+      "3": "Is it sunrise?",
+      "4": "Are the geese flying?",
+      "5": "Are the geese flying over the lake?"
+    }
+  },
+  {
+    "origin_prompt": "two elephants spray each other with water",
+    "idx": 15,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "two elephants spray each other with water",
+        "output": "1 | other - count (elephants, ==2)\n2 | action - (elephants, spray with water)\n3 | relation - spatial (elephant_1, elephant_2, with)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two elephants?",
+      "2": "Are the elephants spraying each other with water?",
+      "3": "Are the elephants together?"
+    }
+  },
+  {
+    "origin_prompt": "five goats climb a rocky mountain path",
+    "idx": 16,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "five goats climb a rocky mountain path",
+        "output": "1 | other - count (goats, ==5)\n2 | other - count (mountain path, ==1)\n3 | attribute - texture (mountain path, rocky)\n4 | action - (goats, climb)\n5 | relation - spatial (goats, mountain path, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        2,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Are there five goats?",
+      "2": "Is there one mountain path?",
+      "3": "Is the mountain path rocky?",
+      "4": "Are the goats climbing?",
+      "5": "Are the goats on the mountain path?"
+    }
+  },
+  {
+    "origin_prompt": "three parrots chatter in a tropical rainforest",
+    "idx": 17,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three parrots chatter in a tropical rainforest",
+        "output": "1 | other - count (parrots, ==3)\n2 | attribute - sound (parrots, chatter)\n3 | attribute - location (parrots, tropical rainforest)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three parrots?",
+      "2": "Do the parrots chatter?",
+      "3": "Are the parrots in a tropical rainforest?"
+    }
+  },
+  {
+    "origin_prompt": "four frogs leap from lily pad to lily pad in a pond",
+    "idx": 18,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "four frogs leap from lily pad to lily pad in a pond",
+        "output": "1 | other - count (frogs, ==4)\n2 | other - count (lily pads, ==4)\n3 | other - count (pond, ==1)\n4 | action - (frogs, leap)\n5 | relation - spatial (frogs, lily pads, from to)\n6 | relation - spatial (lily pads, pond, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four frogs?",
+      "2": "Are there four lily pads?",
+      "3": "Is there one pond?",
+      "4": "Are the frogs leaping?",
+      "5": "Are the frogs leaping from one lily pad to another?",
+      "6": "Are the lily pads in the pond?"
+    }
+  },
+  {
+    "origin_prompt": "two kangaroos box playfully",
+    "idx": 19,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "two kangaroos box playfully",
+        "output": "1 | other - count (kangaroos, ==2)\n2 | action - (kangaroos, box playfully)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two kangaroos?",
+      "2": "Are the kangaroos playfully boxing?"
+    }
+  },
+  {
+    "origin_prompt": "three hedgehogs explore a garden full of autumn leaves",
+    "idx": 20,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three hedgehogs explore a garden full of autumn leaves",
+        "output": "1 | other - count (hedgehogs, ==3)\n2 | other - count (garden, ==1)\n3 | other - count (autumn leaves, ==1)\n4 | action - (hedgehogs, explore)\n5 | relation - spatial (hedgehogs, garden, in)\n6 | relation - spatial (garden, autumn leaves, full of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three hedgehogs?",
+      "2": "Is there one garden?",
+      "3": "Are there autumn leaves?",
+      "4": "Are the hedgehogs exploring?",
+      "5": "Are the hedgehogs in the garden?",
+      "6": "Is the garden full of autumn leaves?"
+    }
+  },
+  {
+    "origin_prompt": "five chicks in a farmyard",
+    "idx": 21,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "five chicks in a farmyard",
+        "output": "1 | other - count (chicks, ==5)\n2 | other - count (farmyard, ==1)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Are there five chicks?",
+      "2": "Is there one farmyard?"
+    }
+  },
+  {
+    "origin_prompt": "two beavers in a small stream",
+    "idx": 22,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "two beavers in a small stream",
+        "output": "1 | other - count (beavers, ==2)\n2 | other - count (stream, ==1)\n3 | attribute - size (stream, small)\n4 | relation - spatial (beavers, stream, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two beavers?",
+      "2": "Is there one stream?",
+      "3": "Is the stream small?",
+      "4": "Are the beavers in the stream?"
+    }
+  },
+  {
+    "origin_prompt": "four turtles race slowly towards the ocean",
+    "idx": 23,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "four turtles race slowly towards the ocean",
+        "output": "1 | other - count (turtles, ==4)\n2 | action - (turtles, race)\n3 | attribute - speed (turtles, slow)\n4 | relation - spatial (turtles, ocean, towards)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four turtles?",
+      "2": "Are the turtles racing?",
+      "3": "Are the turtles slow?",
+      "4": "Are the turtles moving towards the ocean?"
+    }
+  },
+  {
+    "origin_prompt": "six ladybugs crawl along the leaves of a lush, green plant",
+    "idx": 24,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "six ladybugs crawl along the leaves of a lush, green plant",
+        "output": "1 | other - count (ladybugs, ==6)\n2 | entity - whole (leaves)\n3 | entity - whole (plant)\n4 | attribute - color (leaves, green)\n5 | attribute - state (plant, lush)\n6 | action - (ladybugs, crawl)\n7 | relation - spatial (ladybugs, leaves, along)\n8 | relation - spatial (leaves, plant, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        1,
+        2
+      ],
+      "8": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there six ladybugs?",
+      "2": "Are there leaves?",
+      "3": "Is there a plant?",
+      "4": "Are the leaves green?",
+      "5": "Is the plant lush?",
+      "6": "Are the ladybugs crawling?",
+      "7": "Are the ladybugs crawling along the leaves?",
+      "8": "Are the leaves on the plant?"
+    }
+  },
+  {
+    "origin_prompt": "two wolves howl in the wilderness",
+    "idx": 25,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "two wolves howl in the wilderness",
+        "output": "1 | other - count (wolves, ==2)\n2 | attribute - sound (wolves, howl)\n3 | attribute - location (wolves, wilderness)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two wolves?",
+      "2": "Are the wolves howling?",
+      "3": "Are the wolves in the wilderness?"
+    }
+  },
+  {
+    "origin_prompt": "five apples are placed on the table in a kitchen",
+    "idx": 26,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "five apples are placed on the table in a kitchen",
+        "output": "1 | other - count (apples, ==5)\n2 | other - count (table, ==1)\n3 | other - count (kitchen, ==1)\n4 | relation - spatial (apples, table, on)\n5 | relation - spatial (table, kitchen, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there five apples?",
+      "2": "Is there one table?",
+      "3": "Is there one kitchen?",
+      "4": "Are the apples on the table?",
+      "5": "Is the table in the kitchen?"
+    }
+  },
+  {
+    "origin_prompt": "three foxes in a snowy forest",
+    "idx": 27,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three foxes in a snowy forest",
+        "output": "1 | other - count (foxes, ==3)\n2 | other - count (forest, ==1)\n3 | attribute - state (forest, snowy)\n4 | relation - spatial (foxes, forest, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three foxes?",
+      "2": "Is there a forest?",
+      "3": "Is the forest snowy?",
+      "4": "Are the foxes in the forest?"
+    }
+  },
+  {
+    "origin_prompt": "four sea lions sunbathe on a rocky beach",
+    "idx": 28,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "four sea lions sunbathe on a rocky beach",
+        "output": "1 | other - count (sea lions, ==4)\n2 | other - count (beach, ==1)\n3 | attribute - state (sea lions, sunbathe)\n4 | attribute - texture (beach, rocky)\n5 | relation - spatial (sea lions, beach, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four sea lions?",
+      "2": "Is there one beach?",
+      "3": "Are the sea lions sunbathing?",
+      "4": "Is the beach rocky?",
+      "5": "Are the sea lions on the beach?"
+    }
+  },
+  {
+    "origin_prompt": "three dogs and two cats play together in the snow",
+    "idx": 29,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three dogs and two cats play together in the snow",
+        "output": "1 | other - count (dogs, ==3)\n2 | other - count (cats, ==2)\n3 | attribute - state (dogs, play)\n4 | attribute - state (cats, play)\n5 | attribute - state (dogs, in snow)\n6 | attribute - state (cats, in snow)\n7 | relation - social (dogs, cats, play together)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        4
+      ],
+      "7": [
+        3,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three dogs?",
+      "2": "Are there two cats?",
+      "3": "Are the dogs playing?",
+      "4": "Are the cats playing?",
+      "5": "Are the dogs in the snow?",
+      "6": "Are the cats in the snow?",
+      "7": "Are the dogs and cats playing together?"
+    }
+  },
+  {
+    "origin_prompt": "three bees and five butterflies flying around a blooming garden",
+    "idx": 30,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three bees and five butterflies flying around a blooming garden",
+        "output": "1 | other - count (bees, ==3)\n2 | other - count (butterflies, ==5)\n3 | other - count (garden, ==1)\n4 | attribute - state (garden, blooming)\n5 | action - (bees, fly around)\n6 | action - (butterflies, fly around)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three bees?",
+      "2": "Are there five butterflies?",
+      "3": "Is there one garden?",
+      "4": "Is the garden blooming?",
+      "5": "Are the bees flying around?",
+      "6": "Are the butterflies flying around?"
+    }
+  },
+  {
+    "origin_prompt": "four children and three dogs having a picnic in a park",
+    "idx": 31,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "four children and three dogs having a picnic in a park",
+        "output": "1 | other - count (children, ==4)\n2 | other - count (dogs, ==3)\n3 | entity - whole (picnic)\n4 | entity - whole (park)\n5 | attribute - state (children, have)\n6 | relation - spatial (children, picnic, in)\n7 | relation - spatial (dogs, picnic, in)\n8 | relation - spatial (picnic, park, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        3
+      ],
+      "7": [
+        2
+      ],
+      "8": [
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four children?",
+      "2": "Are there three dogs?",
+      "3": "Is there a picnic?",
+      "4": "Is there a park?",
+      "5": "Are the children having a picnic?",
+      "6": "Are the children in the picnic?",
+      "7": "Are the dogs in the picnic?",
+      "8": "Is the picnic in the park?"
+    }
+  },
+  {
+    "origin_prompt": "two horses and four cows graze together on a sunny hillside",
+    "idx": 32,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "two horses and four cows graze together on a sunny hillside",
+        "output": "1 | other - count (horses, ==2)\n2 | other - count (cows, ==4)\n3 | attribute - state (horses, graze)\n4 | attribute - state (cows, graze)\n5 | attribute - state (hillside, sunny)\n6 | relation - spatial (horses, hillside, on)\n7 | relation - spatial (cows, hillside, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        0
+      ],
+      "6": [
+        1,
+        5
+      ],
+      "7": [
+        2,
+        5
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two horses?",
+      "2": "Are there four cows?",
+      "3": "Are the horses grazing?",
+      "4": "Are the cows grazing?",
+      "5": "Is the hillside sunny?",
+      "6": "Are the horses on the hillside?",
+      "7": "Are the cows on the hillside?"
+    }
+  },
+  {
+    "origin_prompt": "five ducks and two swans swim in a serene lake",
+    "idx": 33,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "five ducks and two swans swim in a serene lake",
+        "output": "1 | other - count (ducks, ==5)\n2 | other - count (swans, ==2)\n3 | other - count (lake, ==1)\n4 | attribute - state (lake, serene)\n5 | action - (ducks, swim)\n6 | action - (swans, swim)\n7 | relation - spatial (ducks, lake, in)\n8 | relation - spatial (swans, lake, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        2
+      ],
+      "7": [
+        1,
+        3
+      ],
+      "8": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there five ducks?",
+      "2": "Are there two swans?",
+      "3": "Is there one lake?",
+      "4": "Is the lake serene?",
+      "5": "Are the ducks swimming?",
+      "6": "Are the swans swimming?",
+      "7": "Are the ducks in the lake?",
+      "8": "Are the swans in the lake?"
+    }
+  },
+  {
+    "origin_prompt": "three squirrels and four birds share seeds on a snowy day",
+    "idx": 34,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three squirrels and four birds share seeds on a snowy day",
+        "output": "1 | other - count (squirrels, ==3)\n2 | other - count (birds, ==4)\n3 | other - count (seeds, ==1)\n4 | attribute - state (day, snowy)\n5 | action - (squirrels, seeds, share)\n6 | action - (birds, seeds, share)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1,
+        3
+      ],
+      "6": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three squirrels?",
+      "2": "Are there four birds?",
+      "3": "Are there seeds?",
+      "4": "Is it a snowy day?",
+      "5": "Are the squirrels sharing the seeds?",
+      "6": "Are the birds sharing the seeds?"
+    }
+  },
+  {
+    "origin_prompt": "two lions and three zebras drink from a watering hole",
+    "idx": 35,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "two lions and three zebras drink from a watering hole",
+        "output": "1 | other - count (lions, ==2)\n2 | other - count (zebras, ==3)\n3 | other - count (watering hole, ==1)\n4 | action - (lions, drink from)\n5 | action - (zebras, drink from)\n6 | relation - spatial (lions, watering hole, at)\n7 | relation - spatial (zebras, watering hole, at)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        1,
+        3
+      ],
+      "7": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two lions?",
+      "2": "Are there three zebras?",
+      "3": "Is there one watering hole?",
+      "4": "Are the lions drinking from the watering hole?",
+      "5": "Are the zebras drinking from the watering hole?",
+      "6": "Are the lions at the watering hole?",
+      "7": "Are the zebras at the watering hole?"
+    }
+  },
+  {
+    "origin_prompt": "four rabbits and three foxes in a forest",
+    "idx": 36,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "four rabbits and three foxes in a forest",
+        "output": "1 | other - count (rabbits, ==4)\n2 | other - count (foxes, ==3)\n3 | other - count (forest, ==1)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four rabbits?",
+      "2": "Are there three foxes?",
+      "3": "Is there a forest?"
+    }
+  },
+  {
+    "origin_prompt": "five fish and three frogs in a pond",
+    "idx": 37,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "five fish and three frogs in a pond",
+        "output": "1 | other - count (fish, ==5)\n2 | other - count (frogs, ==3)\n3 | other - count (pond, ==1)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ]
+    },
+    "qid2question": {
+      "1": "Are there five fish?",
+      "2": "Are there three frogs?",
+      "3": "Is there one pond?"
+    }
+  },
+  {
+    "origin_prompt": "two owls and four pigeons perched on a tree",
+    "idx": 38,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "two owls and four pigeons perched on a tree",
+        "output": "1 | other - count (owls, ==2)\n2 | other - count (pigeons, ==4)\n3 | other - count (tree, ==1)\n4 | action - (owls, perch on tree)\n5 | action - (pigeons, perch on tree)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        3
+      ],
+      "5": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two owls?",
+      "2": "Are there four pigeons?",
+      "3": "Is there one tree?",
+      "4": "Are the owls perched on the tree?",
+      "5": "Are the pigeons perched on the tree?"
+    }
+  },
+  {
+    "origin_prompt": "Three monkeys are jumping in the forest, while two parrots are flying among the trees",
+    "idx": 39,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Three monkeys are jumping in the forest, while two parrots are flying among the trees",
+        "output": "1 | other - count (monkeys, ==3)\n2 | other - count (parrots, ==2)\n3 | other - count (forest, ==1)\n4 | action - (monkeys, jump)\n5 | action - (parrots, fly)\n6 | relation - spatial (monkeys, forest, in)\n7 | relation - spatial (parrots, trees, among)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        1,
+        3
+      ],
+      "7": [
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three monkeys?",
+      "2": "Are there two parrots?",
+      "3": "Is there a forest?",
+      "4": "Are the monkeys jumping?",
+      "5": "Are the parrots flying?",
+      "6": "Are the monkeys in the forest?",
+      "7": "Are the parrots among the trees?"
+    }
+  },
+  {
+    "origin_prompt": "four elephants and six giraffes walking around a large tree",
+    "idx": 40,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "four elephants and six giraffes walking around a large tree",
+        "output": "1 | other - count (elephants, ==4)\n2 | other - count (giraffes, ==6)\n3 | other - count (tree, ==1)\n4 | attribute - size (tree, large)\n5 | action - (elephants, walk around)\n6 | action - (giraffes, walk around)\n7 | relation - spatial (elephants, tree, around)\n8 | relation - spatial (giraffes, tree, around)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        2
+      ],
+      "7": [
+        1,
+        3
+      ],
+      "8": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four elephants?",
+      "2": "Are there six giraffes?",
+      "3": "Is there one tree?",
+      "4": "Is the tree large?",
+      "5": "Are the elephants walking around?",
+      "6": "Are the giraffes walking around?",
+      "7": "Are the elephants walking around the tree?",
+      "8": "Are the giraffes walking around the tree?"
+    }
+  },
+  {
+    "origin_prompt": "three sharks and four turtles swim in the ocean",
+    "idx": 41,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three sharks and four turtles swim in the ocean",
+        "output": "1 | other - count (sharks, ==3)\n2 | other - count (turtles, ==4)\n3 | other - count (ocean, ==1)\n4 | action - (sharks, ocean, swim)\n5 | action - (turtles, ocean, swim)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        3
+      ],
+      "5": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three sharks?",
+      "2": "Are there four turtles?",
+      "3": "Is there an ocean?",
+      "4": "Are the sharks swimming in the ocean?",
+      "5": "Are the turtles swimming in the ocean?"
+    }
+  },
+  {
+    "origin_prompt": "five deers are fleeing from two wolves in the woods",
+    "idx": 42,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "five deers are fleeing from two wolves in the woods",
+        "output": "1 | other - count (deers, ==5)\n2 | other - count (wolves, ==2)\n3 | relation - action (deers, flee from, wolves)\n4 | relation - spatial (deers, woods, in)\n5 | relation - spatial (wolves, woods, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there five deers?",
+      "2": "Are there two wolves?",
+      "3": "Are the deers fleeing from the wolves?",
+      "4": "Are the deers in the woods?",
+      "5": "Are the wolves in the woods?"
+    }
+  },
+  {
+    "origin_prompt": "four penguins and two seals rest on an icy shore",
+    "idx": 43,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "four penguins and two seals rest on an icy shore",
+        "output": "1 | other - count (penguins, ==4)\n2 | other - count (seals, ==2)\n3 | other - count (icy shore, ==1)\n4 | attribute - state (penguins, rest)\n5 | attribute - state (seals, rest)\n6 | relation - spatial (penguins, icy shore, on)\n7 | relation - spatial (seals, icy shore, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        1,
+        3
+      ],
+      "7": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four penguins?",
+      "2": "Are there two seals?",
+      "3": "Is there an icy shore?",
+      "4": "Are the penguins resting?",
+      "5": "Are the seals resting?",
+      "6": "Are the penguins on the icy shore?",
+      "7": "Are the seals on the icy shore?"
+    }
+  },
+  {
+    "origin_prompt": "three cats and four dogs engage in a playful chase",
+    "idx": 44,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three cats and four dogs engage in a playful chase",
+        "output": "1 | other - count (cats, ==3)\n2 | other - count (dogs, ==4)\n3 | action - (cats, dogs, engage in a playful chase)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three cats?",
+      "2": "Are there four dogs?",
+      "3": "Are the cats and dogs engaging in a playful chase?"
+    }
+  },
+  {
+    "origin_prompt": "two dolphins and six seagulls near the ocean surface",
+    "idx": 45,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "two dolphins and six seagulls near the ocean surface",
+        "output": "1 | other - count (dolphins, ==2)\n2 | other - count (seagulls, ==6)\n3 | other - count (ocean surface, ==1)\n4 | relation - spatial (dolphins, ocean surface, near)\n5 | relation - spatial (seagulls, ocean surface, near)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        3
+      ],
+      "5": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two dolphins?",
+      "2": "Are there six seagulls?",
+      "3": "Is there the ocean surface?",
+      "4": "Are the dolphins near the ocean surface?",
+      "5": "Are the seagulls near the ocean surface?"
+    }
+  },
+  {
+    "origin_prompt": "three hedgehogs and four snails move slowly through a garden",
+    "idx": 46,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three hedgehogs and four snails move slowly through a garden",
+        "output": "1 | other - count (hedgehogs, ==3)\n2 | other - count (snails, ==4)\n3 | attribute - speed (hedgehogs, slow)\n4 | attribute - speed (snails, slow)\n5 | relation - spatial (hedgehogs, garden, move through)\n6 | relation - spatial (snails, garden, move through)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three hedgehogs?",
+      "2": "Are there four snails?",
+      "3": "Do the hedgehogs move slowly?",
+      "4": "Do the snails move slowly?",
+      "5": "Are the hedgehogs moving through the garden?",
+      "6": "Are the snails moving through the garden?"
+    }
+  },
+  {
+    "origin_prompt": "three dogs and five chairs in a cozy living room",
+    "idx": 47,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three dogs and five chairs in a cozy living room",
+        "output": "1 | other - count (dogs, ==3)\n2 | other - count (chairs, ==5)\n3 | other - count (living room, ==1)\n4 | attribute - state (living room, cozy)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three dogs?",
+      "2": "Are there five chairs?",
+      "3": "Is there one living room?",
+      "4": "Is the living room cozy?"
+    }
+  },
+  {
+    "origin_prompt": "three bees flying around five bonsais in a lush garden",
+    "idx": 48,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three bees flying around five bonsais in a lush garden",
+        "output": "1 | other - count (bees, ==3)\n2 | other - count (bonsais, ==5)\n3 | other - count (garden, ==1)\n4 | attribute - state (garden, lush)\n5 | action - (bees, fly around)\n6 | relation - spatial (bees, bonsais, around)\n7 | relation - spatial (bees, garden, in)\n8 | relation - spatial (bonsais, garden, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        1,
+        3
+      ],
+      "8": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three bees?",
+      "2": "Are there five bonsais?",
+      "3": "Is there one garden?",
+      "4": "Is the garden lush?",
+      "5": "Are the bees flying around?",
+      "6": "Are the bees flying around the bonsais?",
+      "7": "Are the bees in the garden?",
+      "8": "Are the bonsais in the garden?"
+    }
+  },
+  {
+    "origin_prompt": "six children talking and three crystal balls on a table",
+    "idx": 49,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "six children talking and three crystal balls on a table",
+        "output": "1 | other - count (children, ==6)\n2 | other - count (crystal balls, ==3)\n3 | attribute - state (children, talk)\n4 | relation - spatial (children, table, on)\n5 | relation - spatial (crystal balls, table, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        4
+      ],
+      "5": [
+        2,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Are there six children?",
+      "2": "Are there three crystal balls?",
+      "3": "Are the children talking?",
+      "4": "Are the children on the table?",
+      "5": "Are the crystal balls on the table?"
+    }
+  },
+  {
+    "origin_prompt": "four pencils and two erasers are placed on the desk",
+    "idx": 50,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "four pencils and two erasers are placed on the desk",
+        "output": "1 | other - count (pencils, ==4)\n2 | other - count (erasers, ==2)\n3 | other - count (desk, ==1)\n4 | relation - spatial (pencils, desk, on)\n5 | relation - spatial (erasers, desk, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four pencils?",
+      "2": "Are there two erasers?",
+      "3": "Is there one desk?",
+      "4": "Are the pencils on the desk?",
+      "5": "Are the erasers on the desk?"
+    }
+  },
+  {
+    "origin_prompt": "four birds and six birdhouses in a backyard",
+    "idx": 51,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "four birds and six birdhouses in a backyard",
+        "output": "1 | other - count (birds, ==4)\n2 | other - count (birdhouses, ==6)\n3 | other - count (backyard, ==1)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four birds?",
+      "2": "Are there six birdhouses?",
+      "3": "Is there one backyard?"
+    }
+  },
+  {
+    "origin_prompt": "five squirrels and three acorns under an oak tree",
+    "idx": 52,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "five squirrels and three acorns under an oak tree",
+        "output": "1 | other - count (squirrels, ==5)\n2 | other - count (acorns, ==3)\n3 | other - count (oak tree, ==1)\n4 | relation - spatial (squirrels, oak tree, under)\n5 | relation - spatial (acorns, oak tree, under)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there five squirrels?",
+      "2": "Are there three acorns?",
+      "3": "Is there one oak tree?",
+      "4": "Are the squirrels under the oak tree?",
+      "5": "Are the acorns under the oak tree?"
+    }
+  },
+  {
+    "origin_prompt": "three monkeys are sharing two bananas",
+    "idx": 53,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three monkeys are sharing two bananas",
+        "output": "1 | other - count (monkeys, ==3)\n2 | other - count (bananas, ==2)\n3 | action - (monkeys, bananas, share)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three monkeys?",
+      "2": "Are there two bananas?",
+      "3": "Are the monkeys sharing the bananas?"
+    }
+  },
+  {
+    "origin_prompt": "five oranges and four apples are left on the dinner table",
+    "idx": 54,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "five oranges and four apples are left on the dinner table",
+        "output": "1 | other - count (oranges, ==5)\n2 | other - count (apples, ==4)\n3 | other - count (dinner table, ==1)\n4 | relation - spatial (oranges, dinner table, on)\n5 | relation - spatial (apples, dinner table, on)\n6 | action - (oranges and apples, leave)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        3
+      ],
+      "5": [
+        2,
+        3
+      ],
+      "6": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there five oranges?",
+      "2": "Are there four apples?",
+      "3": "Is there one dinner table?",
+      "4": "Are the oranges on the dinner table?",
+      "5": "Are the apples on the dinner table?",
+      "6": "Were the oranges and apples left on the dinner table?"
+    }
+  },
+  {
+    "origin_prompt": "three owls and six books on a library shelf",
+    "idx": 55,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three owls and six books on a library shelf",
+        "output": "1 | other - count (owls, ==3)\n2 | other - count (books, ==6)\n3 | other - count (library shelf, ==1)\n4 | relation - spatial (owls, library shelf, on)\n5 | relation - spatial (books, library shelf, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        3
+      ],
+      "5": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three owls?",
+      "2": "Are there six books?",
+      "3": "Is there one library shelf?",
+      "4": "Are the owls on the library shelf?",
+      "5": "Are the books on the library shelf?"
+    }
+  },
+  {
+    "origin_prompt": "two elephants and five buckets in a zoo",
+    "idx": 56,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "two elephants and five buckets in a zoo",
+        "output": "1 | other - count (elephants, ==2)\n2 | other - count (buckets, ==5)\n3 | other - count (zoo, ==1)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two elephants?",
+      "2": "Are there five buckets?",
+      "3": "Is there one zoo?"
+    }
+  },
+  {
+    "origin_prompt": "four turtles and three seashells on a sandy beach",
+    "idx": 57,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "four turtles and three seashells on a sandy beach",
+        "output": "1 | other - count (turtles, ==4)\n2 | other - count (seashells, ==3)\n3 | other - count (beach, ==1)\n4 | attribute - texture (beach, sandy)\n5 | relation - spatial (turtles, beach, on)\n6 | relation - spatial (seashells, beach, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four turtles?",
+      "2": "Are there three seashells?",
+      "3": "Is there one beach?",
+      "4": "Is the beach sandy?",
+      "5": "Are the turtles on the beach?",
+      "6": "Are the seashells on the beach?"
+    }
+  },
+  {
+    "origin_prompt": "six children are flying four kites on a windy hill",
+    "idx": 58,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "six children are flying four kites on a windy hill",
+        "output": "1 | other - count (children, ==6)\n2 | other - count (kites, ==4)\n3 | attribute - state (hill, windy)\n4 | action - (children, kite, fly)\n5 | relation - spatial (children, hill, on)\n6 | relation - spatial (kites, children, fly)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        3
+      ],
+      "6": [
+        1,
+        2,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Are there six children?",
+      "2": "Are there four kites?",
+      "3": "Is the hill windy?",
+      "4": "Are the children flying kites?",
+      "5": "Are the children on the hill?",
+      "6": "Are the kites being flown by the children?"
+    }
+  },
+  {
+    "origin_prompt": "three foxes and two lanterns in a twilight forest",
+    "idx": 59,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three foxes and two lanterns in a twilight forest",
+        "output": "1 | other - count (foxes, ==3)\n2 | other - count (lanterns, ==2)\n3 | other - count (forest, ==1)\n4 | attribute - time (forest, twilight)\n5 | relation - spatial (foxes, forest, in)\n6 | relation - spatial (lanterns, forest, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        3,
+        4
+      ],
+      "6": [
+        3,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three foxes?",
+      "2": "Are there two lanterns?",
+      "3": "Is there a forest?",
+      "4": "Is it twilight in the forest?",
+      "5": "Are the foxes in the forest?",
+      "6": "Are the lanterns in the forest?"
+    }
+  },
+  {
+    "origin_prompt": "two bears are enjoying honey from four pots in a wooded area",
+    "idx": 60,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "two bears are enjoying honey from four pots in a wooded area",
+        "output": "1 | other - count (bears, ==2)\n2 | other - count (honey pots, ==4)\n3 | other - count (wooded area, ==1)\n4 | action - (bears, honey, enjoy)\n5 | relation - spatial (bears, honey pots, from)\n6 | relation - spatial (honey pots, wooded area, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two bears?",
+      "2": "Are there four honey pots?",
+      "3": "Is there a wooded area?",
+      "4": "Are the bears enjoying honey?",
+      "5": "Are the bears getting honey from the pots?",
+      "6": "Are the pots in the wooded area?"
+    }
+  },
+  {
+    "origin_prompt": "two wolves and six pinecones in a snowy forest",
+    "idx": 61,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "two wolves and six pinecones in a snowy forest",
+        "output": "1 | other - count (wolves, ==2)\n2 | other - count (pinecones, ==6)\n3 | other - count (forest, ==1)\n4 | attribute - state (forest, snowy)\n5 | relation - spatial (wolves, forest, in)\n6 | relation - spatial (pinecones, forest, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        1,
+        3
+      ],
+      "6": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two wolves?",
+      "2": "Are there six pinecones?",
+      "3": "Is there one forest?",
+      "4": "Is the forest snowy?",
+      "5": "Are the wolves in the forest?",
+      "6": "Are the pinecones in the forest?"
+    }
+  },
+  {
+    "origin_prompt": "three hedgehogs are playing with four rabbits in an autumn meadow",
+    "idx": 62,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three hedgehogs are playing with four rabbits in an autumn meadow",
+        "output": "1 | other - count (hedgehogs, ==3)\n2 | other - count (rabbits, ==4)\n3 | entity - whole (meadow)\n4 | attribute - season (meadow, autumn)\n5 | action - (hedgehogs, play with, rabbits)\n6 | relation - spatial (hedgehogs, meadow, in)\n7 | relation - spatial (rabbits, meadow, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ],
+      "7": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three hedgehogs?",
+      "2": "Are there four rabbits?",
+      "3": "Is there a meadow?",
+      "4": "Is it autumn in the meadow?",
+      "5": "Are the hedgehogs playing with the rabbits?",
+      "6": "Are the hedgehogs in the meadow?",
+      "7": "Are the rabbits in the meadow?"
+    }
+  },
+  {
+    "origin_prompt": "four sea lions and three beach balls on a seaside",
+    "idx": 63,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "four sea lions and three beach balls on a seaside",
+        "output": "1 | other - count (sea lions, ==4)\n2 | other - count (beach balls, ==3)\n3 | other - count (seaside, ==1)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four sea lions?",
+      "2": "Are there three beach balls?",
+      "3": "Is there a seaside?"
+    }
+  },
+  {
+    "origin_prompt": "five kittens are standing on three chairs in living room",
+    "idx": 64,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "five kittens are standing on three chairs in living room",
+        "output": "1 | other - count (kittens, ==5)\n2 | other - count (chairs, ==3)\n3 | other - count (living room, ==1)\n4 | attribute - state (kittens, stand)\n5 | relation - spatial (kittens, chairs, on)\n6 | relation - spatial (chairs, living room, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there five kittens?",
+      "2": "Are there three chairs?",
+      "3": "Is there a living room?",
+      "4": "Are the kittens standing?",
+      "5": "Are the kittens on the chairs?",
+      "6": "Are the chairs in the living room?"
+    }
+  },
+  {
+    "origin_prompt": "five owls and three nests in a large old tree",
+    "idx": 65,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "five owls and three nests in a large old tree",
+        "output": "1 | other - count (owls, ==5)\n2 | other - count (nests, ==3)\n3 | entity - whole (tree)\n4 | attribute - size (tree, large)\n5 | attribute - age (tree, old)\n6 | relation - spatial (owls, tree, in)\n7 | relation - spatial (nests, tree, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        3
+      ],
+      "7": [
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there five owls?",
+      "2": "Are there three nests?",
+      "3": "Is there a large tree?",
+      "4": "Is the tree old?",
+      "5": "Are the owls in the tree?",
+      "6": "Are the nests in the tree?"
+    }
+  },
+  {
+    "origin_prompt": "three leopards are walking in front of five trees",
+    "idx": 66,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three leopards are walking in front of five trees",
+        "output": "1 | other - count (leopards, ==3)\n2 | other - count (trees, ==5)\n3 | action - (leopards, walk)\n4 | relation - spatial (leopards, trees, in front of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three leopards?",
+      "2": "Are there five trees?",
+      "3": "Are the leopards walking?",
+      "4": "Are the leopards in front of the trees?"
+    }
+  },
+  {
+    "origin_prompt": "five chicks and four basket on a farmyard",
+    "idx": 67,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "five chicks and four basket on a farmyard",
+        "output": "1 | other - count (chicks, ==5)\n2 | other - count (basket, ==4)\n3 | other - count (farmyard, ==1)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ]
+    },
+    "qid2question": {
+      "1": "Are there five chicks?",
+      "2": "Are there four baskets?",
+      "3": "Is there a farmyard?"
+    }
+  },
+  {
+    "origin_prompt": "six ravens and two scarecrows in a harvested field",
+    "idx": 68,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "six ravens and two scarecrows in a harvested field",
+        "output": "1 | other - count (ravens, ==6)\n2 | other - count (scarecrows, ==2)\n3 | other - count (field, ==1)\n4 | attribute - state (field, harvested)\n5 | relation - spatial (ravens, field, in)\n6 | relation - spatial (scarecrows, field, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there six ravens?",
+      "2": "Are there two scarecrows?",
+      "3": "Is there one field?",
+      "4": "Is the field harvested?",
+      "5": "Are the ravens in the field?",
+      "6": "Are the scarecrows in the field?"
+    }
+  },
+  {
+    "origin_prompt": "three llamas on a high plateau",
+    "idx": 69,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three llamas on a high plateau",
+        "output": "1 | other - count (llamas, ==3)\n2 | other - count (plateau, ==1)\n3 | attribute - height (plateau, high)\n4 | relation - spatial (llamas, plateau, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three llamas?",
+      "2": "Is there one plateau?",
+      "3": "Is the plateau high?",
+      "4": "Are the llamas on the plateau?"
+    }
+  },
+  {
+    "origin_prompt": "three rabbits and two carrots in a garden plot",
+    "idx": 70,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "three rabbits and two carrots in a garden plot",
+        "output": "1 | other - count (rabbits, ==3)\n2 | other - count (carrots, ==2)\n3 | other - count (garden plot, ==1)\n4 | relation - spatial (rabbits, garden plot, in)\n5 | relation - spatial (carrots, garden plot, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        3
+      ],
+      "5": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three rabbits?",
+      "2": "Are there two carrots?",
+      "3": "Is there one garden plot?",
+      "4": "Are the rabbits in the garden plot?",
+      "5": "Are the carrots in the garden plot?"
+    }
+  },
+  {
+    "origin_prompt": "Two dolphins leap out of the ocean as the sun sets.",
+    "idx": 71,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Two dolphins leap out of the ocean as the sun sets.",
+        "output": "1 | other - count (dolphins, ==2)\n2 | other - count (ocean, ==1)\n3 | other - count (sun, ==1)\n4 | action - (dolphins, ocean, leap out of)\n5 | relation - temporal (sun, sets)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two dolphins?",
+      "2": "Is there an ocean?",
+      "3": "Is there a sun?",
+      "4": "Are the dolphins leaping out of the ocean?",
+      "5": "Is the sun setting?"
+    }
+  },
+  {
+    "origin_prompt": "Three sheep graze in a peaceful valley surrounded by hills.",
+    "idx": 72,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Three sheep graze in a peaceful valley surrounded by hills.",
+        "output": "1 | other - count (sheep, ==3)\n2 | other - count (valley, ==1)\n3 | other - count (hills, ==4)\n4 | attribute - state (sheep, graze)\n5 | attribute - state (valley, peaceful)\n6 | relation - spatial (sheep, valley, in)\n7 | relation - spatial (sheep, hills, surrounded by)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three sheep?",
+      "2": "Is there one valley?",
+      "3": "Are there four hills?",
+      "4": "Are the sheep grazing?",
+      "5": "Is the valley peaceful?",
+      "6": "Are the sheep in the valley?",
+      "7": "Are the sheep surrounded by the hills?"
+    }
+  },
+  {
+    "origin_prompt": "Four butterflies dance around blooming flowers in a garden.",
+    "idx": 73,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Four butterflies dance around blooming flowers in a garden.",
+        "output": "1 | other - count (butterflies, ==4)\n2 | other - count (flowers, ==1)\n3 | attribute - state (flowers, blooming)\n4 | relation - spatial (butterflies, flowers, around)\n5 | relation - spatial (butterflies, garden, in)\n6 | action - (butterflies, dance)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four butterflies?",
+      "2": "Is there one flower?",
+      "3": "Are the flowers blooming?",
+      "4": "Are the butterflies flying around the flowers?",
+      "5": "Are the butterflies in the garden?",
+      "6": "Are the butterflies dancing?"
+    }
+  },
+  {
+    "origin_prompt": "Six ducks swim in a calm pond with lily pads.",
+    "idx": 74,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Six ducks swim in a calm pond with lily pads.",
+        "output": "1 | other - count (ducks, ==6)\n2 | other - count (pond, ==1)\n3 | attribute - state (pond, calm)\n4 | entity - part (lily pads)\n5 | relation - spatial (ducks, pond, swim in)\n6 | relation - spatial (lily pads, pond, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        2,
+        3
+      ],
+      "6": [
+        4,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there six ducks?",
+      "2": "Is there one pond?",
+      "3": "Is the pond calm?",
+      "4": "Are there lily pads?",
+      "5": "Are the ducks swimming in the pond?",
+      "6": "Are the lily pads in the pond?"
+    }
+  },
+  {
+    "origin_prompt": "Two elephants playfully spray water at each other in a river.",
+    "idx": 75,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Two elephants playfully spray water at each other in a river.",
+        "output": "1 | other - count (elephants, ==2)\n2 | other - count (river, ==1)\n3 | action - (elephants, water, spray at each other)\n4 | relation - spatial (elephants, river, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two elephants?",
+      "2": "Is there one river?",
+      "3": "Are the elephants playfully spraying water at each other?",
+      "4": "Are the elephants in the river?"
+    }
+  },
+  {
+    "origin_prompt": "Five owls perch on a fence under the moonlight.",
+    "idx": 76,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Five owls perch on a fence under the moonlight.",
+        "output": "1 | other - count (owls, ==5)\n2 | other - count (fence, ==1)\n3 | attribute - state (moonlight)\n4 | relation - spatial (owls, fence, on)\n5 | relation - spatial (owls, moonlight, under)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there five owls?",
+      "2": "Is there one fence?",
+      "3": "Is it moonlight?",
+      "4": "Are the owls on the fence?",
+      "5": "Are the owls under the moonlight?"
+    }
+  },
+  {
+    "origin_prompt": "Three kangaroos hop across the outback during the day.",
+    "idx": 77,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Three kangaroos hop across the outback during the day.",
+        "output": "1 | other - count (kangaroos, ==3)\n2 | other - count (outback, ==1)\n3 | attribute - time (day)\n4 | action - (kangaroos, outback, hop across)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three kangaroos?",
+      "2": "Is there one outback?",
+      "3": "Is it daytime?",
+      "4": "Are the kangaroos hopping across the outback?"
+    }
+  },
+  {
+    "origin_prompt": "Four turtles bask on rocks near a flowing stream.",
+    "idx": 78,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Four turtles bask on rocks near a flowing stream.",
+        "output": "1 | other - count (turtles, ==4)\n2 | other - count (rocks, ==4)\n3 | other - count (stream, ==1)\n4 | attribute - state (turtles, bask)\n5 | relation - spatial (turtles, rocks, on)\n6 | relation - spatial (rocks, stream, near)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four turtles?",
+      "2": "Are there four rocks?",
+      "3": "Is there one stream?",
+      "4": "Are the turtles basking?",
+      "5": "Are the turtles on the rocks?",
+      "6": "Are the rocks near the stream?"
+    }
+  },
+  {
+    "origin_prompt": "Six penguins waddle together across an icy landscape.",
+    "idx": 79,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Six penguins waddle together across an icy landscape.",
+        "output": "1 | other - count (penguins, ==6)\n2 | attribute - state (penguins, waddle)\n3 | attribute - state (landscape, icy)\n4 | relation - spatial (penguins, landscape, across)\n5 | relation - spatial (penguins, penguins, together)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        3
+      ],
+      "5": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Are there six penguins?",
+      "2": "Are the penguins waddling?",
+      "3": "Is the landscape icy?",
+      "4": "Are the penguins moving across the landscape?",
+      "5": "Are the penguins together?"
+    }
+  },
+  {
+    "origin_prompt": "Two deer stand quietly in a misty forest clearing.",
+    "idx": 80,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Two deer stand quietly in a misty forest clearing.",
+        "output": "1 | other - count (deer, ==2)\n2 | attribute - state (deer, stand)\n3 | attribute - state (forest clearing, misty)\n4 | relation - spatial (deer, forest clearing, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two deer?",
+      "2": "Are the deer standing?",
+      "3": "Is the forest clearing misty?",
+      "4": "Are the deer in the forest clearing?"
+    }
+  },
+  {
+    "origin_prompt": "Seven geese fly in a V-formation across the sky.",
+    "idx": 81,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Seven geese fly in a V-formation across the sky.",
+        "output": "1 | other - count (geese, ==7)\n2 | relation - spatial (geese, sky, across)\n3 | relation - spatial (geese, V-formation, fly in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Are there seven geese?",
+      "2": "Are the geese flying across the sky?",
+      "3": "Are the geese flying in a V-formation?"
+    }
+  },
+  {
+    "origin_prompt": "Three kittens nap together in a cozy basket.",
+    "idx": 82,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Three kittens nap together in a cozy basket.",
+        "output": "1 | other - count (kittens, ==3)\n2 | entity - whole (basket)\n3 | attribute - state (kittens, nap)\n4 | attribute - state (basket, cozy)\n5 | relation - spatial (kittens, basket, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three kittens?",
+      "2": "Is there a basket?",
+      "3": "Are the kittens napping?",
+      "4": "Is the basket cozy?",
+      "5": "Are the kittens in the basket?"
+    }
+  },
+  {
+    "origin_prompt": "Five frogs croak in unison on a large lily pad.",
+    "idx": 83,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Five frogs croak in unison on a large lily pad.",
+        "output": "1 | other - count (frogs, ==5)\n2 | entity - whole (lily pad)\n3 | action - (frogs, croak)\n4 | relation - temporal (frogs, in unison)\n5 | relation - spatial (frogs, lily pad, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there five frogs?",
+      "2": "Is there a lily pad?",
+      "3": "Are the frogs croaking?",
+      "4": "Are the frogs croaking in unison?",
+      "5": "Are the frogs on the lily pad?"
+    }
+  },
+  {
+    "origin_prompt": "Four raccoons rummage through fallen leaves in the woods.",
+    "idx": 84,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Four raccoons rummage through fallen leaves in the woods.",
+        "output": "1 | other - count (raccoons, ==4)\n2 | other - count (fallen leaves, ==1)\n3 | other - count (woods, ==1)\n4 | action - (raccoons, rummage through)\n5 | relation - spatial (raccoons, fallen leaves, in)\n6 | relation - spatial (raccoons, woods, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four raccoons?",
+      "2": "Are there fallen leaves?",
+      "3": "Are there woods?",
+      "4": "Are the raccoons rummaging through?",
+      "5": "Are the raccoons in the fallen leaves?",
+      "6": "Are the raccoons in the woods?"
+    }
+  },
+  {
+    "origin_prompt": "Six parrots chatter on branches in a tropical rainforest.",
+    "idx": 85,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Six parrots chatter on branches in a tropical rainforest.",
+        "output": "1 | other - count (parrots, ==6)\n2 | entity - whole (branches)\n3 | entity - whole (tropical rainforest)\n4 | action - (parrots, chatter)\n5 | relation - spatial (parrots, branches, on)\n6 | relation - spatial (parrots, tropical rainforest, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there six parrots?",
+      "2": "Are there branches?",
+      "3": "Is it a tropical rainforest?",
+      "4": "Are the parrots chattering?",
+      "5": "Are the parrots on the branches?",
+      "6": "Are the parrots in the tropical rainforest?"
+    }
+  },
+  {
+    "origin_prompt": "Two bears fish in a rushing river.",
+    "idx": 86,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Two bears fish in a rushing river.",
+        "output": "1 | other - count (bears, ==2)\n2 | other - count (fish, ==1)\n3 | other - count (river, ==1)\n4 | action - (bears, fish, in)\n5 | action - (fish, river, rush)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two bears?",
+      "2": "Is there one fish?",
+      "3": "Is there one river?",
+      "4": "Are the bears fishing?",
+      "5": "Is the fish in the rushing river?"
+    }
+  },
+  {
+    "origin_prompt": "Five goats climb a rocky hillside at dawn.",
+    "idx": 87,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Five goats climb a rocky hillside at dawn.",
+        "output": "1 | other - count (goats, ==5)\n2 | other - count (hillside, ==1)\n3 | attribute - state (hillside, rocky)\n4 | attribute - time (dawn)\n5 | action - (goats, hillside, climb)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there five goats?",
+      "2": "Is there one hillside?",
+      "3": "Is the hillside rocky?",
+      "4": "Is it dawn?",
+      "5": "Are the goats climbing the hillside?"
+    }
+  },
+  {
+    "origin_prompt": "Three foxes play near the entrance of their den.",
+    "idx": 88,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Three foxes play near the entrance of their den.",
+        "output": "1 | other - count (foxes, ==3)\n2 | other - count (entrance, ==1)\n3 | other - count (den, ==1)\n4 | action - (foxes, play)\n5 | relation - spatial (foxes, entrance, near)\n6 | relation - spatial (foxes, den, near)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three foxes?",
+      "2": "Is there one entrance?",
+      "3": "Is there one den?",
+      "4": "Are the foxes playing?",
+      "5": "Are the foxes near the entrance?",
+      "6": "Are the foxes near the den?"
+    }
+  },
+  {
+    "origin_prompt": "Four peacocks display their feathers in a sunny courtyard.",
+    "idx": 89,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Four peacocks display their feathers in a sunny courtyard.",
+        "output": "1 | other - count (peacocks, ==4)\n2 | attribute - state (peacocks, display feathers)\n3 | attribute - state (courtyard, sunny)\n4 | relation - spatial (peacocks, courtyard, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four peacocks?",
+      "2": "Are the peacocks displaying their feathers?",
+      "3": "Is the courtyard sunny?",
+      "4": "Are the peacocks in the courtyard?"
+    }
+  },
+  {
+    "origin_prompt": "Seven bees buzz around a blooming flower bed.",
+    "idx": 90,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Seven bees buzz around a blooming flower bed.",
+        "output": "1 | other - count (bees, ==7)\n2 | entity - whole (flower bed)\n3 | attribute - state (flower bed, blooming)\n4 | action - (bees, buzz around)\n5 | relation - spatial (bees, flower bed, around)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there seven bees?",
+      "2": "Is there a flower bed?",
+      "3": "Is the flower bed blooming?",
+      "4": "Are the bees buzzing around?",
+      "5": "Are the bees around the flower bed?"
+    }
+  },
+  {
+    "origin_prompt": "Eight ants march in a line towards a crumb on the ground.",
+    "idx": 91,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Eight ants march in a line towards a crumb on the ground.",
+        "output": "1 | other - count (ants, ==8)\n2 | other - count (crumb, ==1)\n3 | action - (ants, march)\n4 | relation - spatial (ants, crumb, towards)\n5 | relation - spatial (ants, ground, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        5
+      ]
+    },
+    "qid2question": {
+      "1": "Are there eight ants?",
+      "2": "Is there one crumb?",
+      "3": "Are the ants marching?",
+      "4": "Are the ants moving towards the crumb?",
+      "5": "Are the ants on the ground?"
+    }
+  },
+  {
+    "origin_prompt": "Two peacocks strut across a lush garden.",
+    "idx": 92,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Two peacocks strut across a lush garden.",
+        "output": "1 | other - count (peacocks, ==2)\n2 | entity - whole (garden)\n3 | attribute - state (garden, lush)\n4 | action - (peacocks, strut)\n5 | relation - spatial (peacocks, garden, across)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two peacocks?",
+      "2": "Is there a garden?",
+      "3": "Is the garden lush?",
+      "4": "Are the peacocks strutting?",
+      "5": "Are the peacocks crossing the garden?"
+    }
+  },
+  {
+    "origin_prompt": "Six horses graze in a field under a clear blue sky.",
+    "idx": 93,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Six horses graze in a field under a clear blue sky.",
+        "output": "1 | other - count (horses, ==6)\n2 | other - count (field, ==1)\n3 | other - count (sky, ==1)\n4 | attribute - state (horses, graze)\n5 | attribute - color (sky, clear blue)\n6 | relation - spatial (horses, field, in)\n7 | relation - spatial (horses, sky, under)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        2
+      ],
+      "7": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there six horses?",
+      "2": "Is there one field?",
+      "3": "Is there one sky?",
+      "4": "Are the horses grazing?",
+      "5": "Is the sky clear blue?",
+      "6": "Are the horses in the field?",
+      "7": "Are the horses under the sky?"
+    }
+  },
+  {
+    "origin_prompt": "Five eagles soar through the clear blue sky, their wings outstretched.",
+    "idx": 94,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Five eagles soar through the clear blue sky, their wings outstretched.",
+        "output": "1 | other - count (eagles, ==5)\n2 | attribute - state (sky, clear blue)\n3 | attribute - state (eagles, soar)\n4 | attribute - state (eagles' wings, outstretched)\n5 | relation - spatial (eagles, sky, through)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there five eagles?",
+      "2": "Is the sky clear and blue?",
+      "3": "Are the eagles soaring?",
+      "4": "Are the wings of the eagles outstretched?",
+      "5": "Are the eagles flying through the sky?"
+    }
+  },
+  {
+    "origin_prompt": "Seven flamingos stand on one leg in a shallow lagoon.",
+    "idx": 95,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Seven flamingos stand on one leg in a shallow lagoon.",
+        "output": "1 | other - count (flamingos, ==7)\n2 | other - count (leg, ==1)\n3 | other - count (lagoon, ==1)\n4 | attribute - state (flamingos, stand)\n5 | attribute - state (flamingos, one leg)\n6 | attribute - state (lagoon, shallow)\n7 | relation - spatial (flamingos, lagoon, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Are there seven flamingos?",
+      "2": "Is there one leg?",
+      "3": "Is there one lagoon?",
+      "4": "Are the flamingos standing?",
+      "5": "Are the flamingos standing on one leg?",
+      "6": "Is the lagoon shallow?",
+      "7": "Are the flamingos in the lagoon?"
+    }
+  },
+  {
+    "origin_prompt": "Three seals sunbathe on a rocky shore.",
+    "idx": 96,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Three seals sunbathe on a rocky shore.",
+        "output": "1 | other - count (seals, ==3)\n2 | other - count (shore, ==1)\n3 | attribute - state (seals, sunbathe)\n4 | attribute - texture (shore, rocky)\n5 | relation - spatial (seals, shore, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there three seals?",
+      "2": "Is there one shore?",
+      "3": "Are the seals sunbathing?",
+      "4": "Is the shore rocky?",
+      "5": "Are the seals on the shore?"
+    }
+  },
+  {
+    "origin_prompt": "Five bunnies nibble on clover in a green meadow.",
+    "idx": 97,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Five bunnies nibble on clover in a green meadow.",
+        "output": "1 | other - count (bunnies, ==5)\n2 | other - count (clover, ==1)\n3 | other - count (meadow, ==1)\n4 | attribute - color (meadow, green)\n5 | action - (bunnies, clover, nibble on)\n6 | relation - spatial (bunnies, clover, in)\n7 | relation - spatial (bunnies, meadow, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ],
+      "7": [
+        3,
+        6
+      ]
+    },
+    "qid2question": {
+      "1": "Are there five bunnies?",
+      "2": "Is there clover?",
+      "3": "Is there a meadow?",
+      "4": "Is the meadow green?",
+      "5": "Are the bunnies nibbling on the clover?",
+      "6": "Are the bunnies in the clover?",
+      "7": "Are the bunnies in the meadow?"
+    }
+  },
+  {
+    "origin_prompt": "Four zebras graze together on the African savannah.",
+    "idx": 98,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Four zebras graze together on the African savannah.",
+        "output": "1 | other - count (zebras, ==4)\n2 | entity - whole (African savannah)\n3 | attribute - state (zebras, graze)\n4 | relation - spatial (zebras, African savannah, on)\n5 | relation - spatial (zebras, each other, together)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Are there four zebras?",
+      "2": "Is there an African savannah?",
+      "3": "Are the zebras grazing?",
+      "4": "Are the zebras on the African savannah?",
+      "5": "Are the zebras together with each other?"
+    }
+  },
+  {
+    "origin_prompt": "Two swans glide gracefully on a tranquil lake.",
+    "idx": 99,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "Two swans glide gracefully on a tranquil lake.",
+        "output": "1 | other - count (swans, ==2)\n2 | other - count (lake, ==1)\n3 | attribute - state (swans, glide gracefully)\n4 | attribute - state (lake, tranquil)\n5 | relation - spatial (swans, lake, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Are there two swans?",
+      "2": "Is there one lake?",
+      "3": "Are the swans gliding gracefully?",
+      "4": "Is the lake tranquil?",
+      "5": "Are the swans on the lake?"
+    }
+  }
+]

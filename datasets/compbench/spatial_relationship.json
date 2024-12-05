@@ -1,0 +1,3473 @@
+[
+  {
+    "origin_prompt": "A dog running on the left of a bicycle",
+    "idx": 0,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A dog running on the left of a bicycle",
+        "output": "1 | other - count (dog, ==1)\n2 | other - count (bicycle, ==1)\n3 | action - (dog, run)\n4 | relation - spatial (dog, bicycle, on the left of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one dog?",
+      "2": "Is there one bicycle?",
+      "3": "Is the dog running?",
+      "4": "Is the dog on the left of the bicycle?"
+    }
+  },
+  {
+    "origin_prompt": "A cat sitting on the left of a fireplace",
+    "idx": 1,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A cat sitting on the left of a fireplace",
+        "output": "1 | other - count (cat, ==1)\n2 | other - count (fireplace, ==1)\n3 | attribute - state (cat, sit)\n4 | relation - spatial (cat, fireplace, on the left of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one cat?",
+      "2": "Is there one fireplace?",
+      "3": "Is the cat sitting?",
+      "4": "Is the cat on the left of the fireplace?"
+    }
+  },
+  {
+    "origin_prompt": "A bird flying on the left side of a hot air balloon",
+    "idx": 2,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A bird flying on the left side of a hot air balloon",
+        "output": "1 | other - count (bird, ==1)\n2 | other - count (hot air balloon, ==1)\n3 | relation - spatial (bird, hot air balloon, on the left side)\n4 | action - (bird, fly)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one bird?",
+      "2": "Is there one hot air balloon?",
+      "3": "Is the bird on the left side of the hot air balloon?",
+      "4": "Is the bird flying?"
+    }
+  },
+  {
+    "origin_prompt": "A toddler walking on the left of a dog in a park",
+    "idx": 3,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A toddler walking on the left of a dog in a park",
+        "output": "1 | other - count (toddler, ==1)\n2 | other - count (dog, ==1)\n3 | other - count (park, ==1)\n4 | attribute - age (toddler, young)\n5 | action - (toddler, walk)\n6 | relation - spatial (toddler, dog, on the left of)\n7 | relation - spatial (toddler, park, in)\n8 | relation - spatial (dog, park, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        1,
+        3
+      ],
+      "8": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one toddler?",
+      "2": "Is there one dog?",
+      "3": "Is there one park?",
+      "4": "Is the toddler young?",
+      "5": "Is the toddler walking?",
+      "6": "Is the toddler on the left of the dog?",
+      "7": "Is the toddler in the park?",
+      "8": "Is the dog in the park?"
+    }
+  },
+  {
+    "origin_prompt": "A squirrel on the left of an old house",
+    "idx": 4,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A squirrel on the left of an old house",
+        "output": "1 | other - count (squirrel, ==1)\n2 | other - count (house, ==1)\n3 | relation - spatial (squirrel, house, on the left of)\n4 | attribute - state (house, old)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one squirrel?",
+      "2": "Is there one house?",
+      "3": "Is the squirrel on the left of the house?",
+      "4": "Is the house old?"
+    }
+  },
+  {
+    "origin_prompt": "A photographer setting up a tripod on the left of a tree",
+    "idx": 5,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A photographer setting up a tripod on the left of a tree",
+        "output": "1 | other - count (photographer, ==1)\n2 | other - count (tripod, ==1)\n3 | other - count (tree, ==1)\n4 | relation - spatial (photographer, tree, on the left of)\n5 | action - (photographer, tripod, set up)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        3
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one photographer?",
+      "2": "Is there one tripod?",
+      "3": "Is there one tree?",
+      "4": "Is the photographer on the left of the tree?",
+      "5": "Is the photographer setting up a tripod?"
+    }
+  },
+  {
+    "origin_prompt": "A child building a sandcastle on the left of a beach umbrella",
+    "idx": 6,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A child building a sandcastle on the left of a beach umbrella",
+        "output": "1 | other - count (child, ==1)\n2 | other - count (sandcastle, ==1)\n3 | other - count (beach umbrella, ==1)\n4 | attribute - state (child, building)\n5 | relation - spatial (child, sandcastle, on)\n6 | relation - spatial (child, beach umbrella, left of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one child?",
+      "2": "Is there one sandcastle?",
+      "3": "Is there one beach umbrella?",
+      "4": "Is the child building?",
+      "5": "Is the child on the sandcastle?",
+      "6": "Is the child to the left of the beach umbrella?"
+    }
+  },
+  {
+    "origin_prompt": "A bee flying on the left of a flower",
+    "idx": 7,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A bee flying on the left of a flower",
+        "output": "1 | other - count (bee, ==1)\n2 | other - count (flower, ==1)\n3 | relation - spatial (bee, flower, on the left of)\n4 | action - (bee, fly)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one bee?",
+      "2": "Is there one flower?",
+      "3": "Is the bee on the left of the flower?",
+      "4": "Is the bee flying?"
+    }
+  },
+  {
+    "origin_prompt": "A penguin standing on the left side of a cactus in a desert",
+    "idx": 8,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A penguin standing on the left side of a cactus in a desert",
+        "output": "1 | other - count (penguin, ==1)\n2 | other - count (cactus, ==1)\n3 | other - count (desert, ==1)\n4 | attribute - state (penguin, stand)\n5 | relation - spatial (penguin, cactus, on the left side)\n6 | relation - spatial (penguin, desert, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one penguin?",
+      "2": "Is there one cactus?",
+      "3": "Is there one desert?",
+      "4": "Is the penguin standing?",
+      "5": "Is the penguin on the left side of the cactus?",
+      "6": "Is the penguin in the desert?"
+    }
+  },
+  {
+    "origin_prompt": "A sheep grazing on the left of a surfboard on a sandy beach",
+    "idx": 9,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A sheep grazing on the left of a surfboard on a sandy beach",
+        "output": "1 | other - count (sheep, ==1)\n2 | other - count (surfboard, ==1)\n3 | other - count (beach, ==1)\n4 | attribute - state (sheep, graze)\n5 | relation - spatial (sheep, surfboard, on the left of)\n6 | relation - spatial (sheep, beach, on)\n7 | relation - spatial (surfboard, beach, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ],
+      "7": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one sheep?",
+      "2": "Is there one surfboard?",
+      "3": "Is there one beach?",
+      "4": "Is the sheep grazing?",
+      "5": "Is the sheep on the left of the surfboard?",
+      "6": "Is the sheep on the beach?",
+      "7": "Is the surfboard on the beach?"
+    }
+  },
+  {
+    "origin_prompt": "A gorilla sitting on the left side of a vending machine in a forest",
+    "idx": 10,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A gorilla sitting on the left side of a vending machine in a forest",
+        "output": "1 | other - count (gorilla, ==1)\n2 | other - count (vending machine, ==1)\n3 | other - count (forest, ==1)\n4 | attribute - position (gorilla, left side)\n5 | relation - spatial (gorilla, vending machine, on)\n6 | relation - spatial (gorilla, forest, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one gorilla?",
+      "2": "Is there one vending machine?",
+      "3": "Is there one forest?",
+      "4": "Is the gorilla on the left side?",
+      "5": "Is the gorilla on the vending machine?",
+      "6": "Is the gorilla in the forest?"
+    }
+  },
+  {
+    "origin_prompt": "An elephant standing on the left of a rowboat in a small pond",
+    "idx": 11,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "An elephant standing on the left of a rowboat in a small pond",
+        "output": "1 | other - count (elephant, ==1)\n2 | other - count (rowboat, ==1)\n3 | other - count (pond, ==1)\n4 | attribute - state (elephant, stand)\n5 | relation - spatial (elephant, rowboat, on the left of)\n6 | relation - spatial (elephant, pond, in)\n7 | relation - spatial (rowboat, pond, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ],
+      "7": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one elephant?",
+      "2": "Is there one rowboat?",
+      "3": "Is there one pond?",
+      "4": "Is the elephant standing?",
+      "5": "Is the elephant on the left of the rowboat?",
+      "6": "Is the elephant in the pond?",
+      "7": "Is the rowboat in the pond?"
+    }
+  },
+  {
+    "origin_prompt": "A llama walking on the left side of a motorcycle in a city street",
+    "idx": 12,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A llama walking on the left side of a motorcycle in a city street",
+        "output": "1 | other - count (llama, ==1)\n2 | other - count (motorcycle, ==1)\n3 | other - count (city street, ==1)\n4 | relation - spatial (llama, motorcycle, on the left side)\n5 | relation - spatial (llama, city street, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one llama?",
+      "2": "Is there one motorcycle?",
+      "3": "Is there one city street?",
+      "4": "Is the llama on the left side of the motorcycle?",
+      "5": "Is the llama in the city street?"
+    }
+  },
+  {
+    "origin_prompt": "A squirrel on the left of a birthday cake at a party in the park",
+    "idx": 13,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A squirrel on the left of a birthday cake at a party in the park",
+        "output": "1 | other - count (squirrel, ==1)\n2 | other - count (birthday cake, ==1)\n3 | other - count (party, ==1)\n4 | other - count (park, ==1)\n5 | relation - spatial (squirrel, birthday cake, on the left of)\n6 | relation - spatial (squirrel, party, at)\n7 | relation - spatial (party, park, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ],
+      "7": [
+        3,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one squirrel?",
+      "2": "Is there one birthday cake?",
+      "3": "Is there one party?",
+      "4": "Is there one park?",
+      "5": "Is the squirrel on the left of the birthday cake?",
+      "6": "Is the squirrel at the party?",
+      "7": "Is the party in the park?"
+    }
+  },
+  {
+    "origin_prompt": "A dog running on the right of a bicycle",
+    "idx": 14,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A dog running on the right of a bicycle",
+        "output": "1 | other - count (dog, ==1)\n2 | other - count (bicycle, ==1)\n3 | action - (dog, run)\n4 | relation - spatial (dog, bicycle, on the right of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one dog?",
+      "2": "Is there one bicycle?",
+      "3": "Is the dog running?",
+      "4": "Is the dog on the right of the bicycle?"
+    }
+  },
+  {
+    "origin_prompt": "A cat sitting on the right of a fireplace",
+    "idx": 15,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A cat sitting on the right of a fireplace",
+        "output": "1 | other - count (cat, ==1)\n2 | other - count (fireplace, ==1)\n3 | attribute - state (cat, sit)\n4 | relation - spatial (cat, fireplace, on the right of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one cat?",
+      "2": "Is there one fireplace?",
+      "3": "Is the cat sitting?",
+      "4": "Is the cat on the right of the fireplace?"
+    }
+  },
+  {
+    "origin_prompt": "A bird flying on the right side of a hot air balloon",
+    "idx": 16,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A bird flying on the right side of a hot air balloon",
+        "output": "1 | other - count (bird, ==1)\n2 | other - count (hot air balloon, ==1)\n3 | relation - spatial (bird, hot air balloon, on the right side)\n4 | action - (bird, fly)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one bird?",
+      "2": "Is there one hot air balloon?",
+      "3": "Is the bird on the right side of the hot air balloon?",
+      "4": "Is the bird flying?"
+    }
+  },
+  {
+    "origin_prompt": "A toddler walking on the right of a dog in a park",
+    "idx": 17,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A toddler walking on the right of a dog in a park",
+        "output": "1 | other - count (toddler, ==1)\n2 | other - count (dog, ==1)\n3 | other - count (park, ==1)\n4 | attribute - age (toddler, toddler)\n5 | action - (toddler, walk)\n6 | relation - spatial (toddler, dog, on the right of)\n7 | relation - spatial (toddler, park, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        4
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one toddler?",
+      "2": "Is there one dog?",
+      "3": "Is there one park?",
+      "4": "Is the toddler a toddler?",
+      "5": "Is the toddler walking?",
+      "6": "Is the toddler on the right of the dog?",
+      "7": "Is the toddler in the park?"
+    }
+  },
+  {
+    "origin_prompt": "A squirrel on the right of an old house",
+    "idx": 18,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A squirrel on the right of an old house",
+        "output": "1 | other - count (squirrel, ==1)\n2 | other - count (house, ==1)\n3 | relation - spatial (squirrel, house, on the right of)\n4 | attribute - state (house, old)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one squirrel?",
+      "2": "Is there one house?",
+      "3": "Is the squirrel on the right of the house?",
+      "4": "Is the house old?"
+    }
+  },
+  {
+    "origin_prompt": "A photographer setting up a tripod on the right of a tree",
+    "idx": 19,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A photographer setting up a tripod on the right of a tree",
+        "output": "1 | other - count (photographer, ==1)\n2 | other - count (tripod, ==1)\n3 | other - count (tree, ==1)\n4 | relation - spatial (photographer, tree, on the right of)\n5 | action - (photographer, tripod, set up)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        3
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one photographer?",
+      "2": "Is there one tripod?",
+      "3": "Is there one tree?",
+      "4": "Is the photographer on the right of the tree?",
+      "5": "Is the photographer setting up a tripod?"
+    }
+  },
+  {
+    "origin_prompt": "A child building a sandcastle on the right of a beach umbrella",
+    "idx": 20,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A child building a sandcastle on the right of a beach umbrella",
+        "output": "1 | other - count (child, ==1)\n2 | other - count (sandcastle, ==1)\n3 | other - count (beach umbrella, ==1)\n4 | attribute - position (child, right)\n5 | relation - spatial (child, sandcastle, building)\n6 | relation - spatial (child, beach umbrella, right of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one child?",
+      "2": "Is there one sandcastle?",
+      "3": "Is there one beach umbrella?",
+      "4": "Is the child on the right?",
+      "5": "Is the child building a sandcastle?",
+      "6": "Is the child to the right of the beach umbrella?"
+    }
+  },
+  {
+    "origin_prompt": "A bee flying on the right of a flower",
+    "idx": 21,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A bee flying on the right of a flower",
+        "output": "1 | other - count (bee, ==1)\n2 | other - count (flower, ==1)\n3 | relation - spatial (bee, flower, on the right of)\n4 | action - (bee, fly)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one bee?",
+      "2": "Is there one flower?",
+      "3": "Is the bee on the right of the flower?",
+      "4": "Is the bee flying?"
+    }
+  },
+  {
+    "origin_prompt": "A penguin standing on the right side of a cactus in a desert",
+    "idx": 22,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A penguin standing on the right side of a cactus in a desert",
+        "output": "1 | other - count (penguin, ==1)\n2 | other - count (cactus, ==1)\n3 | other - count (desert, ==1)\n4 | attribute - state (penguin, stand)\n5 | relation - spatial (penguin, cactus, on the right side)\n6 | relation - spatial (penguin, desert, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one penguin?",
+      "2": "Is there one cactus?",
+      "3": "Is there one desert?",
+      "4": "Is the penguin standing?",
+      "5": "Is the penguin on the right side of the cactus?",
+      "6": "Is the penguin in the desert?"
+    }
+  },
+  {
+    "origin_prompt": "A sheep grazing on the right of a surfboard on a sandy beach",
+    "idx": 23,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A sheep grazing on the right of a surfboard on a sandy beach",
+        "output": "1 | other - count (sheep, ==1)\n2 | other - count (surfboard, ==1)\n3 | other - count (beach, ==1)\n4 | attribute - state (sheep, graze)\n5 | relation - spatial (sheep, surfboard, on the right of)\n6 | relation - spatial (surfboard, beach, on)\n7 | attribute - texture (beach, sandy)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        2,
+        3
+      ],
+      "7": [
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one sheep?",
+      "2": "Is there one surfboard?",
+      "3": "Is there one beach?",
+      "4": "Is the sheep grazing?",
+      "5": "Is the sheep on the right of the surfboard?",
+      "6": "Is the surfboard on the beach?",
+      "7": "Is the beach sandy?"
+    }
+  },
+  {
+    "origin_prompt": "A gorilla sitting on the right side of a vending machine in a forest",
+    "idx": 24,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A gorilla sitting on the right side of a vending machine in a forest",
+        "output": "1 | other - count (gorilla, ==1)\n2 | other - count (vending machine, ==1)\n3 | other - count (forest, ==1)\n4 | attribute - position (gorilla, right side)\n5 | relation - spatial (gorilla, vending machine, on)\n6 | relation - spatial (gorilla, forest, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one gorilla?",
+      "2": "Is there one vending machine?",
+      "3": "Is there one forest?",
+      "4": "Is the gorilla sitting on the right side?",
+      "5": "Is the gorilla on the vending machine?",
+      "6": "Is the gorilla in the forest?"
+    }
+  },
+  {
+    "origin_prompt": "An elephant standing on the right of a rowboat in a small pond",
+    "idx": 25,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "An elephant standing on the right of a rowboat in a small pond",
+        "output": "1 | other - count (elephant, ==1)\n2 | other - count (rowboat, ==1)\n3 | other - count (pond, ==1)\n4 | attribute - state (elephant, stand)\n5 | relation - spatial (elephant, rowboat, on the right of)\n6 | relation - spatial (elephant, pond, in)\n7 | relation - spatial (rowboat, pond, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ],
+      "7": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one elephant?",
+      "2": "Is there one rowboat?",
+      "3": "Is there one pond?",
+      "4": "Is the elephant standing?",
+      "5": "Is the elephant on the right of the rowboat?",
+      "6": "Is the elephant in the pond?",
+      "7": "Is the rowboat in the pond?"
+    }
+  },
+  {
+    "origin_prompt": "A llama walking on the right side of a motorcycle in a city street",
+    "idx": 26,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A llama walking on the right side of a motorcycle in a city street",
+        "output": "1 | other - count (llama, ==1)\n2 | other - count (motorcycle, ==1)\n3 | other - count (city street, ==1)\n4 | relation - spatial (llama, motorcycle, on the right side)\n5 | relation - spatial (llama, city street, in)\n6 | relation - spatial (motorcycle, city street, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        3
+      ],
+      "6": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one llama?",
+      "2": "Is there one motorcycle?",
+      "3": "Is there one city street?",
+      "4": "Is the llama on the right side of the motorcycle?",
+      "5": "Is the llama in the city street?",
+      "6": "Is the motorcycle in the city street?"
+    }
+  },
+  {
+    "origin_prompt": "A squirrel on the right of a birthday cake at a party in the park",
+    "idx": 27,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A squirrel on the right of a birthday cake at a party in the park",
+        "output": "1 | other - count (squirrel, ==1)\n2 | other - count (birthday cake, ==1)\n3 | other - count (party, ==1)\n4 | other - count (park, ==1)\n5 | relation - spatial (squirrel, birthday cake, on the right of)\n6 | relation - spatial (squirrel, party, at)\n7 | relation - spatial (party, park, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        3,
+        4
+      ],
+      "7": [
+        2,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one squirrel?",
+      "2": "Is there one birthday cake?",
+      "3": "Is there one party?",
+      "4": "Is there one park?",
+      "5": "Is the squirrel on the right of the birthday cake?",
+      "6": "Is the squirrel at the party?",
+      "7": "Is the party in the park?"
+    }
+  },
+  {
+    "origin_prompt": "A traffic light suspended above a bicycle",
+    "idx": 28,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A traffic light suspended above a bicycle",
+        "output": "1 | other - count (traffic light, ==1)\n2 | other - count (bicycle, ==1)\n3 | relation - spatial (traffic light, bicycle, suspended above)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one traffic light?",
+      "2": "Is there one bicycle?",
+      "3": "Is the traffic light suspended above the bicycle?"
+    }
+  },
+  {
+    "origin_prompt": "A clock mounted above an ancient door in a bustling old town",
+    "idx": 29,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A clock mounted above an ancient door in a bustling old town",
+        "output": "1 | other - count (clock, ==1)\n2 | other - count (door, ==1)\n3 | other - count (town, ==1)\n4 | attribute - age (door, ancient)\n5 | attribute - state (town, bustling)\n6 | relation - spatial (clock, door, above)\n7 | relation - spatial (clock, town, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one clock?",
+      "2": "Is there one door?",
+      "3": "Is there one town?",
+      "4": "Is the door ancient?",
+      "5": "Is the town bustling?",
+      "6": "Is the clock above the door?",
+      "7": "Is the clock in the town?"
+    }
+  },
+  {
+    "origin_prompt": "A kite stuck in a tree above a boy in a park",
+    "idx": 30,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A kite stuck in a tree above a boy in a park",
+        "output": "1 | other - count (kite, ==1)\n2 | other - count (tree, ==1)\n3 | other - count (boy, ==1)\n4 | other - count (park, ==1)\n5 | relation - spatial (kite, tree, stuck in)\n6 | relation - spatial (kite, boy, above)\n7 | relation - spatial (kite, park, in)\n8 | relation - spatial (boy, tree, below)\n9 | relation - spatial (boy, park, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ],
+      "7": [
+        1,
+        4
+      ],
+      "8": [
+        3,
+        2
+      ],
+      "9": [
+        3,
+        4
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one kite?",
+      "2": "Is there one tree?",
+      "3": "Is there one boy?",
+      "4": "Is there one park?",
+      "5": "Is the kite stuck in the tree?",
+      "6": "Is the kite above the boy?",
+      "7": "Is the kite in the park?",
+      "8": "Is the boy below the tree?",
+      "9": "Is the boy in the park?"
+    }
+  },
+  {
+    "origin_prompt": "A hot air balloon floating above a sheep",
+    "idx": 31,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A hot air balloon floating above a sheep",
+        "output": "1 | other - count (hot air balloon, ==1)\n2 | other - count (sheep, ==1)\n3 | relation - spatial (hot air balloon, sheep, above)\n4 | action - (hot air balloon, float)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one hot air balloon?",
+      "2": "Is there one sheep?",
+      "3": "Is the hot air balloon above the sheep?",
+      "4": "Is the hot air balloon floating?"
+    }
+  },
+  {
+    "origin_prompt": "A hammock strung between two trees above a suitcase",
+    "idx": 32,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A hammock strung between two trees above a suitcase",
+        "output": "1 | other - count (hammock, ==1)\n2 | other - count (trees, ==2)\n3 | other - count (suitcase, ==1)\n4 | relation - spatial (hammock, trees, between)\n5 | relation - spatial (hammock, suitcase, above)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one hammock?",
+      "2": "Are there two trees?",
+      "3": "Is there one suitcase?",
+      "4": "Is the hammock between the trees?",
+      "5": "Is the hammock above the suitcase?"
+    }
+  },
+  {
+    "origin_prompt": "A banner fluttering above a house",
+    "idx": 33,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A banner fluttering above a house",
+        "output": "1 | other - count (banner, ==1)\n2 | other - count (house, ==1)\n3 | action - (banner, flutter)\n4 | relation - spatial (banner, house, above)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one banner?",
+      "2": "Is there one house?",
+      "3": "Is the banner fluttering?",
+      "4": "Is the banner above the house?"
+    }
+  },
+  {
+    "origin_prompt": "A chandelier hanging above a grand piano in a busy hotel lobby",
+    "idx": 34,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A chandelier hanging above a grand piano in a busy hotel lobby",
+        "output": "1 | other - count (chandelier, ==1)\n2 | other - count (grand piano, ==1)\n3 | other - count (hotel lobby, ==1)\n4 | attribute - state (hotel lobby, busy)\n5 | relation - spatial (chandelier, grand piano, above)\n6 | relation - spatial (chandelier, hotel lobby, in)\n7 | relation - spatial (grand piano, hotel lobby, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ],
+      "7": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one chandelier?",
+      "2": "Is there one grand piano?",
+      "3": "Is there one hotel lobby?",
+      "4": "Is the hotel lobby busy?",
+      "5": "Is the chandelier above the grand piano?",
+      "6": "Is the chandelier in the hotel lobby?",
+      "7": "Is the grand piano in the hotel lobby?"
+    }
+  },
+  {
+    "origin_prompt": "A rabbit playing on a table",
+    "idx": 35,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A rabbit playing on a table",
+        "output": "1 | other - count (rabbit, ==1)\n2 | other - count (table, ==1)\n3 | action - (rabbit, play)\n4 | relation - spatial (rabbit, table, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one rabbit?",
+      "2": "Is there one table?",
+      "3": "Is the rabbit playing?",
+      "4": "Is the rabbit on the table?"
+    }
+  },
+  {
+    "origin_prompt": "A backpack placed on a table in a bustling coffee shop",
+    "idx": 36,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A backpack placed on a table in a bustling coffee shop",
+        "output": "1 | other - count (backpack, ==1)\n2 | other - count (table, ==1)\n3 | other - count (coffee shop, ==1)\n4 | attribute - state (coffee shop, bustling)\n5 | relation - spatial (backpack, table, on)\n6 | relation - spatial (table, coffee shop, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one backpack?",
+      "2": "Is there one table?",
+      "3": "Is there one coffee shop?",
+      "4": "Is the coffee shop bustling?",
+      "5": "Is the backpack on the table?",
+      "6": "Is the table in the coffee shop?"
+    }
+  },
+  {
+    "origin_prompt": "A hat left on a statue in a busy park",
+    "idx": 37,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A hat left on a statue in a busy park",
+        "output": "1 | other - count (hat, ==1)\n2 | other - count (statue, ==1)\n3 | other - count (park, ==1)\n4 | attribute - state (hat, left)\n5 | attribute - state (park, busy)\n6 | relation - spatial (hat, statue, on)\n7 | relation - spatial (hat, park, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one hat?",
+      "2": "Is there one statue?",
+      "3": "Is there one park?",
+      "4": "Is the hat left?",
+      "5": "Is the park busy?",
+      "6": "Is the hat on the statue?",
+      "7": "Is the hat in the park?"
+    }
+  },
+  {
+    "origin_prompt": "A frog perched on a refrigerator in a busy kitchen",
+    "idx": 38,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A frog perched on a refrigerator in a busy kitchen",
+        "output": "1 | other - count (frog, ==1)\n2 | other - count (refrigerator, ==1)\n3 | other - count (kitchen, ==1)\n4 | attribute - state (kitchen, busy)\n5 | relation - spatial (frog, refrigerator, perched on)\n6 | relation - spatial (frog, kitchen, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one frog?",
+      "2": "Is there one refrigerator?",
+      "3": "Is there one kitchen?",
+      "4": "Is the kitchen busy?",
+      "5": "Is the frog perched on the refrigerator?",
+      "6": "Is the frog in the kitchen?"
+    }
+  },
+  {
+    "origin_prompt": "A cat lounging on top of a television in a living room",
+    "idx": 39,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A cat lounging on top of a television in a living room",
+        "output": "1 | other - count (cat, ==1)\n2 | other - count (television, ==1)\n3 | other - count (living room, ==1)\n4 | attribute - state (cat, lounging)\n5 | relation - spatial (cat, television, on)\n6 | relation - spatial (cat, living room, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one cat?",
+      "2": "Is there one television?",
+      "3": "Is there one living room?",
+      "4": "Is the cat lounging?",
+      "5": "Is the cat on top of the television?",
+      "6": "Is the cat in the living room?"
+    }
+  },
+  {
+    "origin_prompt": "A rabbit sitting on a drum in the middle of a rock concert",
+    "idx": 40,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A rabbit sitting on a drum in the middle of a rock concert",
+        "output": "1 | other - count (rabbit, ==1)\n2 | other - count (drum, ==1)\n3 | other - count (rock concert, ==1)\n4 | attribute - state (rabbit, sit)\n5 | relation - spatial (rabbit, drum, on)\n6 | relation - spatial (drum, rock concert, in the middle of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one rabbit?",
+      "2": "Is there one drum?",
+      "3": "Is there one rock concert?",
+      "4": "Is the rabbit sitting?",
+      "5": "Is the rabbit on the drum?",
+      "6": "Is the drum in the middle of the rock concert?"
+    }
+  },
+  {
+    "origin_prompt": "A dog sitting atop a moving robot vacuum in a room",
+    "idx": 41,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A dog sitting atop a moving robot vacuum in a room",
+        "output": "1 | other - count (dog, ==1)\n2 | other - count (robot vacuum, ==1)\n3 | other - count (room, ==1)\n4 | attribute - state (dog, sit)\n5 | relation - spatial (dog, robot vacuum, atop)\n6 | relation - spatial (robot vacuum, room, in)\n7 | action - (robot vacuum, move)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        2,
+        3
+      ],
+      "7": [
+        6
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one dog?",
+      "2": "Is there one robot vacuum?",
+      "3": "Is there one room?",
+      "4": "Is the dog sitting?",
+      "5": "Is the dog atop the robot vacuum?",
+      "6": "Is the robot vacuum in the room?",
+      "7": "Is the robot vacuum moving?"
+    }
+  },
+  {
+    "origin_prompt": "A lizard basking on a solar panel on a hot day",
+    "idx": 42,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A lizard basking on a solar panel on a hot day",
+        "output": "1 | other - count (lizard, ==1)\n2 | other - count (solar panel, ==1)\n3 | attribute - state (day, hot)\n4 | action - (lizard, bask)\n5 | relation - spatial (lizard, solar panel, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one lizard?",
+      "2": "Is there one solar panel?",
+      "3": "Is it a hot day?",
+      "4": "Is the lizard basking?",
+      "5": "Is the lizard on the solar panel?"
+    }
+  },
+  {
+    "origin_prompt": "A goldfish bowl set on a suitcase",
+    "idx": 43,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A goldfish bowl set on a suitcase",
+        "output": "1 | other - count (goldfish bowl, ==1)\n2 | other - count (suitcase, ==1)\n3 | attribute - material (goldfish bowl, glass)\n4 | relation - spatial (goldfish bowl, suitcase, set on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one goldfish bowl?",
+      "2": "Is there one suitcase?",
+      "3": "Is the goldfish bowl made of glass?",
+      "4": "Is the goldfish bowl set on the suitcase?"
+    }
+  },
+  {
+    "origin_prompt": "A cat hiding under a bench in a park",
+    "idx": 44,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A cat hiding under a bench in a park",
+        "output": "1 | other - count (cat, ==1)\n2 | other - count (bench, ==1)\n3 | other - count (park, ==1)\n4 | action - (cat, hide)\n5 | relation - spatial (cat, bench, under)\n6 | relation - spatial (cat, park, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one cat?",
+      "2": "Is there one bench?",
+      "3": "Is there one park?",
+      "4": "Is the cat hiding?",
+      "5": "Is the cat under the bench?",
+      "6": "Is the cat in the park?"
+    }
+  },
+  {
+    "origin_prompt": "A dog sitting under a umbrella on a sunny beach",
+    "idx": 45,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A dog sitting under a umbrella on a sunny beach",
+        "output": "1 | other - count (dog, ==1)\n2 | other - count (umbrella, ==1)\n3 | other - count (beach, ==1)\n4 | attribute - state (dog, sit)\n5 | attribute - state (umbrella, sunny)\n6 | relation - spatial (dog, umbrella, under)\n7 | relation - spatial (umbrella, beach, on)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one dog?",
+      "2": "Is there one umbrella?",
+      "3": "Is there one beach?",
+      "4": "Is the dog sitting?",
+      "5": "Is it sunny under the umbrella?",
+      "6": "Is the dog under the umbrella?",
+      "7": "Is the umbrella on the beach?"
+    }
+  },
+  {
+    "origin_prompt": "A squirrel darting under a car",
+    "idx": 46,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A squirrel darting under a car",
+        "output": "1 | other - count (squirrel, ==1)\n2 | other - count (car, ==1)\n3 | action - (squirrel, car, dart under)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one squirrel?",
+      "2": "Is there one car?",
+      "3": "Is the squirrel darting under the car?"
+    }
+  },
+  {
+    "origin_prompt": "A frog resting under a leaf during a rainstorm",
+    "idx": 47,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A frog resting under a leaf during a rainstorm",
+        "output": "1 | other - count (frog, ==1)\n2 | other - count (leaf, ==1)\n3 | attribute - state (frog, resting)\n4 | attribute - state (rainstorm, during)\n5 | relation - spatial (frog, leaf, under)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        0
+      ],
+      "5": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one frog?",
+      "2": "Is there one leaf?",
+      "3": "Is the frog resting?",
+      "4": "Is it during a rainstorm?",
+      "5": "Is the frog under the leaf?"
+    }
+  },
+  {
+    "origin_prompt": "A puppy dozing under a crowded cafe table during lunch hour",
+    "idx": 48,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A puppy dozing under a crowded cafe table during lunch hour",
+        "output": "1 | other - count (puppy, ==1)\n2 | entity - whole (cafe table)\n3 | attribute - state (puppy, dozing)\n4 | attribute - state (cafe table, crowded)\n5 | attribute - time (cafe table, lunch hour)\n6 | relation - spatial (puppy, cafe table, under)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one puppy?",
+      "2": "Is there a cafe table?",
+      "3": "Is the puppy dozing?",
+      "4": "Is the cafe table crowded?",
+      "5": "Is it lunch hour?",
+      "6": "Is the puppy under the cafe table?"
+    }
+  },
+  {
+    "origin_prompt": "A turtle resting at the bottom of a garden bench",
+    "idx": 49,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A turtle resting at the bottom of a garden bench",
+        "output": "1 | other - count (turtle, ==1)\n2 | other - count (garden bench, ==1)\n3 | attribute - state (turtle, resting)\n4 | relation - spatial (turtle, garden bench, at the bottom of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one turtle?",
+      "2": "Is there one garden bench?",
+      "3": "Is the turtle resting?",
+      "4": "Is the turtle at the bottom of the garden bench?"
+    }
+  },
+  {
+    "origin_prompt": "A swan swimming under a bridge",
+    "idx": 50,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A swan swimming under a bridge",
+        "output": "1 | other - count (swan, ==1)\n2 | other - count (bridge, ==1)\n3 | action - (swan, swim)\n4 | relation - spatial (swan, bridge, under)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one swan?",
+      "2": "Is there one bridge?",
+      "3": "Is the swan swimming?",
+      "4": "Is the swan under the bridge?"
+    }
+  },
+  {
+    "origin_prompt": "A basket placed below a television",
+    "idx": 51,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A basket placed below a television",
+        "output": "1 | other - count (basket, ==1)\n2 | other - count (television, ==1)\n3 | relation - spatial (basket, television, below)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one basket?",
+      "2": "Is there one television?",
+      "3": "Is the basket below the television?"
+    }
+  },
+  {
+    "origin_prompt": "A toy lying under a swing in a playground",
+    "idx": 52,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A toy lying under a swing in a playground",
+        "output": "1 | other - count (toy, ==1)\n2 | other - count (swing, ==1)\n3 | other - count (playground, ==1)\n4 | relation - spatial (toy, swing, under)\n5 | relation - spatial (toy, playground, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one toy?",
+      "2": "Is there one swing?",
+      "3": "Is there one playground?",
+      "4": "Is the toy under the swing?",
+      "5": "Is the toy in the playground?"
+    }
+  },
+  {
+    "origin_prompt": "A horse hiding under a table",
+    "idx": 53,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A horse hiding under a table",
+        "output": "1 | other - count (horse, ==1)\n2 | other - count (table, ==1)\n3 | relation - spatial (horse, table, under)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one horse?",
+      "2": "Is there one table?",
+      "3": "Is the horse hiding under the table?"
+    }
+  },
+  {
+    "origin_prompt": "A duck waddling below a spacecraft",
+    "idx": 54,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A duck waddling below a spacecraft",
+        "output": "1 | other - count (duck, ==1)\n2 | other - count (spacecraft, ==1)\n3 | action - (duck, waddle)\n4 | relation - spatial (duck, spacecraft, below)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one duck?",
+      "2": "Is there one spacecraft?",
+      "3": "Is the duck waddling?",
+      "4": "Is the duck below the spacecraft?"
+    }
+  },
+  {
+    "origin_prompt": "clouds floating under a balloon",
+    "idx": 55,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "clouds floating under a balloon",
+        "output": "1 | other - count (clouds, ==1)\n2 | other - count (balloon, ==1)\n3 | relation - spatial (clouds, balloon, under)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Are there clouds?",
+      "2": "Is there one balloon?",
+      "3": "Are the clouds floating under the balloon?"
+    }
+  },
+  {
+    "origin_prompt": "A parrot flying under a drone",
+    "idx": 56,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A parrot flying under a drone",
+        "output": "1 | other - count (parrot, ==1)\n2 | other - count (drone, ==1)\n3 | action - (parrot, fly)\n4 | relation - spatial (parrot, drone, under)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one parrot?",
+      "2": "Is there one drone?",
+      "3": "Is the parrot flying?",
+      "4": "Is the parrot under the drone?"
+    }
+  },
+  {
+    "origin_prompt": "A cat sitting in front of a cake",
+    "idx": 57,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A cat sitting in front of a cake",
+        "output": "1 | other - count (cat, ==1)\n2 | other - count (cake, ==1)\n3 | attribute - state (cat, sit)\n4 | relation - spatial (cat, cake, in front of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one cat?",
+      "2": "Is there one cake?",
+      "3": "Is the cat sitting?",
+      "4": "Is the cat in front of the cake?"
+    }
+  },
+  {
+    "origin_prompt": "A dog waiting patiently in front of a shop",
+    "idx": 58,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A dog waiting patiently in front of a shop",
+        "output": "1 | other - count (dog, ==1)\n2 | other - count (shop, ==1)\n3 | attribute - state (dog, wait)\n4 | relation - spatial (dog, shop, in front of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one dog?",
+      "2": "Is there one shop?",
+      "3": "Is the dog waiting?",
+      "4": "Is the dog in front of the shop?"
+    }
+  },
+  {
+    "origin_prompt": "A horse standing in front of a farmhouse",
+    "idx": 59,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A horse standing in front of a farmhouse",
+        "output": "1 | other - count (horse, ==1)\n2 | other - count (farmhouse, ==1)\n3 | attribute - state (horse, stand)\n4 | relation - spatial (horse, farmhouse, in front of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one horse?",
+      "2": "Is there one farmhouse?",
+      "3": "Is the horse standing?",
+      "4": "Is the horse in front of the farmhouse?"
+    }
+  },
+  {
+    "origin_prompt": "A motorcycle driving in front of a building",
+    "idx": 60,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A motorcycle driving in front of a building",
+        "output": "1 | other - count (motorcycle, ==1)\n2 | other - count (building, ==1)\n3 | action - (motorcycle, drive)\n4 | relation - spatial (motorcycle, building, in front of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one motorcycle?",
+      "2": "Is there one building?",
+      "3": "Is the motorcycle driving?",
+      "4": "Is the motorcycle in front of the building?"
+    }
+  },
+  {
+    "origin_prompt": "A cow walking in front of a chair",
+    "idx": 61,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A cow walking in front of a chair",
+        "output": "1 | other - count (cow, ==1)\n2 | other - count (chair, ==1)\n3 | action - (cow, walk)\n4 | relation - spatial (cow, chair, in front of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one cow?",
+      "2": "Is there one chair?",
+      "3": "Is the cow walking?",
+      "4": "Is the cow in front of the chair?"
+    }
+  },
+  {
+    "origin_prompt": "A bee flying in front of a bag",
+    "idx": 62,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A bee flying in front of a bag",
+        "output": "1 | other - count (bee, ==1)\n2 | other - count (bag, ==1)\n3 | action - (bee, fly)\n4 | relation - spatial (bee, bag, in front of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one bee?",
+      "2": "Is there one bag?",
+      "3": "Is the bee flying?",
+      "4": "Is the bee in front of the bag?"
+    }
+  },
+  {
+    "origin_prompt": "A vase is placed in front of a window",
+    "idx": 63,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A vase is placed in front of a window",
+        "output": "1 | other - count (vase, ==1)\n2 | other - count (window, ==1)\n3 | relation - spatial (vase, window, in front of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one vase?",
+      "2": "Is there one window?",
+      "3": "Is the vase in front of the window?"
+    }
+  },
+  {
+    "origin_prompt": "A bird flying in front of a tower",
+    "idx": 64,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A bird flying in front of a tower",
+        "output": "1 | other - count (bird, ==1)\n2 | other - count (tower, ==1)\n3 | relation - spatial (bird, tower, in front of)\n4 | action - (bird, fly)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one bird?",
+      "2": "Is there one tower?",
+      "3": "Is the bird flying in front of the tower?",
+      "4": "Is the bird flying?"
+    }
+  },
+  {
+    "origin_prompt": "A child walking in front of a car",
+    "idx": 65,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A child walking in front of a car",
+        "output": "1 | other - count (child, ==1)\n2 | other - count (car, ==1)\n3 | action - (child, walk)\n4 | relation - spatial (child, car, in front of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one child?",
+      "2": "Is there one car?",
+      "3": "Is the child walking?",
+      "4": "Is the child in front of the car?"
+    }
+  },
+  {
+    "origin_prompt": "A car parked in front of a pig",
+    "idx": 66,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A car parked in front of a pig",
+        "output": "1 | other - count (car, ==1)\n2 | other - count (pig, ==1)\n3 | relation - spatial (car, pig, in front of)\n4 | attribute - state (car, parked)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one car?",
+      "2": "Is there one pig?",
+      "3": "Is the car in front of the pig?",
+      "4": "Is the car parked?"
+    }
+  },
+  {
+    "origin_prompt": "A balloon floating in front of an airplane",
+    "idx": 67,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A balloon floating in front of an airplane",
+        "output": "1 | other - count (balloon, ==1)\n2 | other - count (airplane, ==1)\n3 | relation - spatial (balloon, airplane, in front of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one balloon?",
+      "2": "Is there one airplane?",
+      "3": "Is the balloon in front of the airplane?"
+    }
+  },
+  {
+    "origin_prompt": "A cup in front of a turtle",
+    "idx": 68,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A cup in front of a turtle",
+        "output": "1 | other - count (cup, ==1)\n2 | other - count (turtle, ==1)\n3 | relation - spatial (cup, turtle, in front of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one cup?",
+      "2": "Is there one turtle?",
+      "3": "Is the cup in front of the turtle?"
+    }
+  },
+  {
+    "origin_prompt": "A fish swimming in front of a suitcase",
+    "idx": 69,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A fish swimming in front of a suitcase",
+        "output": "1 | other - count (fish, ==1)\n2 | other - count (suitcase, ==1)\n3 | relation - spatial (fish, suitcase, in front of)\n4 | action - (fish, swim)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one fish?",
+      "2": "Is there one suitcase?",
+      "3": "Is the fish swimming in front of the suitcase?",
+      "4": "Is the fish swimming?"
+    }
+  },
+  {
+    "origin_prompt": "A camel lounging in front of a snowman",
+    "idx": 70,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A camel lounging in front of a snowman",
+        "output": "1 | other - count (camel, ==1)\n2 | other - count (snowman, ==1)\n3 | attribute - state (camel, lounging)\n4 | relation - spatial (camel, snowman, in front of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one camel?",
+      "2": "Is there one snowman?",
+      "3": "Is the camel lounging?",
+      "4": "Is the camel in front of the snowman?"
+    }
+  },
+  {
+    "origin_prompt": "A cat sitting behind a cake",
+    "idx": 71,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A cat sitting behind a cake",
+        "output": "1 | other - count (cat, ==1)\n2 | other - count (cake, ==1)\n3 | attribute - state (cat, sit)\n4 | relation - spatial (cat, cake, behind)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one cat?",
+      "2": "Is there one cake?",
+      "3": "Is the cat sitting?",
+      "4": "Is the cat behind the cake?"
+    }
+  },
+  {
+    "origin_prompt": "A dog waiting patiently behind a cat",
+    "idx": 72,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A dog waiting patiently behind a cat",
+        "output": "1 | other - count (dog, ==1)\n2 | other - count (cat, ==1)\n3 | attribute - state (dog, waiting patiently)\n4 | relation - spatial (dog, cat, behind)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one dog?",
+      "2": "Is there one cat?",
+      "3": "Is the dog waiting patiently?",
+      "4": "Is the dog behind the cat?"
+    }
+  },
+  {
+    "origin_prompt": "A horse standing behind a man",
+    "idx": 73,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A horse standing behind a man",
+        "output": "1 | other - count (horse, ==1)\n2 | other - count (man, ==1)\n3 | relation - spatial (horse, man, behind)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one horse?",
+      "2": "Is there one man?",
+      "3": "Is the horse behind the man?"
+    }
+  },
+  {
+    "origin_prompt": "A sculpture displayed behind a candle",
+    "idx": 74,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A sculpture displayed behind a candle",
+        "output": "1 | other - count (sculpture, ==1)\n2 | other - count (candle, ==1)\n3 | relation - spatial (sculpture, candle, behind)\n4 | action - (sculpture, display)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one sculpture?",
+      "2": "Is there one candle?",
+      "3": "Is the sculpture behind the candle?",
+      "4": "Is the sculpture being displayed?"
+    }
+  },
+  {
+    "origin_prompt": "A motorcycle parked behind a dog",
+    "idx": 75,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A motorcycle parked behind a dog",
+        "output": "1 | other - count (motorcycle, ==1)\n2 | other - count (dog, ==1)\n3 | relation - spatial (motorcycle, dog, behind)\n4 | attribute - state (motorcycle, parked)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one motorcycle?",
+      "2": "Is there one dog?",
+      "3": "Is the motorcycle behind the dog?",
+      "4": "Is the motorcycle parked?"
+    }
+  },
+  {
+    "origin_prompt": "A cow walking behind a chair",
+    "idx": 76,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A cow walking behind a chair",
+        "output": "1 | other - count (cow, ==1)\n2 | other - count (chair, ==1)\n3 | action - (cow, walk)\n4 | relation - spatial (cow, chair, behind)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one cow?",
+      "2": "Is there one chair?",
+      "3": "Is the cow walking?",
+      "4": "Is the cow behind the chair?"
+    }
+  },
+  {
+    "origin_prompt": "A sheep grazing behind a bicycle",
+    "idx": 77,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A sheep grazing behind a bicycle",
+        "output": "1 | other - count (sheep, ==1)\n2 | other - count (bicycle, ==1)\n3 | action - (sheep, graze)\n4 | relation - spatial (sheep, bicycle, behind)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one sheep?",
+      "2": "Is there one bicycle?",
+      "3": "Is the sheep grazing?",
+      "4": "Is the sheep behind the bicycle?"
+    }
+  },
+  {
+    "origin_prompt": "A dog sitting behind a vase",
+    "idx": 78,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A dog sitting behind a vase",
+        "output": "1 | other - count (dog, ==1)\n2 | other - count (vase, ==1)\n3 | attribute - state (dog, sit)\n4 | relation - spatial (dog, vase, behind)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one dog?",
+      "2": "Is there one vase?",
+      "3": "Is the dog sitting?",
+      "4": "Is the dog behind the vase?"
+    }
+  },
+  {
+    "origin_prompt": "A helicopter flying behind a balloon",
+    "idx": 79,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A helicopter flying behind a balloon",
+        "output": "1 | other - count (helicopter, ==1)\n2 | other - count (balloon, ==1)\n3 | action - (helicopter, fly)\n4 | relation - spatial (helicopter, balloon, behind)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one helicopter?",
+      "2": "Is there one balloon?",
+      "3": "Is the helicopter flying?",
+      "4": "Is the helicopter behind the balloon?"
+    }
+  },
+  {
+    "origin_prompt": "A child walking behind a car",
+    "idx": 80,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A child walking behind a car",
+        "output": "1 | other - count (child, ==1)\n2 | other - count (car, ==1)\n3 | action - (child, walk)\n4 | relation - spatial (child, car, behind)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one child?",
+      "2": "Is there one car?",
+      "3": "Is the child walking?",
+      "4": "Is the child behind the car?"
+    }
+  },
+  {
+    "origin_prompt": "A car parked behind a pig",
+    "idx": 81,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A car parked behind a pig",
+        "output": "1 | other - count (car, ==1)\n2 | other - count (pig, ==1)\n3 | relation - spatial (car, pig, behind)\n4 | attribute - state (car, parked)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one car?",
+      "2": "Is there one pig?",
+      "3": "Is the car behind the pig?",
+      "4": "Is the car parked?"
+    }
+  },
+  {
+    "origin_prompt": "A balloon floating behind a bird",
+    "idx": 82,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A balloon floating behind a bird",
+        "output": "1 | other - count (balloon, ==1)\n2 | other - count (bird, ==1)\n3 | action - (balloon, float)\n4 | relation - spatial (balloon, bird, behind)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one balloon?",
+      "2": "Is there one bird?",
+      "3": "Is the balloon floating?",
+      "4": "Is the balloon behind the bird?"
+    }
+  },
+  {
+    "origin_prompt": "A cup behind a turtle",
+    "idx": 83,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A cup behind a turtle",
+        "output": "1 | other - count (cup, ==1)\n2 | other - count (turtle, ==1)\n3 | relation - spatial (cup, turtle, behind)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one cup?",
+      "2": "Is there one turtle?",
+      "3": "Is the cup behind the turtle?"
+    }
+  },
+  {
+    "origin_prompt": "A bus driving behind a man",
+    "idx": 84,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A bus driving behind a man",
+        "output": "1 | other - count (bus, ==1)\n2 | other - count (man, ==1)\n3 | action - (bus, drive)\n4 | relation - spatial (bus, man, behind)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one bus?",
+      "2": "Is there one man?",
+      "3": "Is the bus driving?",
+      "4": "Is the bus behind the man?"
+    }
+  },
+  {
+    "origin_prompt": "A lion sitting behind a chicken",
+    "idx": 85,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A lion sitting behind a chicken",
+        "output": "1 | other - count (lion, ==1)\n2 | other - count (chicken, ==1)\n3 | attribute - state (lion, sit)\n4 | relation - spatial (lion, chicken, behind)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one lion?",
+      "2": "Is there one chicken?",
+      "3": "Is the lion sitting?",
+      "4": "Is the lion behind the chicken?"
+    }
+  },
+  {
+    "origin_prompt": "A camel lounging behind a snowman",
+    "idx": 86,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A camel lounging behind a snowman",
+        "output": "1 | other - count (camel, ==1)\n2 | other - count (snowman, ==1)\n3 | attribute - state (camel, lounging)\n4 | relation - spatial (camel, snowman, behind)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one camel?",
+      "2": "Is there one snowman?",
+      "3": "Is the camel lounging?",
+      "4": "Is the camel behind the snowman?"
+    }
+  },
+  {
+    "origin_prompt": "A girl walking on the left of an elephant",
+    "idx": 87,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A girl walking on the left of an elephant",
+        "output": "1 | other - count (girl, ==1)\n2 | other - count (elephant, ==1)\n3 | action - (girl, walk)\n4 | relation - spatial (girl, elephant, on the left of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one girl?",
+      "2": "Is there one elephant?",
+      "3": "Is the girl walking?",
+      "4": "Is the girl on the left of the elephant?"
+    }
+  },
+  {
+    "origin_prompt": "A book on the left of a bird",
+    "idx": 88,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A book on the left of a bird",
+        "output": "1 | other - count (book, ==1)\n2 | other - count (bird, ==1)\n3 | relation - spatial (book, bird, on the left of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one book?",
+      "2": "Is there one bird?",
+      "3": "Is the book on the left of the bird?"
+    }
+  },
+  {
+    "origin_prompt": "A cat on the left of a vase",
+    "idx": 89,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A cat on the left of a vase",
+        "output": "1 | other - count (cat, ==1)\n2 | other - count (vase, ==1)\n3 | relation - spatial (cat, vase, on the left of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one cat?",
+      "2": "Is there one vase?",
+      "3": "Is the cat on the left of the vase?"
+    }
+  },
+  {
+    "origin_prompt": "A dog on the left of a bowl",
+    "idx": 90,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A dog on the left of a bowl",
+        "output": "1 | other - count (dog, ==1)\n2 | other - count (bowl, ==1)\n3 | relation - spatial (dog, bowl, on the left of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one dog?",
+      "2": "Is there one bowl?",
+      "3": "Is the dog on the left of the bowl?"
+    }
+  },
+  {
+    "origin_prompt": "A girl walking on the right of an elephant",
+    "idx": 91,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A girl walking on the right of an elephant",
+        "output": "1 | other - count (girl, ==1)\n2 | other - count (elephant, ==1)\n3 | action - (girl, walk)\n4 | relation - spatial (girl, elephant, on the right of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one girl?",
+      "2": "Is there one elephant?",
+      "3": "Is the girl walking?",
+      "4": "Is the girl on the right of the elephant?"
+    }
+  },
+  {
+    "origin_prompt": "A book on the right of a bird",
+    "idx": 92,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A book on the right of a bird",
+        "output": "1 | other - count (book, ==1)\n2 | other - count (bird, ==1)\n3 | relation - spatial (book, bird, on the right of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one book?",
+      "2": "Is there one bird?",
+      "3": "Is the book on the right of the bird?"
+    }
+  },
+  {
+    "origin_prompt": "A cat on the right of a vase",
+    "idx": 93,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A cat on the right of a vase",
+        "output": "1 | other - count (cat, ==1)\n2 | other - count (vase, ==1)\n3 | relation - spatial (cat, vase, on the right of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one cat?",
+      "2": "Is there one vase?",
+      "3": "Is the cat on the right of the vase?"
+    }
+  },
+  {
+    "origin_prompt": "A dog on the right of a bowl",
+    "idx": 94,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A dog on the right of a bowl",
+        "output": "1 | other - count (dog, ==1)\n2 | other - count (bowl, ==1)\n3 | relation - spatial (dog, bowl, on the right of)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one dog?",
+      "2": "Is there one bowl?",
+      "3": "Is the dog on the right of the bowl?"
+    }
+  },
+  {
+    "origin_prompt": "A raccoon foraging under a bird feeder in a backyard",
+    "idx": 95,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A raccoon foraging under a bird feeder in a backyard",
+        "output": "1 | other - count (raccoon, ==1)\n2 | other - count (bird feeder, ==1)\n3 | other - count (backyard, ==1)\n4 | action - (raccoon, forage)\n5 | relation - spatial (raccoon, bird feeder, under)\n6 | relation - spatial (raccoon, backyard, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one raccoon?",
+      "2": "Is there one bird feeder?",
+      "3": "Is there one backyard?",
+      "4": "Is the raccoon foraging?",
+      "5": "Is the raccoon under the bird feeder?",
+      "6": "Is the raccoon in the backyard?"
+    }
+  },
+  {
+    "origin_prompt": "A bonsai is placed under a painting in a room",
+    "idx": 96,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A bonsai is placed under a painting in a room",
+        "output": "1 | other - count (bonsai, ==1)\n2 | other - count (painting, ==1)\n3 | other - count (room, ==1)\n4 | relation - spatial (bonsai, painting, under)\n5 | relation - spatial (bonsai, room, in)\n6 | relation - spatial (painting, room, in)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        3
+      ],
+      "6": [
+        2,
+        3
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one bonsai?",
+      "2": "Is there one painting?",
+      "3": "Is there one room?",
+      "4": "Is the bonsai under the painting?",
+      "5": "Is the bonsai in the room?",
+      "6": "Is the painting in the room?"
+    }
+  },
+  {
+    "origin_prompt": "A clock is placed under a book",
+    "idx": 97,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A clock is placed under a book",
+        "output": "1 | other - count (clock, ==1)\n2 | other - count (book, ==1)\n3 | relation - spatial (clock, book, under)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one clock?",
+      "2": "Is there one book?",
+      "3": "Is the clock under the book?"
+    }
+  },
+  {
+    "origin_prompt": "A surfboard under a horse",
+    "idx": 98,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A surfboard under a horse",
+        "output": "1 | other - count (surfboard, ==1)\n2 | other - count (horse, ==1)\n3 | relation - spatial (surfboard, horse, under)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one surfboard?",
+      "2": "Is there one horse?",
+      "3": "Is the surfboard under the horse?"
+    }
+  },
+  {
+    "origin_prompt": "A rabbit playing under a desk",
+    "idx": 99,
+    "qid2tuple": {
+      "custom_0": {
+        "id": "custom_0",
+        "input": "A rabbit playing under a desk",
+        "output": "1 | other - count (rabbit, ==1)\n2 | other - count (desk, ==1)\n3 | action - (rabbit, play)\n4 | relation - spatial (rabbit, desk, under)"
+      }
+    },
+    "qid2dependency": {
+      "1": [
+        0
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        1,
+        2
+      ]
+    },
+    "qid2question": {
+      "1": "Is there one rabbit?",
+      "2": "Is there one desk?",
+      "3": "Is the rabbit playing?",
+      "4": "Is the rabbit under the desk?"
+    }
+  }
+]
