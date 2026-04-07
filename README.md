@@ -3,6 +3,7 @@
 [![Project Website](https://img.shields.io/badge/Project-Website-blue)](https://video-repair.github.io/)  [![arXiv](https://img.shields.io/badge/arXiv-2411.15115-b31b1b.svg)](https://arxiv.org/pdf/2411.15115.pdf)   
 
 #### [Daeun Lee](https://daeunni.github.io/), [Jaehong Yoon](https://jaehong31.github.io/), [Jaemin Cho](https://j-min.io), [Mohit Bansal](https://www.cs.unc.edu/~mbansal/)    
+#### ACL 2026 Findings 
 
 
 <br>
